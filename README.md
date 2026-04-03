@@ -96,3 +96,30 @@ Useful for CI/CD and data management:
 
 * `npm run fetch-all`: Downloads all Valve JSONs and assets (images/videos) to local storage.
 * `npm run docs:static-build`: Generates a fully-contained static version of the library and explorer.
+
+## Dependencies
+
+### Binaries
+
+| Name                                          | Usage                                | License                                                                               |
+| --------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------- |
+| [Node.js](https://nodejs.org)                 | Core runtime                         | [OpenJS Foundation License](https://github.com/nodejs/node/blob/main/LICENSE)         |
+| [TypeScript](https://www.typescriptlang.org/) | Static type checking and compilation | [Apache-2.0 license](https://github.com/microsoft/TypeScript/blob/master/LICENSE.txt) |
+
+### NPM packages
+
+| Name                                                    | Usage                                      | License                                                                   |
+| ------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------- |
+| [axios](https://github.com/axios/axios)                 | Downloading/querying Valve/OpenDota data   | [MIT license](https://github.com/axios/axios/blob/v1.x/LICENSE)           |
+| [dotaconstants](https://github.com/odota/dotaconstants) | Data enrichment (Heroes, Items, Abilities) | [MIT license](https://github.com/odota/dotaconstants/blob/master/LICENSE) |
+| [express](https://github.com/expressjs/express)         | Development server                         | [MIT license](https://github.com/expressjs/express/blob/master/LICENSE)   |
+| [gh-pages](https://github.com/tschaub/gh-pages)         | Deployment                                 | [MIT license](https://github.com/tschaub/gh-pages/blob/master/LICENSE)    |
+| [tsup](https://github.com/egoist/tsup)                  | ESM/CJS bundling                           | [MIT license](https://github.com/egoist/tsup/blob/master/LICENSE)         |
+| [vite](https://vitejs.dev/)                             | Explorer development & bundling            | [MIT license](https://github.com/vitejs/vite/blob/main/LICENSE)           |
+| [vitest](https://vitest.dev/)                           | Unit testing                               | [MIT license](https://github.com/vitest-dev/vitest/blob/master/LICENSE)   |
+
+## License
+
+Contents of this repository are licensed under [MIT](LICENSE).
+
+Dota 2 is a registered trademark of Valve Corporation. All game images and assets are the property of Valve Corporation. This project is not affiliated with, sponsored by, or endorsed by Valve Corporation.
