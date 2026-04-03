@@ -1,0 +1,1761 @@
+{
+  "result": {
+    "data": {
+      "heroes": [
+        {
+          "id": 48,
+          "name": "npc_dota_hero_luna",
+          "order_id": 82,
+          "name_loc": "Luna",
+          "bio_loc": "How had she been reduced to this?  She was once the Scourge of the Plains, a merciless leader of men and beasts, and able to sow terror wherever she dared.  Now she was far from her homeland, driven half mad from starvation and months of wandering, her army long dead or worse.  As she stood at the edge of an ancient forest, a pair of glowing eyes spied on from an elder branch.  Something beautiful and deadly sought a meal in the wilting dusk.  Without a sound, it turned and left.  Fury overtook her.  Clutching a rust-eaten dagger, she charged after the beast determined to reclaim even a shred of her past glory, but her quarry would not be caught.  Three times she cornered the creature among the rocks and trees, and three times she pounced only to witness its fading shadow darting further into the woods.  Yet the full moon shone brightly, and the creature's trail was easy to follow.\r\n\t\t\t\t<br><br>Arriving in a clearing atop a high hill, the beast's massive feline form sat in the open, attentive and waiting.  When the woman brandished her dagger, the creature reared and roared and charged.  Death, it seemed, had come for her at long last in this strange place.  She stood, calm and ready.  A flash of movement, and the beast snatched the dagger from her hand before vanishing into the forest.  Stillness.  Hooded figures approached. In reverent tones they revealed that Selemene, Goddess of the Moon, had chosen her, had guided her, had tested her. Unwittingly she had endured the sacred rites of the Dark Moon, warriors of the Nightsilver Woods.\r\n\t\t\t\t<br><br>She was offered a choice: join the Dark Moon and pledge herself to the service of Selemene, or leave and never return. She did not hesitate. Embracing her absolution, she renounced her bloody past, and took up a new mantle as Luna of the Dark Moon, the dreaded Moon Rider, ruthless and ever-loyal guardian of the Nightsilver Woods.",
+          "hype_loc": "<b>Riding swiftly</b> into battle, Luna tears into her enemies with attacks able to <b>bounce between targets</b>. When foes threaten, she calls down <b>the power of the moon</b> as a single searing beam or as a <b>lunar barrage</b>, crushing those who stand against her.",
+          "npe_desc_loc": "Tears into her enemies with bouncing attacks",
+          "facets": [],
+          "str_base": 21,
+          "str_gain": 2.2,
+          "agi_base": 24,
+          "agi_gain": 3.4,
+          "int_base": 23,
+          "int_gain": 1.9,
+          "primary_attr": 1,
+          "complexity": 1,
+          "attack_capability": 2,
+          "role_levels": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "damage_min": 50,
+          "damage_max": 56,
+          "attack_rate": 1.7,
+          "attack_range": 330,
+          "projectile_speed": 900,
+          "armor": 6,
+          "magic_resistance": 25,
+          "movement_speed": 325,
+          "turn_rate": 0.6,
+          "sight_range_day": 1800,
+          "sight_range_night": 800,
+          "max_health": 582,
+          "health_regen": 2.6000001,
+          "max_mana": 351,
+          "mana_regen": 1.15,
+          "abilities": [
+            {
+              "id": 5222,
+              "name": "luna_lucent_beam",
+              "name_loc": "Lucent Beam",
+              "desc_loc": "Calls a beam of lunar energy down upon an enemy, damaging and briefly stunning them.",
+              "lore_loc": "Selemene smites those who encroach upon the Nightsilver Woods.",
+              "notes_loc": [],
+              "shard_loc": "Grants Luna an attack damage bonus buff every time an enemy hero is hit by Lucent Beam. Lucent Beams created by Eclipse grant %damage_buff_from_eclipse_pct%%% of the damage amount.",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "8",
+              "target_team": 2,
+              "target_type": 19,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 4,
+              "dispellable": 1,
+              "max_level": 4,
+              "cast_ranges": [
+                800
+              ],
+              "cast_points": [
+                0.4
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                9,
+                8,
+                7,
+                6
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                90,
+                100,
+                110,
+                120
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "beam_damage",
+                  "values_float": [
+                    75,
+                    150,
+                    225,
+                    300
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BEAM DAMAGE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_1",
+                      "value": 80,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "glaives_fired",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_8",
+                      "value": 2,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "glaives_attack_radius",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_8",
+                      "value": 500,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "stun_duration",
+                  "values_float": [
+                    0.6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "STUN DURATION:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_4",
+                      "value": 0.5,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_buff_duration",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DAMAGE BUFF DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "luna_moonstorm",
+                    "values": [
+                      15
+                    ],
+                    "operation": 0
+                  },
+                  "required_facet": "luna_moonstorm"
+                },
+                {
+                  "name": "damage_buff_per_beam",
+                  "values_float": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DAMAGE BUFF PER BEAM:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "luna_moonstorm",
+                    "values": [
+                      4,
+                      7,
+                      10,
+                      13
+                    ],
+                    "operation": 0
+                  },
+                  "required_facet": "luna_moonstorm"
+                },
+                {
+                  "name": "lucent_beam_bounce_range",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_5",
+                      "value": 500,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_buff_from_eclipse_pct",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "luna_moonstorm",
+                    "values": [
+                      50
+                    ],
+                    "operation": 5
+                  },
+                  "required_facet": "luna_moonstorm"
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    800
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    90,
+                    100,
+                    110,
+                    120
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    9,
+                    8,
+                    7,
+                    6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_2",
+                      "value": 2,
+                      "operation": 2
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1462,
+              "name": "luna_lunar_orbit",
+              "name_loc": "Lunar Orbit",
+              "desc_loc": "Creates %rotating_glaives% glaives that rotate %rotating_glaives_movement_radius% radius around Luna. Any enemy unit that collides with a glaive will take a percentage of Luna's Attack Damage.",
+              "lore_loc": "None may approach Selemene's chosen without favor from the goddess herself.",
+              "notes_loc": [],
+              "shard_loc": "Increases damage reduction. While active, Luna gains %bonus_movement_speed%%% bonus movement speed.",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "Rotating glaives provide damage reduction while active.",
+                ""
+              ],
+              "type": 0,
+              "behavior": "8390660",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 1,
+              "immunity": 3,
+              "dispellable": 3,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                40,
+                35,
+                30,
+                25
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                65,
+                70,
+                75,
+                80
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "rotating_glaives_duration",
+                  "values_float": [
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives",
+                  "values_float": [
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_lunar_orbit_glaive_count",
+                      "value": 1,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives_movement_radius",
+                  "values_float": [
+                    225
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives_movement_radius_expand_speed_scale",
+                  "values_float": [
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives_hit_radius",
+                  "values_float": [
+                    200
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "COLLISION RADIUS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives_collision_damage",
+                  "values_float": [
+                    28,
+                    32,
+                    36,
+                    40
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "COLLISION DAMAGE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_lunar_orbit_speed_damage",
+                      "value": 50,
+                      "operation": 3
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives_speed",
+                  "values_float": [
+                    160
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_lunar_orbit_speed_damage",
+                      "value": 50,
+                      "operation": 3
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaive_collision_speed_damage_tooltip",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_lunar_orbit_speed_damage",
+                      "value": 1.5,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotating_glaives_damage_reduction",
+                  "values_float": [
+                    8,
+                    12,
+                    16,
+                    20
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "DAMAGE REDUCTION:",
+                  "bonuses": [],
+                  "values_shard": [
+                    10
+                  ],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_movement_speed",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [
+                    20
+                  ],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    65,
+                    70,
+                    75,
+                    80
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    40,
+                    35,
+                    30,
+                    25
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": true,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5223,
+              "name": "luna_moon_glaive",
+              "name_loc": "Moon Glaives",
+              "desc_loc": "Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce.",
+              "lore_loc": "Carefully sharpened, Luna's boomerang-like weapon cuts a wide swath through enemy numbers.",
+              "notes_loc": [
+                "Moon Glaives do not proc any attack modifier except Critical Strikes."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 3,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "range",
+                  "values_float": [
+                    500
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BOUNCE RADIUS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bounces",
+                  "values_float": [
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BOUNCES:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_reduction_percent",
+                  "values_float": [
+                    50,
+                    45,
+                    40,
+                    35
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "DAMAGE REDUCTION PER BOUNCE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_7",
+                      "value": 5,
+                      "operation": 2
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5224,
+              "name": "luna_lunar_blessing",
+              "name_loc": "Lunar Blessing",
+              "desc_loc": "Grants attack damage to Luna and nearby allied heroes within %radius% range, with Luna receiving double the attack damage bonuses. At night, Lunar Blessing is global, and Luna is blessed with bonus night vision.",
+              "lore_loc": "The Goddess of the Moon smiles upon her kin.",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "567347999997955",
+              "target_team": 1,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 1,
+              "dispellable": 0,
+              "max_level": 1,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "radius",
+                  "values_float": [
+                    1200
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_damage",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BONUS DAMAGE (ALLIES):",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_3",
+                      "value": 25,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "self_bonus_damage",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BONUS DAMAGE (SELF):",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_3",
+                      "value": 50,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_night_vision",
+                  "values_float": [
+                    225
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BONUS NIGHT VISION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": true,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5225,
+              "name": "luna_eclipse",
+              "name_loc": "Eclipse",
+              "desc_loc": "Showers random nearby enemies with strikes from Luna's current level of Lucent Beam. These beams do not stun their targets, and there is a maximum number of times that a single target can be struck. Also turns day into night for a short time.",
+              "lore_loc": "In times of great need, Selemene herself descends into the world, blocking out the light and hope of the opposed.",
+              "notes_loc": [
+                "Eclipse doesn't work if Luna doesn't have any points in Lucent Beam.",
+                "Beams will stop if Luna is killed.",
+                "Will not hit invisible units.",
+                "There is a %beam_interval% seconds gap between beams, %beam_interval_scepter% seconds with scepter."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "Allows Luna to cast Eclipse on an allied unit or herself and have its effects follow them, or cast it on an area. Increases total beams, reduces duration, removes the limit on beams per unit, and makes the beams appear twice as fast.",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 1,
+              "behavior": "4",
+              "target_team": 1,
+              "target_type": 19,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 4,
+              "dispellable": 3,
+              "max_level": 3,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0.5
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                105
+              ],
+              "durations": [
+                2.4,
+                4.2,
+                6
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                150,
+                200,
+                250
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "beams",
+                  "values_float": [
+                    6,
+                    9,
+                    12
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "TOTAL BEAMS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    0,
+                    3,
+                    6
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "beam_interval",
+                  "values_float": [
+                    0.6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    0.3
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "beam_interval_scepter",
+                  "values_float": [
+                    0.3
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "radius",
+                  "values_float": [
+                    675
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "RADIUS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "hit_count",
+                  "values_float": [
+                    5
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "MAX BEAMS PER UNIT:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    1,
+                    7,
+                    13
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "night_duration",
+                  "values_float": [
+                    10
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "NIGHT DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    2500
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityDuration",
+                  "values_float": [
+                    2.4,
+                    4.2,
+                    6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "ECLIPSE DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    0.6
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.5
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    150,
+                    200,
+                    250
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    105
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_luna_6",
+                      "value": 40,
+                      "operation": 2
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": true,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            }
+          ],
+          "talents": [
+            {
+              "id": 847,
+              "name": "special_bonus_unique_luna_7",
+              "name_loc": "-{s:bonus_damage_reduction_percent}% Moon Glaives Damage Reduction",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 7047,
+              "name": "special_bonus_unique_luna_4",
+              "name_loc": "+{s:bonus_stun_duration}s Lucent Beam Ministun",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 323,
+              "name": "special_bonus_unique_luna_lunar_orbit_glaive_count",
+              "name_loc": "+{s:bonus_rotating_glaives} Lunar Orbit Glaive",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 6180,
+              "name": "special_bonus_unique_luna_1",
+              "name_loc": "+{s:bonus_beam_damage} Lucent Beam Damage",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 770,
+              "name": "special_bonus_unique_luna_6",
+              "name_loc": "-{s:bonus_AbilityCooldown}s Eclipse Cooldown",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1812,
+              "name": "special_bonus_unique_luna_lunar_orbit_speed_damage",
+              "name_loc": "{s:bonus_rotating_glaive_collision_speed_damage_tooltip}x Lunar Orbit Damage / Speed",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 6682,
+              "name": "special_bonus_unique_luna_3",
+              "name_loc": "+{s:bonus_bonus_damage}/{s:bonus_self_bonus_damage} Lunar Blessing Allied/Self Damage",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 7055,
+              "name": "special_bonus_unique_luna_5",
+              "name_loc": "Lucent Beam Hits An Additional Target",
+              "desc_loc": "Random target within {s:bonus_lucent_beam_bounce_range} range of the primary target.",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            }
+          ],
+          "facet_abilities": []
+        }
+      ]
+    }
+  }
+}

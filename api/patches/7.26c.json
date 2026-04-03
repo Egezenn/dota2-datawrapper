@@ -1,0 +1,1314 @@
+{
+  "patch_number": "7.26c",
+  "patch_name": "7.26c",
+  "patch_timestamp": 1588402800,
+  "neutral_items": [
+    {
+      "ability_id": 305,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Buff is now duplicated on illusions"
+        },
+        {
+          "indent_level": 1,
+          "note": "Neutral: 1"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now has a global cast range"
+        }
+      ]
+    },
+    {
+      "ability_id": 363,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Neutral: 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Illusion now dies if the item is unequipped"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 1,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -40s Mana Void Cooldown to -45s"
+        }
+      ]
+    },
+    {
+      "hero_id": 2,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.6 to 3.4",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Strength to +8"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +30 Attack Speed to +20 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Movement Speed to +35 Attack Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +2.5 Mana Regen to +2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +80 Berserker's Call AoE to +100"
+        }
+      ]
+    },
+    {
+      "hero_id": 3,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +75 Cast Range to +15% Magic Resistance"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +15% Magic Resistance to +125 Cast Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +6% Spell Amplification to +7%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +15% Spell Lifesteal to -3s Nightmare Cooldown"
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -1.5s Crystal Nova Cooldown to -2s"
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +4 All Stats to +5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15 Movement Speed to +40% Gust Blind"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +40% Gust Blind to +20 Movement Speed"
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed Helm of the Dominator not affecting your hero during Omnislash"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +60 Blade Fury Movement Speed to +80"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +0.8s Omnislash Duration to +1s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5030,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now waits for 0.15 seconds before ending when it doesn't find any valid target, rather than instantly ending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 9,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from -4s Sacred Arrow Cooldown to -3.5s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -55s Moonlight Shadow Cooldown to -60s"
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +4 Max Juxtapose Illusions to +5"
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +40% Illusory Orb Distance/Speed to +50%"
+        }
+      ]
+    },
+    {
+      "hero_id": 15,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +10 Strength to +12"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -0.08 Eye of the Storm Interval to -0.1"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +160 Eye of the Storm Damage to +180"
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15 Movement Speed to -30 Epicenter Attack Slow"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +150 Health to +175"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from -40 Epicenter Attack Slow to +2 Epicenter Pulses"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +3 Epicenter Pulses to +25 Epicenter Damage Per Pulse"
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Strength to +7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Movement Speed to +15% Lifesteal"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +20% Lifesteal to +25 Movement Speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5094,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 19/17/15/13 to 18/16/14/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -1.5s Shackleshot Cooldown to -2s"
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +2.5 Mana Regen to +2"
+        }
+      ]
+    },
+    {
+      "hero_id": 23,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +16 Strength to +18"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +65% Tidebringer Cleave to +85%"
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +275 Health to +300"
+        }
+      ]
+    },
+    {
+      "hero_id": 26,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +50 Mana Drain to +15% Mana Drain Slow"
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased +150 Health to +175"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +8% Spell Amplification to +100 Shackles Total Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +32 Wards Attack Damage to +30"
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +25 Damage to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +0.4 Backstab Multiplier to +0.5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from Cloak and Dagger Doesn't Reveal to +125 Smoke Screen AoE"
+        }
+      ]
+    },
+    {
+      "hero_id": 33,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +80 Malefice Instance Damage to +0.25 Malefice Stun Duration"
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from 20% Cooldown Reduction to 15%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +16% Shrapnel Slow to +14%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5154,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 15/20/25/30% to 12/18/24/30%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5157,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter stun duration reduced from 1.8 to 1.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 36,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 2.8 to 2.6",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 2.9 to 2.7",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 38,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 4",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +24 Boar Damage to -14s Hawks Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +60 Wild Axes Damage to +30 Boar Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -16s Hawks Cooldown to +80 Wild Axes Damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 41,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +35 Attack Speed to +40"
+        }
+      ]
+    },
+    {
+      "hero_id": 42,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.2 to 3.0",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +1.2s Wraithfire Blast Slow Duration -1s Wraithfire Blast Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from 1.8x Skeletons Spawned to +6 Skeletons Spawned"
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +20% Cleave to +25%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +24% Blur Evasion to +30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +8% Coup de Grace to +100% Coup de Grace Critical Damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from 12% Evasion to +15 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Attack Speed to +15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +15 Movement Speed to +15% Evasion"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +3s Refraction Instances to +4"
+        }
+      ]
+    },
+    {
+      "hero_id": 47,
+      "abilities": [
+        {
+          "ability_id": 5219,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Maximum dps increased from 60/80/100/120 to 80/100/120/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +325 Cast Range to +350"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -3s Lucent Beam Cooldown to -3.5s"
+        }
+      ]
+    },
+    {
+      "hero_id": 49,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +2.5 Mana Regen to +2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +325 Health to +350"
+        }
+      ]
+    },
+    {
+      "hero_id": 52,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +325 Health to +350"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +32 Diabolic Edict Explosions to +30"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5243,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 80/120/160/200 to 90/130/170/210"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +20 Movement Speed to +15 Wrath of Nature Base Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +3 Treants Summoned to +4"
+        }
+      ]
+    },
+    {
+      "hero_id": 55,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +100 Ion Shell Radius to +60 Vacuum AoE"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +60 Vacuum AoE to +100 Ion Shell Radius"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +65 Ion Shell Damage to +60"
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8 Strength to +9"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Agility to +7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -24s Burning Army Cooldown to -30s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +275 Death Pact Health to +325"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5260,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 30/40/50/60 to 25/35/45/55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +80 Purification AoE to +20 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8 Heavenly Grace HP Regen to +10"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Movement Speed to -2s Purification Cooldown"
+        }
+      ]
+    },
+    {
+      "hero_id": 59,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +16 Strength to +40% Berserker's Blood Regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 60,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -50s Dark Ascension Cooldown to -60s"
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +200 Health to +10 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +15 Agility to +30 Attack Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +40 Attack Speed to +400 Health"
+        }
+      ]
+    },
+    {
+      "hero_id": 64,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +250 Attack Range to +275"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +30 Dual Breath Burn Damage to +25"
+        }
+      ]
+    },
+    {
+      "hero_id": 65,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +2.5s Flamebreak Duration to +2s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -7s Flamebreak Cooldown to -8s"
+        }
+      ]
+    },
+    {
+      "hero_id": 67,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +4 All Stats to +5"
+        }
+      ]
+    },
+    {
+      "hero_id": 69,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from 16% Evasion to +3s Doom Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +140% Cleave to +150%"
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 2.8 to 2.6",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +1.5 Mana Regen to +20s Fury Swipes Reset Time"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +6 Strength to +175 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +20s Fury Swipes Reset Time to +2 Mana Regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +13 Fury Swipes Damage to +12"
+        }
+      ]
+    },
+    {
+      "hero_id": 71,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 285 to 290",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 72,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +15 Damage to +12"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +200 Health to +175"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +9 Rocket Barrage Damage to -40s Call Down Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -40s Call Down Cooldown to +12 Rocket Barrage Damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 73,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Attack Speed to +15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -5.5s Unstable Concoction Cooldown to -6s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +25 Damage to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +325 Health to +350"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +325 Unstable Concoction Damage to +350"
+        }
+      ]
+    },
+    {
+      "hero_id": 74,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +30 Chaos Meteor Contact Damage to +50"
+        }
+      ]
+    },
+    {
+      "hero_id": 75,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +11% Arcane Curse Slow to +20 Arcane Curse Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "level 20 Talent changed from +24 Arcane Curse Damage to +15% Arcane Curse Slow"
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +5 Armor to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +275 Mana to +250"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +0.08 Sanity's Eclipse Mana Difference Multiplier to +0.1"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5684,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow increased from 11/22/33/44% to 20/30/40/50%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5394,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base damage increased from 150/225/300 to 150/250/350"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed reduced from 315 to 305",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 78,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -60s Primal Split Cooldown to -65s"
+        }
+      ]
+    },
+    {
+      "hero_id": 79,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from Soul Catcher Creates Illusion On Death to +12 Intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +800 True Form Health to +1000"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from -0.16 Spirit Bear Attack Time to -0.15"
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +4 All Stats to +5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +40 Damage to +60"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +30 Leech Seed Damage/Heal to +40"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +80 DPS Overgrowth to +100"
+        }
+      ]
+    },
+    {
+      "hero_id": 84,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +50 Bloodlust AS to +40"
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -1.5s Decay Cooldown -2s"
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -60 Fade Bolt Hero Attack to -80"
+        }
+      ]
+    },
+    {
+      "hero_id": 87,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +175 Health to +20% Magic Resistance"
+        }
+      ]
+    },
+    {
+      "hero_id": 89,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8% Mirror Image Damage to +9%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +11 Strength to +13"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -7s Ensnare Cooldown to -9s"
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 91,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +12 Armor to -25s Relocate Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -24s Relocate Cooldown to +700 Health"
+        }
+      ]
+    },
+    {
+      "hero_id": 93,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 Agility to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8 Strength to +9"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +0.8s Shadow Dance Duration to +1s"
+        }
+      ]
+    },
+    {
+      "hero_id": 96,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +8% Evasion to +5 Health Regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +16 Strength to -20s Stampede Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +1.2s Hoof Stomp Duration to +1s"
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +400 Skewer Range to +425"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5518,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 14/13/12/11 to 13/12/11/10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 101,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +6% Spell Lifesteal to +10 Intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +150 Health to +8 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +475 Echo Stomp Wake Damage to +450"
+        }
+      ]
+    },
+    {
+      "hero_id": 104,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Strength to +7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +65 Overwhelming Odds Hero Damage to -4s Overwhelming Odds Cooldown"
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Damage to +15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +50 Sleight of Fist Hero Damage to +65"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from -13 Remnant Charge Restore Time to -12"
+        }
+      ]
+    },
+    {
+      "hero_id": 108,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.3 to 3.0",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +25 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +150 Cast Range to +175"
+        }
+      ]
+    },
+    {
+      "hero_id": 109,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -8s Reflection Cooldown to +8 Conjure Image Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -28s Sunder Cooldown to -32s"
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence reduced from 18 to 16",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +28 Fire Spirits DPS to +25"
+        }
+      ]
+    },
+    {
+      "hero_id": 111,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +0.8s Fortune's End Max Duration to +0.4 Fortune's End Duration (affects the minimum and max values, does not increase channel duration)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +35 Movement Speed to -20s False Promise Cooldown"
+        }
+      ]
+    },
+    {
+      "hero_id": 112,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +0.8% Cold Embrace Heal to +1%"
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +80 Armor Wukong's Command to +100"
+        }
+      ]
+    },
+    {
+      "hero_id": 119,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +25 Damage to +10 Intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +12% Spell Lifesteal to +50 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +1.2s Terrorize Duration to 1.3s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +140 Attack Speed to +110"
+        }
+      ]
+    },
+    {
+      "hero_id": 120,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +2.5 Mana Regen to +2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +325 Swashbuckle Slash Range to +350"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6344,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1000 to 900"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slash range increased from 900 to 1000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 121,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +25 Movement Speed to +20"
+        }
+      ]
+    },
+    {
+      "hero_id": 126,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 300 to 295",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Damage to +15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +12% Spell Amplification to +14%"
+        }
+      ]
+    },
+    {
+      "hero_id": 129,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +6 Strength to +15 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15 Movement Speed to -2s Spear of Mars Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +20 Damage to +20 Movement Speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6583,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 100 to 110/120/130/140"
+            }
+          ]
+        },
+        {
+          "ability_id": 6582,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Toggle will now be turned off when casting Spear of Mars"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

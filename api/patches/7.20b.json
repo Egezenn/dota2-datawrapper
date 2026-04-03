@@ -1,0 +1,400 @@
+{
+  "patch_number": "7.20b",
+  "patch_name": "7.20b",
+  "patch_timestamp": 1542700800,
+  "items": [
+    {
+      "ability_id": 75,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack speed bonus reduced from 8 to 7"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 6,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base agility increased by 4",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 1205,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Increased from 20/36/52/68% to 20/40/60/80%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Sandstorm cooldown increased from 34/28/22/16 to 40/32/24/16"
+        },
+        {
+          "indent_level": 1,
+          "note": "Sandstorm manacost rescaled from 60/50/40/30 to 60"
+        }
+      ]
+    },
+    {
+      "hero_id": 17,
+      "abilities": [
+        {
+          "ability_id": 5099,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration from 1/1.5/2/2.5 to 1.4/1.8/2.2/2.6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown from 21/20/19/18 to 22/20/18/16"
+            }
+          ]
+        },
+        {
+          "ability_id": 5100,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed reduction from -50 to -80 (matches movement speed now)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "abilities": [
+        {
+          "ability_id": 5096,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shield health increased from 100/200/300/400 to 110/220/330/440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 40,
+      "abilities": [
+        {
+          "ability_id": 5179,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow from 11/12/13/14% to 11/13/15/17%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +14 Lunar Blessing Attributes to +30 Movement Speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5224,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Reduced from 8/14/20/26 to 6/12/18/24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bad Juju debuff duration reduced from 10 to 8"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5233,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 80/90/100/110 to 80/100/120/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "abilities": [
+        {
+          "ability_id": 7319,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base attack time improved from 1.8/1.65/1.5 to 1.65/1.5/1.35"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range increased from 800 to 1200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base Intelligence increased from 24 to 28",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Equilibrium mana restore from 60/80/100/120% to 80/100/120/140%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Equilibrium slow from 8/16/24/32% to 12/20/28/36%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Equilibrium cooldown from 20 to 18"
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "abilities": [
+        {
+          "ability_id": 7309,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed reduced from 30/50/70/90 to 20/40/60/80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown from 42/34/26/18 to 44/36/28/20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "abilities": [
+        {
+          "ability_id": 5428,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown from 8/7/6/5 to 7/6/5/4"
+            }
+          ]
+        },
+        {
+          "ability_id": 5429,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 40/70/100% to 50/75/100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 82,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 2.2 to 1.4",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +15 Damage to +10"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +10% Lifesteal to +15% Evasion"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +15% Evasion to +10% Lifesteal"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +600 Health to +400"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5431,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 80/100/120/140 to 70/90/110/130"
+            }
+          ]
+        },
+        {
+          "ability_id": 7318,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Hero steal reduced from 8/12/16/20 to 6/10/14/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "abilities": [
+        {
+          "ability_id": 5434,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Fade time reduced from 4.75/4/3.25/2.5 to 4/3.5/3/2.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Total damage increased from 30/80/130/180 to 30/90/150/210"
+            },
+            {
+              "indent_level": 1,
+              "note": "Movement speed increased from 10/15/20/25% to 14/18/22/26%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 93,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now only steals agility when he kills the enemy himself",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +3s Pounce Leash to +2s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5495,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Leash duration from 3.5 to 2.75/3/3.25/3.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Leash range from 325 to 350"
+            }
+          ]
+        },
+        {
+          "ability_id": 5497,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 60 to 80/70/60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 20 + 2.5 to 22 + 3.4",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +20% Mystic Snake Mana Steal to +35%"
+        }
+      ]
+    },
+    {
+      "hero_id": 96,
+      "abilities": [
+        {
+          "ability_id": 5516,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max stacks increased from 10 to 13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed a bug with multiple Fire Remnant instances not doing damage properly",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5604,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 30/60/90/120 to 35/70/105/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 108,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 2.6 to 2.3",
+          "icon": "intelligence"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

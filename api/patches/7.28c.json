@@ -1,0 +1,261 @@
+{
+  "patch_number": "7.28c",
+  "patch_name": "7.28c",
+  "patch_timestamp": 1613721600,
+  "heroes": [
+    {
+      "hero_id": 7,
+      "abilities": [
+        {
+          "ability_id": 5023,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard aftershock replication now stuns for half duration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "abilities": [
+        {
+          "ability_id": 5057,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 160/100/40 to 140/100/60"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter bonus cast range reduced from 600 to 300"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now also reduces Morph cooldown by 20 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage range reduced from 46-57 to 46-54",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5071,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 70/140/210/280 to 70/130/190/250"
+            }
+          ]
+        },
+        {
+          "ability_id": 5073,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter stun duration reduced from 2/3.25/4.5 to 2/3/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "abilities": [
+        {
+          "ability_id": 5080,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cast range reduced from 150 to 125"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from -6s Tricks of the Trade Cooldown to -4s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5145,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter no longer increases duration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 38,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed reduced from 110 to 100",
+          "icon": "attack_speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Call of the Wild Boar movement speed reduced from 350 to 320/330/340/350",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 42,
+      "abilities": [
+        {
+          "ability_id": 5086,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 14/12/10/8 to 17/14/11/8"
+            }
+          ]
+        },
+        {
+          "ability_id": 1283,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Skeletons base damage reduced by 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Greater Treants Base Attack Time increased from 1.0 to 1.4",
+          "icon": "attack_time"
+        }
+      ]
+    },
+    {
+      "hero_id": 65,
+      "abilities": [
+        {
+          "ability_id": 5320,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now deals 50% less damage against all creeps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement Speed reduced from 325 to 320",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5391,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 4/3/2/0 to 6/4/2/0"
+            }
+          ]
+        },
+        {
+          "ability_id": 5392,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 120 to 150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "abilities": [
+        {
+          "ability_id": 5395,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 55 to 50 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 88,
+      "abilities": [
+        {
+          "ability_id": 5465,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer applies Break"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 90/70/50 to 90/75/60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "abilities": [
+        {
+          "ability_id": 5475,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Delay increased from 3 to 5/4/3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 126,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,529 @@
+{
+  "patch_number": "7.23b",
+  "patch_name": "7.23b",
+  "patch_timestamp": 1575014400,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Tier 1 Neutral Items now drop at 7 minutes instead of 5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Melee hero damage block no longer works against enemy player units"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 143,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Stun damage changed from Magical to Physical"
+        }
+      ]
+    },
+    {
+      "ability_id": 208,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Stun damage changed from Magical to Physical"
+        }
+      ]
+    }
+  ],
+  "neutral_items": [
+    {
+      "ability_id": 287,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regeneration reduced from 1.25 to 1"
+        }
+      ]
+    },
+    {
+      "ability_id": 356,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 70 to 55"
+        },
+        {
+          "indent_level": 1,
+          "note": "Drop rates for Bounty/Flask/TP/Neutral adjusted from 25/25/25/25 to 16/28/28/28"
+        }
+      ]
+    },
+    {
+      "ability_id": 375,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement Speed increased from 20 to 25"
+        }
+      ]
+    },
+    {
+      "ability_id": 328,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now spawns with a 3 mango bundle"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vision increased from 800 to 1200"
+        }
+      ]
+    },
+    {
+      "ability_id": 297,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Spell Lifesteal lowered decreased from 10 to 8%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Lifesteal increased from 10 to 14%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vision reduced from 450 to 250"
+        }
+      ]
+    },
+    {
+      "ability_id": 212,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regeneration increased from 0.5 to 1.25"
+        }
+      ]
+    },
+    {
+      "ability_id": 306,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Secondary stats reduced from 14 to 13"
+        }
+      ]
+    },
+    {
+      "ability_id": 334,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased from 20 to 24"
+        },
+        {
+          "indent_level": 1,
+          "note": "Critical strike reduced from 1.4 to 1.3"
+        }
+      ]
+    },
+    {
+      "ability_id": 290,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Gold per minute reduced from 75 to 60"
+        }
+      ]
+    },
+    {
+      "ability_id": 309,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked. Passive Cooldown. Passively provides +25 attack speed and +25 Magic damage on your attacks. The next attack against a hero silences them for 4 seconds. 20 Cooldown"
+        }
+      ]
+    },
+    {
+      "ability_id": 310,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now also provides +7 All Stats, goes away when the item does"
+        }
+      ]
+    },
+    {
+      "ability_id": 381,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack damage reduced from +22% to +16%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Magic resistance reduced from +22% to +16%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Status resistance reduced from +22% to +16%"
+        }
+      ]
+    },
+    {
+      "ability_id": 362,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed increased from +25 to 30"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 5,
+      "abilities": [
+        {
+          "ability_id": 5126,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 11/10/9/8 to 14/12/10/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.6 to 2.9",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5022,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Agility multiplier increased from 30/35/40 to 35/40/45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 All Stats to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +20 Movement Speed to +25"
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 15,
+      "abilities": [
+        {
+          "ability_id": 1224,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 4/6/8/10% (8/12/16/20% for you) to 3/5/7/9% (6/10/14/18% for you)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 2.9 to 2.6",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5123,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attribute bonus from 4/8/12/16 to 4/7/10/13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "abilities": [
+        {
+          "ability_id": 5144,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backstab damage increased from 1/1.5/2 to 1.4/1.8/2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 45,
+      "abilities": [
+        {
+          "ability_id": 5189,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Increased from 150/250/350 to 175/275/375"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "abilities": [
+        {
+          "ability_id": 5252,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed for heroes is now the same as the creeps bonus"
+            },
+            {
+              "indent_level": 1,
+              "note": "Health bonus reduced from 750/1000/1250 to 400/800/1200"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown begins once you leave the infested unit"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown increased from 20 to 25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 59,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 3.1 to 3.4",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Spirit Bear base attack time increased from 1.7/1.6/1.5/1.4 to 1.75/1.65/1.55/1.45",
+          "icon": "attack_time"
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "abilities": [
+        {
+          "ability_id": 5428,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max crit increased from 140/165/190/215 to 140/170/200/230%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "abilities": [
+        {
+          "ability_id": 338,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer targets trees directly"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 20 to 20/19/18/17"
+            }
+          ]
+        },
+        {
+          "ability_id": 5435,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 16 to 16/15/14/13"
+            }
+          ]
+        },
+        {
+          "ability_id": 5437,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 50/75/100 to 100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 105,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Scepter bonus range from 400 to 300"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5599,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Replenish time increased from 15 to 23"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.1 to 2.6",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 126,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +150 Resonant Pulse Damage to +100 Resonant Pulse Damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7701,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 90/150/210/270 to 80/130/180/230"
+            }
+          ]
+        },
+        {
+          "ability_id": 6470,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 140/220/300/380 to 100/180/260/340"
+            }
+          ]
+        },
+        {
+          "ability_id": 7710,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 14 to 16"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 90/100/110/120 to 100/110/120/130"
+            },
+            {
+              "indent_level": 1,
+              "note": "Base shield absorption reduced from 50/100/150/200 to 40/80/120/160"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 70/130/190/250 to 70/120/170/220"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 128,
+      "abilities": [
+        {
+          "ability_id": 6488,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 75 to 90"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 45/60/75/90 to 40/55/70/85"
+            },
+            {
+              "indent_level": 1,
+              "note": "Attack speed slow per stack reduced from 20/25/30/35 to 15/20/25/30"
+            }
+          ]
+        },
+        {
+          "ability_id": 6483,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 24/22/20/18 to 24/21/18/15"
+            },
+            {
+              "indent_level": 1,
+              "note": "Projectile speed increased from 800 to 1000"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced when used on self from 0.4 to 0.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now works on rooted targets"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

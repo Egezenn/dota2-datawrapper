@@ -1,0 +1,364 @@
+{
+  "patch_number": "7.23e",
+  "patch_name": "7.23e",
+  "patch_timestamp": 1576310400,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Outposts XP is now every 10 minutes instead of every 5 (XP is 20*Min-50)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Removed the two non-Roshan Shrines (initial delay from 5 to 7 minutes, cooldown from 5 to 4)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Removed all XP talents"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 3,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +20% Magic Resistance"
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "abilities": [
+        {
+          "ability_id": 5022,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Agility bonus reduced from 35/40/45% to 28/36/44%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 14,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +5 Armor",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 2.6 to 2.4",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5122,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration reduced from 1.5/1.6/1.7/1.8 to 1.4/1.5/1.6/1.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +250 Health"
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +10% Spell Amp"
+        }
+      ]
+    },
+    {
+      "hero_id": 29,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +4 Mana Regen",
+          "icon": "mana_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 37,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +10 Armor",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 38,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +30 Damage",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +2 Mana Regen",
+          "icon": "mana_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +30 Movement Speed",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 62,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +25 Damage",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 63,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +8 Agility",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 64,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +350 Health"
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.1 to 2.8",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5357,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 75 to 85"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 79,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +100 Cast Range"
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 4.1 to 3.7",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from 700 AoE Living Armor to 550"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5437,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "DPS reduced from 100 to 75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +6% Spell Amp"
+        }
+      ]
+    },
+    {
+      "hero_id": 92,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with -3 Armor Corruption",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 100,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +10 Health Regen",
+          "icon": "health_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 101,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +8% Spell Lifesteal"
+        }
+      ]
+    },
+    {
+      "hero_id": 102,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +10 Strength",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 104,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +2 Mana Regen",
+          "icon": "mana_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 105,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +25% Magic Resistance"
+        }
+      ]
+    },
+    {
+      "hero_id": 111,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "XP Talent is now replaced with +15 Intelligence",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 126,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 2.8 to 2.6",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7705,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Charge restore time increased from 25/20/15 to 30/25/20"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 80/90/100 to 100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 128,
+      "abilities": [
+        {
+          "ability_id": 6488,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage per shot reduced from 40/55/70/85 to 35/50/65/80"
+            }
+          ]
+        },
+        {
+          "ability_id": 6482,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement slow reduced from 25% to 15/20/25%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,297 @@
+{
+  "patch_number": "7.23d",
+  "patch_name": "7.23d",
+  "patch_timestamp": 1576051200,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Passive gold income no longer increases with hero level"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tome of Knowledge initial stock capacity reduced from 2 to 1 at 10 minutes"
+        },
+        {
+          "indent_level": 1,
+          "note": "Hero kills XP bounty reduced from 40 + CurrentXP * 0.14 to 40 + CurrentXP * 0.13"
+        },
+        {
+          "indent_level": 1,
+          "note": "Outpost experience reduced from 18 * Min to 15 * Min"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 302,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed"
+        }
+      ]
+    },
+    {
+      "ability_id": 71,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 6 to 7"
+        }
+      ]
+    },
+    {
+      "ability_id": 239,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Damage increased from 40% to 50%"
+        }
+      ]
+    },
+    {
+      "ability_id": 360,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Ensnare duration reduced from 2 to 1.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "All stats increased from 5 to 6"
+        }
+      ]
+    },
+    {
+      "ability_id": 357,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Self armor reduction reduced from -4 to -3"
+        }
+      ]
+    },
+    {
+      "ability_id": 299,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack Damage increased from 30 to 35"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heal reduced from 500 to 450"
+        }
+      ]
+    },
+    {
+      "ability_id": 327,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed"
+        }
+      ]
+    },
+    {
+      "ability_id": 378,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Armor reduction reduced from 6 to 5"
+        },
+        {
+          "indent_level": 1,
+          "note": "No longer pierces Spell Immunity"
+        }
+      ]
+    },
+    {
+      "ability_id": 361,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bonus magic damage increased from 225 to 270"
+        }
+      ]
+    },
+    {
+      "ability_id": 336,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack range bonus increased from 125 to 150"
+        }
+      ]
+    },
+    {
+      "ability_id": 363,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Illusion duration increased from 20 to 30 seconds"
+        },
+        {
+          "indent_level": 1,
+          "note": "Bonus Strength and Agility increased from 10 to 14"
+        }
+      ]
+    },
+    {
+      "ability_id": 364,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced from 35 to 30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now deals 175 + 1x your strength in the area around you"
+        }
+      ]
+    },
+    {
+      "ability_id": 335,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides +30 Movement Speed"
+        }
+      ]
+    },
+    {
+      "ability_id": 237,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 125 to 70"
+        },
+        {
+          "indent_level": 1,
+          "note": "Damage reduced from 3 to 2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heal reduced from 100 to 85"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 4,
+      "abilities": [
+        {
+          "ability_id": 5018,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 60 to 70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base mana regeneration from 1.5 to 1",
+          "icon": "mana_regen"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5128,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Self multiplier increased from 2 to 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +14 Agility to +12"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from 50% Cooldown Reduction to 40%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 343,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 95/125/155/185% to 90/115/140/165%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "abilities": [
+        {
+          "ability_id": 5394,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage multiplier from 0.5/0.6/0.7 to 0.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "abilities": [
+        {
+          "ability_id": 5435,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 80 to 110"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 16/15/14/13 to 22/19/16/13"
+            }
+          ]
+        },
+        {
+          "ability_id": 5437,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 100/85/70 to 100"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,771 @@
+{
+  "patch_number": "7.23c",
+  "patch_name": "7.23c",
+  "patch_timestamp": 1575619200,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Outpost XP reduced from 25 per minute to 18"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 XP talents reduced from 20/25/30/40 (most were 25/30) to 20%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 XP talents reduced from 35/40/50 to 35%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Glyph duration on creeps reduced from 7 to 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Innate Damage Block now works against player units again (same rules as regular damage block now)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Innate Damage Block changed from 100% for 8 block to 50% for 16 block"
+        },
+        {
+          "indent_level": 1,
+          "note": "Innate Damage Block no longer stacks with damage block instances"
+        },
+        {
+          "indent_level": 1,
+          "note": "Courier items that are locked will now not be delivered nor will they be returned to the stash"
+        },
+        {
+          "indent_level": 1,
+          "note": "Courier base movement speed increased from 275 to 280"
+        },
+        {
+          "indent_level": 1,
+          "note": "Neutral Items no longer roll if there is an enemy of the killer within 600 AoE of the dying unit"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 48,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now has the same 6 second teleportation delay when teleporting to outposts"
+        }
+      ]
+    },
+    {
+      "ability_id": 86,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 250 to 300"
+        }
+      ]
+    },
+    {
+      "ability_id": 73,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 215 to 210"
+        }
+      ]
+    },
+    {
+      "ability_id": 75,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 215 to 210"
+        }
+      ]
+    },
+    {
+      "ability_id": 77,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 215 to 210"
+        }
+      ]
+    },
+    {
+      "ability_id": 81,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 350 to 450"
+        }
+      ]
+    },
+    {
+      "ability_id": 185,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "All stats reduced from 6 to 4"
+        }
+      ]
+    },
+    {
+      "ability_id": 43,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Replenish interval reduced from 95 to 90"
+        }
+      ]
+    },
+    {
+      "ability_id": 249,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bonus damage increased from 36 to 40"
+        }
+      ]
+    }
+  ],
+  "neutral_items": [
+    {
+      "ability_id": 288,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides 10 Attack Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Debuff duration reduced from 10 to 6"
+        }
+      ]
+    },
+    {
+      "ability_id": 359,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Health increased from 375 to 425"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 25 to 20"
+        }
+      ]
+    },
+    {
+      "ability_id": 297,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Lifesteal increased from 14 to 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 361,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bonus damage increased from 175 to 225"
+        }
+      ]
+    },
+    {
+      "ability_id": 334,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 10 to 8"
+        }
+      ]
+    },
+    {
+      "ability_id": 310,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed"
+        }
+      ]
+    },
+    {
+      "ability_id": 336,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Changed from Tier 4 to Tier 3"
+        }
+      ]
+    },
+    {
+      "ability_id": 309,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Silence duration reduced from 4 to 2 seconds"
+        }
+      ]
+    },
+    {
+      "ability_id": 308,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides you with +13 Health Regen while carrying it"
+        }
+      ]
+    },
+    {
+      "ability_id": 299,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Charges increased from 2 to 3"
+        }
+      ]
+    },
+    {
+      "ability_id": 364,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer increases base attack time"
+        },
+        {
+          "indent_level": 1,
+          "note": "Bonus damage reduced from 60 to 35"
+        }
+      ]
+    },
+    {
+      "ability_id": 363,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides +10 Strength and +10 Agility"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 4,
+      "abilities": [
+        {
+          "ability_id": 5015,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Heal percentage reduced from 16/19/22/25% to 13/17/21/25%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +14% Manacost/Manaloss Reduction Aura to +10% Magic Resistance Arcane Aura"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5128,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer provides Magic Resistance"
+            }
+          ]
+        },
+        {
+          "ability_id": 5126,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 14/12/10/8 to 11/10/9/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed increased from 100 to 110",
+          "icon": "attack_speed"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +20 Attack Speed to +25"
+        }
+      ]
+    },
+    {
+      "hero_id": 11,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 2.5 to 2.7",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5064,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Fear per wave increased from 0.6 to 0.8"
+            },
+            {
+              "indent_level": 1,
+              "note": "Max fear duration increased from 2.2 to 2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 2",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5071,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 100/160/220/280 to to 70/140/210/280"
+            }
+          ]
+        },
+        {
+          "ability_id": 5073,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Level 1 scepter duration fixed to not be lower than original (1.5 to 1.8)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 19,
+      "abilities": [
+        {
+          "ability_id": 5108,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Building damage reduced from 50/80/110/140% to 20/50/80/110%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "abilities": [
+        {
+          "ability_id": 5123,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack range reduced from 60/90/120/150 to 50/75/100/125"
+            },
+            {
+              "indent_level": 1,
+              "note": "Illusion outgoing damage from 100% to 70/80/90/100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 23,
+      "abilities": [
+        {
+          "ability_id": 5031,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow duration from 1.75/2.5/3.25/4 to 1/2/3/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 29,
+      "abilities": [
+        {
+          "ability_id": 5119,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage block increased from 5/10/20/40 to 12/24/36/48 (as a result of the innate damage block changes)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 315 to 320",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base HP regen increased from 2 to 3"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5145,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 55/70/85/100 to 70/80/90/100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 3.1 to 3.4",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 40,
+      "abilities": [
+        {
+          "ability_id": 5179,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Regen reduction reduced from 30% to 15/20/25/30%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 6/14/22/30 to 6/12/18/24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +25 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced 1.5s Meld Hit Bash to 1.25s"
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Max base damage reduced by 4",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "abilities": [
+        {
+          "ability_id": 5262,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Health gain increased from 200/300/400/500 to 250/350/450/550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 315 to 320",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 3 (base damage unaffected)",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 320,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Distance increased from 400 to 450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.3 to 3.1",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +3 Mana Regen to +2"
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "abilities": [
+        {
+          "ability_id": 1342,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base damage reduced by 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now has an innate Nature's Guise passive ability. Whenever you haven't taken damage in the last 3 seconds, you gain the ability to path through trees. While in trees you gain 25% more regeneration and heal as well as a 15% Movement Speed bonus. (Once you have the ability to walk through trees, you don't lose it until you aren't near trees.)",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Scepter now also causes trees to respawn every 10 seconds instead of the default 5 minutes"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +10% Cooldown Reduction to Nature's Guise Invisibility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +60 Living Armor Heal to +50 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +90 Damage to +60 Living Armor Heal"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from Gains Tree Walking to +15% Cooldown Reduction"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5436,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Is now global."
+            },
+            {
+              "indent_level": 1,
+              "note": "Bonus armor reduced from 7/10/13/16 to 4/6/8/10"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now heals over 12 seconds instead of 8"
+            },
+            {
+              "indent_level": 1,
+              "note": "Total heal reduced from 60/120/180/240 to 60/100/140/180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "abilities": [
+        {
+          "ability_id": 5444,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Zombies damage increased from 33 to 36"
+            }
+          ]
+        },
+        {
+          "ability_id": 5447,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage per second increased from 15/25/35 to 25/35/45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "abilities": [
+        {
+          "ability_id": 5506,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Absorption increased from 60 to 70%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5507,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed bonus increased from 25% to 35%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "abilities": [
+        {
+          "ability_id": 5520,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter reduces manacost by 50% rather than 100%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown increased from 4 to 6 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 102,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence reduced by 3",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 111,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 5 (base damage unchanged)",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +75 Jingu Mastery Damage to +100"
+        }
+      ]
+    },
+    {
+      "hero_id": 129,
+      "abilities": [
+        {
+          "ability_id": 6582,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Front damage reduction increased from 25/40/55/70% to 40/50/60/70%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Side damage reduction increased from 12/20/27/35% to 20/25/30/35%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

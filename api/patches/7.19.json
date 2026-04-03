@@ -1,0 +1,430 @@
+{
+  "patch_number": "7.19",
+  "patch_name": "7.19",
+  "patch_timestamp": 1532847600,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Daily Bonus Hero changed from 2 Mangoes to 1"
+        },
+        {
+          "indent_level": 1,
+          "note": "Added 2 trees near the cliff area below the Dire primary jungle shrine"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 4,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +20% Max Thirst and Damage to +18%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5017,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus rescaled from 16/24/32/40 to 7/18/29/40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "abilities": [
+        {
+          "ability_id": 5126,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 100/120/140/160 to 130/140/150/160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength reduced by 1",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "abilities": [
+        {
+          "ability_id": 5028,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 80/105/130/150 to 90/115/140/160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence reduced by 2",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5067,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Illusion incoming damage increased from 500% to 600%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "abilities": [
+        {
+          "ability_id": 5071,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Silence duration increased from 1.5/2/2.5/3 to 2/2.5/3/3.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 14,
+      "abilities": [
+        {
+          "ability_id": 5075,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 17/15/13/11 to 27/22/17/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 2",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "abilities": [
+        {
+          "ability_id": 5132,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 12 to 15/14/13/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "abilities": [
+        {
+          "ability_id": 6325,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius reduced from 500 to 450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "abilities": [
+        {
+          "ability_id": 5142,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point improved from 0.4 to 0.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +25 Shrapnel DPS to +35"
+        }
+      ]
+    },
+    {
+      "hero_id": 36,
+      "abilities": [
+        {
+          "ability_id": 5161,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown increased from 55/40/25 to 60/50/40"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast point increased from 0.5 to 0.55"
+            }
+          ]
+        },
+        {
+          "ability_id": 1270,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Self magic resistance reduction increased from 30% to 40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 45,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "abilities": [
+        {
+          "ability_id": 5197,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "damage reduced from 250/350/450 to 250/300/350"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5269,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 110/120/140/150 to 170/160/150/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "abilities": [
+        {
+          "ability_id": 5280,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 40/50/60/70% to 25/40/55/70%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Charge replenish rate increased from 40 to 45 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 63,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed reduced from 280 to 275",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 68,
+      "abilities": [
+        {
+          "ability_id": 5346,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 80/90/100/110 to 65/80/95/110"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Essence Aura mana bonus increased from 125/200/275/350 to 150/250/350/450"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5394,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage multiplier increased from 8/9/10 to 9/10/11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "abilities": [
+        {
+          "ability_id": 5435,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 80/95/110/125 to 100/110/120/130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 84,
+      "abilities": [
+        {
+          "ability_id": 5438,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 55/110/165/220 to 60/120/180/240"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 92,
+      "abilities": [
+        {
+          "ability_id": 5482,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Minimum damage reduced from 50 to 40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 96,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 2",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 98,
+      "abilities": [
+        {
+          "ability_id": 5526,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Armor per stack increased from 1/1.2/1.4/1.6 to 1.3/1.4/1.5/1.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 102,
+      "abilities": [
+        {
+          "ability_id": 5585,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 50/60/70/80 to 50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +60 Fire Spirits DPS to +50"
+        }
+      ]
+    },
+    {
+      "hero_id": 112,
+      "abilities": [
+        {
+          "ability_id": 5652,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 90/110/130/150 to 105/120/135/150"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

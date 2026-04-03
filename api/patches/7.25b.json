@@ -1,0 +1,90 @@
+{
+  "patch_number": "7.25b",
+  "patch_name": "7.25b",
+  "patch_timestamp": 1585033200,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Kill Streak XP bonus reduced from 500->2040 to 30*Level -> 100*Level"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 279,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost increased from 600 to 650"
+        }
+      ]
+    },
+    {
+      "ability_id": 106,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Manacost increased from 50 to 150"
+        }
+      ]
+    }
+  ],
+  "neutral_items": [
+    {
+      "ability_id": 356,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "TP Scroll bundle reduced from 2 to 1"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 63,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 3.6 to 3.1",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5290,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement bonus reduced from 220/240/260/280 to 200/220/240/260"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 6",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +8s Shapeshift Duration to +6s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +3 Wolves Summoned to +2"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

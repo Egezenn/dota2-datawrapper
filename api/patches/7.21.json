@@ -1,0 +1,2683 @@
+{
+  "patch_number": "7.21",
+  "patch_name": "7.21",
+  "patch_timestamp": 1548748800,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Melee creeps average gold bounty reduced by 3"
+        },
+        {
+          "indent_level": 1,
+          "note": "Range creeps upgrade cycle gold bounty increased from +3 to +6"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Replaced the primary jungles' ancient camps with big camps"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heroes no longer gain 25% more benefit from their primary attributes (affects attributes from both items and the hero)"
+        },
+        {
+          "indent_level": 1,
+          "note": "All heroes' primary attribute growth values increased by 15%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Health per strength increased from 18 to 20"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "XP required to reach level 7->12 changed from 640/660/680/800/820/840 to 720/750/780/810/840/870 (the difference is +80/90/100/10/20/30 XP)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "General:Default:The following melee heroes now have +5 movement speed: Naga Siren, Underlord, Monkey King, Nyx Assassin, Bloodseeker, Riki"
+        },
+        {
+          "indent_level": 1,
+          "note": "General:Default:The following melee heroes now have +10 movement speed: Alchemist, Dragon Knight, Meepo"
+        },
+        {
+          "indent_level": 1,
+          "note": "General:Default:The following melee heroes now have +15 movement speed: Legion Commander, Lifestealer, Lycan, Sven, Ursa, Wraith King"
+        },
+        {
+          "indent_level": 1,
+          "note": "General:Default:Ranged heroes with 295 movement speed and above now have 5 less movement speed"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 2 tower armor increased from 14 to 15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 3 tower armor increased from 14 to 16"
+        },
+        {
+          "indent_level": 1,
+          "note": "Melee Barracks armor increased from 13 to 15"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tower Protection armor bonus for Tier 2/3/4 increased from 3 to 4"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 45,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Flying movement speed increased from 460 to 470"
+        }
+      ]
+    },
+    {
+      "ability_id": 256,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Active status resistance increased from 50% to 75%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 1350 to 1250"
+        }
+      ]
+    },
+    {
+      "ability_id": 145,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Percentage damage bonus against non-hero units changed to be a fixed amount matching Quelling Blade"
+        }
+      ]
+    },
+    {
+      "ability_id": 121,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bloodpact changed from 60% of current mana to 30% of max mana"
+        }
+      ]
+    },
+    {
+      "ability_id": 250,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 18 to 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 48,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 2 movement speed increased from +32% to +35%"
+        }
+      ]
+    },
+    {
+      "ability_id": 86,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Activated armor bonus duration on heroes reduced from 25 to 15 (carries through to Mek)"
+        }
+      ]
+    },
+    {
+      "ability_id": 242,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 600 to 750"
+        }
+      ]
+    },
+    {
+      "ability_id": 185,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Passive changed from a 6% movement speed aura to +20 movement speed to yourself only"
+        }
+      ]
+    },
+    {
+      "ability_id": 176,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Enemy debuff duration increased from 3 to 4 (matching duration when cast on allies)"
+        }
+      ]
+    },
+    {
+      "ability_id": 100,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus changed from +6% percentage to +20 flat"
+        }
+      ]
+    },
+    {
+      "ability_id": 269,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now uses Energy Booster instead of a Void Stone (provides +325 Mana)"
+        }
+      ]
+    },
+    {
+      "ability_id": 16,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range increased from 200 to 400"
+        }
+      ]
+    },
+    {
+      "ability_id": 147,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus reduced from +25 to +20"
+        }
+      ]
+    },
+    {
+      "ability_id": 172,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Lifesteal increased from 15% to 20%"
+        }
+      ]
+    },
+    {
+      "ability_id": 79,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Stack limit is now tied to cooldown on cast (like Greaves and Crimson stack mechanics)"
+        }
+      ]
+    },
+    {
+      "ability_id": 223,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Radius increased from 300 to 315"
+        }
+      ]
+    },
+    {
+      "ability_id": 106,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Last Will damage increased from 550/675/800 to 600/700/800"
+        }
+      ]
+    },
+    {
+      "ability_id": 225,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Duration increased from 5 to 6"
+        }
+      ]
+    },
+    {
+      "ability_id": 50,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe changed from Gloves of Haste to Blades of Attack"
+        },
+        {
+          "indent_level": 1,
+          "note": "Armor bonus increased from 5 to 6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now gives +18 damage on melee (and +12 on range) instead of +20 attack speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Melee active speed increased from 20% to 22%"
+        }
+      ]
+    },
+    {
+      "ability_id": 63,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe changed from Blades of Attack to Gloves of Haste"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attribute bonus reduced from 14 to 10"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now gives +20 attack speed instead of +12 damage"
+        }
+      ]
+    },
+    {
+      "ability_id": 154,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus reduced from +35 to +30"
+        }
+      ]
+    },
+    {
+      "ability_id": 229,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus changed from +6% percentage to +20 flat"
+        }
+      ]
+    },
+    {
+      "ability_id": 267,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Damage as a percentage of current health increased from 4.5% to 5%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus changed from +6% percentage to +20 flat"
+        }
+      ]
+    },
+    {
+      "ability_id": 214,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Active form movement speed increased from 24% to 26%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Disabled form movement speed reduced from 20% to 18%"
+        }
+      ]
+    },
+    {
+      "ability_id": 81,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer uses Headdress nor provides its hp regen/stats"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now requires a 525 gold recipe"
+        }
+      ]
+    },
+    {
+      "ability_id": 244,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus changed from +6% percentage to +20 flat"
+        }
+      ]
+    },
+    {
+      "ability_id": 170,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus reduced from +25 to +20"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed bonus reduced from +35 to +30"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 1,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed Counterspell providing double magic resistance when the shield is active"
+        }
+      ]
+    },
+    {
+      "hero_id": 3,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Armor to +7"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5012,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed slow increased from 40/60/80/100 to 50/75/100/125"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 70/90/110/130 to 50/75/100/125"
+            }
+          ]
+        },
+        {
+          "ability_id": 5013,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 5 to 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 4,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "abilities": [
+        {
+          "ability_id": 5129,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now grants you 10 bonus armor while channeling"
+            }
+          ]
+        },
+        {
+          "ability_id": 5128,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Allied mana regen reduced from 1.2/1.7/2.2/2.7 to 1/1.5/2/2.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Self mana regen increased from 2.4/4.4/6.4/8.4 to 2.5/4.5/6.5/8.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Attack Speed to +10 Agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 7,
+      "abilities": [
+        {
+          "ability_id": 5023,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 125/140/155/170 to 110/130/150/170"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +1s Blade Fury to +50 Blade Fury Movement Speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5030,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer allows you to teleport while using it"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 130/120/110 to 130"
+            }
+          ]
+        },
+        {
+          "ability_id": 5029,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 420 to 400"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 9,
+      "abilities": [
+        {
+          "ability_id": 5048,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed increased from 857 to 950"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 2.3 to 2.6",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +15s Morph Duration to +20s"
+        }
+      ]
+    },
+    {
+      "hero_id": 11,
+      "abilities": [
+        {
+          "ability_id": 5063,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Armor reduction increased from 3/4/5/6 to 4/5/6/7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +10% Evasion to +15%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +4 Max Juxtapose Illusions to +5"
+        }
+      ]
+    },
+    {
+      "hero_id": 14,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 6",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 15,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack backswing reduced from 0.7 to 0.4"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +200 Health to +225"
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "abilities": [
+        {
+          "ability_id": 5102,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 85/150/215/280 to 100/160/220/280"
+            }
+          ]
+        },
+        {
+          "ability_id": 5103,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 350/450/550/650 to 425/500/575/650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 17,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +20 Damage to +30 Overload Damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5099,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 85 to 60/70/80/90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 15",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5096,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shield health changed from 110/220/330/440 to 80/110/140/170 + 1/1.5/2/2.5x your strength"
+            }
+          ]
+        },
+        {
+          "ability_id": 5094,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 13 to 16/15/14/13"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 100/175/250/325 to 80/160/240/320"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 19,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +125 Avalanche Damage to +100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +350 Health to +400"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5106,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE reduced from 400 to 325/350/375/400"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 23/20/17/14 to 26/22/18/14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -5s Magic Missle Cooldown to -6s"
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +100 Attack Range to +125"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +100 Powershot Damage to +125"
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Static Field. Now affects enemies directly affected by your abilities. No longer has a range."
+        }
+      ]
+    },
+    {
+      "hero_id": 23,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -1.5s Tidebringer Cooldown to +60% Tidebringer Cleave"
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 26,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +75 Cast Range to +100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +120 Gold/Min to +150"
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +3s Shackles Duration to +2.5s"
+        }
+      ]
+    },
+    {
+      "hero_id": 28,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +1.5s Slithereen Crush Stun to 1.25s"
+        }
+      ]
+    },
+    {
+      "hero_id": 29,
+      "abilities": [
+        {
+          "ability_id": 5120,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduction from -45/50/55/60 to -30/40/50/60%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 30,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 Armor to +6"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5140,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 50/40/30/20 to 30/26/22/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 31,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +40% slow to +50%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5136,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 35% to 20/25/30/35%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5137,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 300/400/500 to 250/375/500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 4",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +0.2 Backstab Multiplier to +0.3"
+        }
+      ]
+    },
+    {
+      "hero_id": 33,
+      "abilities": [
+        {
+          "ability_id": 5148,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost rescaled from 75/95/115/135 to 50/80/110/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +35 Shrapnel DPS to +15% Shrapnel Slow"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5155,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now has a back knockback of 10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 36,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +20% Ghost Shroud Slow to +30%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5158,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 100/140/180/220 to 100/150/200/250"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 37,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 2",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Golem attack backswing reduced from 0.74 to 0.57"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5165,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage increased from 75/125/175 to 100/150/200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 38,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Hawk health reduced from 300/450/600/750 to 150/200/250/300"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +40 Boar Damage to +65 Wild Axes Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +80 Wild Axes Damage to +50 Boar Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -15s Hawks Cooldown to -20s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +30 Inner Beast Attack Speed to +25"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5172,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed reduced from 15/25/35/45 to 10/20/30/40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 39,
+      "abilities": [
+        {
+          "ability_id": 5175,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 95/110/125/140 to 80/100/120/140"
+            }
+          ]
+        },
+        {
+          "ability_id": 5173,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage per tick increased from 30/45/60/75 to 30/50/70/90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 40,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 1.9 to 2.1",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 41,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8 Strength to +10"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +300 Health to -1s Time Walk Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5691,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 725 to 775"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 42,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 15",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 43,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Rearranged Level 15 Talents - +25% Cleave vs +15% Lifesteal"
+        },
+        {
+          "indent_level": 1,
+          "note": "Rearranged Level 20 Talents - +20% Blur Evasion vs -4 Armor Corruption",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Rearranged Level 25 Talents - +5% Coup de Grace vs Triple Strike Stifling Dagger"
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed meld bonus damage being increased by Spell Amplification",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +3 Psionic Traps to +15% Evasion"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +7 Armor to +25 Movement Speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5195,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Debuff is now applied before the attack damage is reduced by armor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 47,
+      "abilities": [
+        {
+          "ability_id": 5219,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 350 to 380"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 20/35/50/65 to 30/45/60/75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +200 Cast Range to +300"
+        }
+      ]
+    },
+    {
+      "hero_id": 49,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 10",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from 2x Dragon Blood to +25 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +40 Strength to 2x Dragon Blood"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5228,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Health regen increased from 4/7/10/13 to 4/8/12/16"
+            }
+          ]
+        },
+        {
+          "ability_id": 5229,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Frost attack slow increased from -20 to -30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "abilities": [
+        {
+          "ability_id": 5233,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mancost increased from 95/110/125/140 to 110/120/130/140"
+            }
+          ]
+        },
+        {
+          "ability_id": 5235,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 900 to 800"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 51,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +20% Magic Resistance to Rocket Flare True Sight"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from Rocket Flare True Sight to +50% Magic Resistance"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5237,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point removed"
+            }
+          ]
+        },
+        {
+          "ability_id": 5239,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 50 to 35/40/45/50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 52,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +50 Diabolic Edict Explosions to +40"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5242,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Increased from 9/18/27/36 to 11/22/33/44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Using tango on a sprout tree will 2x regen (like eating a branch tree)"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -4s Sprout Cooldown to +25% Cooldown Reduction"
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 15",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 2",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +30 Movement Speed to +25"
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +20% Evasion to +15 Strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Heavenly Grace status resistance reduced from 50/60/70/80% to 50%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heavenly Grace duration increased from 8 to 10"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heavenly Grace now provides 7/14/21/28 bonus strength",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heavenly Grace manacost increased from 75 to 80/90/100/110"
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5268,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 55/40/25/10 to 22/18/14/10"
+            },
+            {
+              "indent_level": 1,
+              "note": "Creep duration reduced from 50/60/70/80 to 26/44/62/80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 65 to 40/50/60/70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 59,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack point reduced from 0.4 to 0.3"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +15 Burning Spears DPS to +10"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5273,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max attack speed reduced from 220/260/300/340 to 160/220/280/340"
+            }
+          ]
+        },
+        {
+          "ability_id": 5274,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage and cost reduced from 34/39/44% to 32/38/44%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 60,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed Scepter"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +150 Cast Range to +15% Lifesteal"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5277,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed bonus increased from 20/25/30/35 to 22/28/34/40%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5278,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now provides full unobstructed vision, instead of only 900 range"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +75 Spawn Spiderlings Damage to +125"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +35% XP Gain to +15 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +20 Spiders Attack Damage to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +350 Spiders Health to +450"
+        }
+      ]
+    },
+    {
+      "hero_id": 62,
+      "abilities": [
+        {
+          "ability_id": 1314,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 10 to 9"
+            }
+          ]
+        },
+        {
+          "ability_id": 5286,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Gold steal increased from 12/18/24/30 to 12/20/28/36"
+            }
+          ]
+        },
+        {
+          "ability_id": 5288,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Critical strike damage increased from 140/160/180% to 140/170/200%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 63,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +7 Strength to +75 Shukuchi Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +75 Shukuchi Damage to +14 Strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 64,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +30% XP Gain to +300 Attack Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +300 Attack Range to +40% XP Gain"
+        }
+      ]
+    },
+    {
+      "hero_id": 65,
+      "abilities": [
+        {
+          "ability_id": 5322,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now grants a 4/7/10/13% movement speed bonus"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 18 to 15"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 40 to 34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 66,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from -10s Divine Favor Cooldown to -7s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +400 Hand of God Heal to +350"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +4 Holy Persuasion Max Units to +5"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7306,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage reduced from 10/20/40/80 to 12/24/36/48"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now provides double bonus damage on non-hero units"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 12 to 14"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 110 to 70/80/90/100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5331,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Heal increased from 250/400/550 to 300/450/600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 67,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 2.3 to 2.5",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +20% Spectral Dagger to +18%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5334,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed increased from 8/12/16/20% to 10/14/18/22%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 68,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from 900 AoE Cold Feet to 700"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +4% Ice Blast Kill Threshold to +5%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5347,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 50/85/120/155 to 50/90/130/170"
+            }
+          ]
+        },
+        {
+          "ability_id": 5346,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 65/80/95/110 to 50/70/90/110"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 69,
+      "abilities": [
+        {
+          "ability_id": 5340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 55/50/45/40 to 50/45/40/35"
+            }
+          ]
+        },
+        {
+          "ability_id": 5339,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Health regen from 4/8/13/18 to 3/8/13/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 15",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5359,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 10/16/22/28 to 7/14/21/28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 72,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased from 19 to 22",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 73,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 10",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base agility increased from 16 to 22",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from -8s Unstable Concoction to -7s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent Concoction talent now adds the damage to the max instead of the base"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5369,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base attack time improved from 1.3/1.15/1.0 to 1.2/1.1/1.0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 74,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +1.25s Tornado Lift Time to -30s Ghost Walk Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5372,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage reduced from 4->28 to 3->27 per instance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 75,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 Armor to +6"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5379,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 28/22/16/10 to 22/18/14/10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +30 Movement Speed to +25"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5394,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Multiplier from 9/10/11 to 8/9/10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 15",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5395,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Armor reduced from 1 to 0"
+            },
+            {
+              "indent_level": 1,
+              "note": "Magic resistance reduced from 80% to 70%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Health increased from 230/260/290/320 to 300/350/400/450"
+            }
+          ]
+        },
+        {
+          "ability_id": 5396,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Health regen increased from 4/6/8/10 to 4/8/12/16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 78,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Damage to +15"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5402,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Critical strike reduced from 170/200/230/260% to 140/180/220/260%"
+            }
+          ]
+        },
+        {
+          "ability_id": 7310,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 7 to 5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration is refreshed on ignition"
+            },
+            {
+              "indent_level": 1,
+              "note": "Ignite DPS increased from 20/25/30/35 to 20/30/40/50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 79,
+      "abilities": [
+        {
+          "ability_id": 1340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 110 to 50/70/90/110"
+            }
+          ]
+        },
+        {
+          "ability_id": 5423,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 50 to 35/40/45/50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -0.3 Spirit Bear Attack Time to 0 Entangle Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from 0 Entangle Cooldown to -0.5s Spirit Bear Attack Time"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 1342,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed increased from 340/355/370/385 to 340/360/380/400"
+            },
+            {
+              "indent_level": 1,
+              "note": "Attack damage increased from 35/50/65/80 to 35/55/75/95"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "abilities": [
+        {
+          "ability_id": 5428,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 7/6/5/4 to 4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Lifesteal reduced from 50/55/60/65% to 40/50/60/70%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Max damage increased from 160/190/220/250% to 160/195/230/265%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5427,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow duration increased from 2 to 3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 15/25/35/45% to 10/20/30/40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 82,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 10",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Scepter now causes Treant's Overgrowth to deal damage instead of only Enchanted Trees",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +40 Leech Seed Damage/Heal to +50"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5436,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage block increased from 20/40/60/80 to 25/50/75/100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5437,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 3/3.75/4.5 to 3.25/4/4.75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 84,
+      "abilities": [
+        {
+          "ability_id": 5438,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 12/11/10/9 to 11/10/9/8"
+            }
+          ]
+        },
+        {
+          "ability_id": 5441,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "2x chance increased from 60% to 70%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from Tombstone On Death to +30 Tombstone Zombie Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +30 Tombstone Zombie Damage to Tombstone On Death"
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -45 Fade Bolt Hero Attack to -60"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5448,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Lift duration reduced from 1/1.4/1.8/2.2 to 0.8/1.2/1.6/2.0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 87,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 88,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 2.3 to 2.5",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +60 GPM to +90"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6% Spell Amp to +8%"
+        }
+      ]
+    },
+    {
+      "hero_id": 89,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -5s Ensnare Cooldown to -7s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5467,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration from 24 to 26"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage taken reduced from 475/450/425/400% to 400%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from 8% Spell Lifesteal to +30% XP Gain"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +30% XP Gain to +1 Will-O-Wisp Health Count"
+        }
+      ]
+    },
+    {
+      "hero_id": 91,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Temporarily removed from Captains Mode"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -60s Relocate Cooldown to -30s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5485,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now transfers health and mana even when Io is at max hp/mp"
+            }
+          ]
+        },
+        {
+          "ability_id": 5487,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now has an 18 second cooldown and an 8 second duration. No longer has a 2 second toggle."
+            },
+            {
+              "indent_level": 1,
+              "note": "Now costs 40/60/80/100 mana to cast. No longer cost 6% of health and mana per second."
+            },
+            {
+              "indent_level": 1,
+              "note": "Attack speed bonus increased from 40/50/60/70 to 50/80/110/140"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduction increased from 5/10/15/20% to 15/20/25/30%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5488,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Delay increased from 2.7/2.35/2 to 3.5/3.25/3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 130/110/90 to 90/75/60"
+            },
+            {
+              "indent_level": 1,
+              "note": "Is now cast delay again instead of channeling (being interrupted, silenced, rooted, etc will cancel the ability)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 92,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +125 Cast Range to +100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +60 Familiars Movement Speed to +50"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +15 Soul Assumption Damage Per Charge to +20"
+        }
+      ]
+    },
+    {
+      "hero_id": 93,
+      "abilities": [
+        {
+          "ability_id": 5495,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer does 30/60/90/120 damage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed Mystic Snake bouncing to Spell Immune enemies"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Damage to +15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +35% Mystic Snake Mana Steal to +30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +700 Mana to -4s Mystic Snake Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +7 Split Shot Targets to +1000 Mana"
+        }
+      ]
+    },
+    {
+      "hero_id": 95,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +75 Whirling Axes Damage to +90"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +20% Evasion to +25%"
+        }
+      ]
+    },
+    {
+      "hero_id": 96,
+      "abilities": [
+        {
+          "ability_id": 5516,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer gains charges while it is active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 98,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +10% Cooldown Reduction to +15%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5526,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus armor reduced from 1.3/1.4/1.5/1.6 to 1/1.1/1.2/1.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Bonus health regen reduced from 1/1.2/1.4/1.6 to 1/1.1/1.2/1.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Max stacks increased from 5/10/15/20 to 6/12/18/24"
+            }
+          ]
+        },
+        {
+          "ability_id": 5524,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Tree bonus damage increased from 10/15/20/25 to 12/18/24/30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 99,
+      "abilities": [
+        {
+          "ability_id": 5548,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 25 to 12/16/20/24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 100,
+      "abilities": [
+        {
+          "ability_id": 7322,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow duration reduced from 0.5 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 40/50/60/70 to 70"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 15 to 24/21/18/15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 101,
+      "abilities": [
+        {
+          "ability_id": 5584,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Deals damage to creeps if no heroes are around"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 102,
+      "abilities": [
+        {
+          "ability_id": 5587,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Curse duration increased from 4 to 4.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5586,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 115 to 100/105/110/115"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +25 Movement Speed to +20"
+        }
+      ]
+    },
+    {
+      "hero_id": 104,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 15",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +40 Movement Speed to +35"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -10s Press The Attack Cooldown to 350 AoE Press The Attack"
+        }
+      ]
+    },
+    {
+      "hero_id": 105,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Remote Mines manacost reduced from 200/240/300 to 120/180/240"
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5604,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 30/22/14/6 to 18/14/10/6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 107,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +200 Rolling Boulder Damage to +150"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5609,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 100 to 70/80/90/100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5608,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 80% to 60%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 108,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 109,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength reduced from 16 + 1.7 to 15 + 1.5",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Sunray can no longer move forward while rooted"
+        }
+      ]
+    },
+    {
+      "hero_id": 112,
+      "abilities": [
+        {
+          "ability_id": 5653,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base health regen increased from 15 to 14/18/22/26"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost changed from 75 to 50/60/70/80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 113,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +25 Attack Speed to +30"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5679,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 100/160/220/280 to 100/170/240/310"
+            }
+          ]
+        },
+        {
+          "ability_id": 5683,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 14/16/18 to 16/18/20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5725,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack rate improved from 1.3 to 1.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 119,
+      "abilities": [
+        {
+          "ability_id": 6339,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 140/150/160/170 to 100/120/140/160"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 34/31/28/25 to 25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 120,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 4",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +20 Movement Speed to +300 Swashbuckle Slash Range"
+        }
+      ]
+    },
+    {
+      "hero_id": 121,
+      "abilities": [
+        {
+          "ability_id": 8006,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Rend damage reduced from 120/200/280/360 to 75/150/225/300"
+            }
+          ]
+        },
+        {
+          "ability_id": 8007,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 90/100/110/120 to 120/130/140/150"
+            },
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 18% to 12/14/16/18%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

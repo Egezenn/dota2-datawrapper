@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="api/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dota2 datawrapper Explorer</title>
+    <script type="module" crossorigin src="./assets/index-DFuzK-q8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-6lQsyls8.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <div class="logo"><img src="api/assets/images/dota_react/global/dota2_logo_horiz.png" style="height: 40px; margin-right: 15px; vertical-align: middle" /><span>datawrapper EXPLORER</span></div>
+        <div class="nav-links">
+          <a href="#heroes" id="nav-heroes" class="active">Heroes</a>
+          <a href="#items" id="nav-items">Items</a>
+          <a href="#patches" id="nav-patches">Patches</a>
+          <button id="clear-cache" class="clear-btn" title="Clear IndexedDB Cache">Clear Cache</button>
+        </div>
+      </nav>
+      <header class="page-header">
+        <h1 id="page-title">Heroes</h1>
+        <div class="search-bar">
+          <img src="api/assets/images/dota_react/icons/search.svg" class="search-icon" />
+          <input type="text" id="search-input" placeholder="Search..." />
+        </div>
+      </header>
+      <nav class="category-nav hidden" id="hero-categories">
+        <button class="cat-btn active" data-category="all">All</button>
+        <button class="cat-btn" data-category="0">Strength</button>
+        <button class="cat-btn" data-category="1">Agility</button>
+        <button class="cat-btn" data-category="2">Intelligence</button>
+        <button class="cat-btn" data-category="3">Universal</button>
+      </nav>
+      <nav class="category-nav hidden" id="item-categories">
+        <button class="cat-btn active" data-category="all">Unfiltered</button>
+        <button class="cat-btn" data-category="normal">Normal</button>
+        <button class="cat-btn" data-category="neutral1">Tier 1</button>
+        <button class="cat-btn" data-category="neutral2">Tier 2</button>
+        <button class="cat-btn" data-category="neutral3">Tier 3</button>
+        <button class="cat-btn" data-category="neutral4">Tier 4</button>
+        <button class="cat-btn" data-category="neutral5">Tier 5</button>
+        <button class="cat-btn" data-category="enhancements">Enhancements</button>
+        <button class="cat-btn" data-category="zero">0 Gold</button>
+        <button class="cat-btn" data-category="null">Null Gold</button>
+      </nav>
+      <main id="content">
+        <div id="loader" class="loader hidden">Loading...</div>
+        <div id="grid" class="data-grid"></div>
+      </main>
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-search-container">
+              <input type="text" id="modal-search" placeholder="Quick switch (Ctrl+K)..." autocomplete="off" />
+              <div id="modal-search-results" class="search-results hidden"></div>
+            </div>
+            <button id="modal-close" class="close-btn">&times;</button>
+          </div>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

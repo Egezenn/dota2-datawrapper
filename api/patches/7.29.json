@@ -1,0 +1,7163 @@
+{
+  "patch_number": "7.29",
+  "patch_name": "7.29",
+  "patch_timestamp": 1617951600,
+  "patch_website": "dawnbreaker",
+  "patch_website_anchor": "PatchSection",
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Terrain updated with various changes"
+        },
+        {
+          "indent_level": 1,
+          "note": "Added Water Power Rune. Spawns at both Power Rune locations only at minute 2 and 4. Instantly restores 100 health and 80 mana when used. Can be used to fill bottles. Starting at 6 minutes, Power Runes spawn as usual on one side."
+        },
+        {
+          "indent_level": 1,
+          "note": "Added +2 Attributes leveling for up to 7 times (for the 7 empty levels from 1-26), and can be leveled in any order (via clicking on the talent tree circle). They will automatically be leveled if there are no other options available."
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 30 no longer grants all remaining talents. Instead level 27/28/29/30 will grant you the remaining level 10/15/20/25 talents"
+        },
+        {
+          "indent_level": 1,
+          "note": "Outposts no longer give XP at the 10/20/30/etc minute mark"
+        },
+        {
+          "indent_level": 1,
+          "note": "Outposts now provide XPM while controlled (XP = 2*Minute). No extra XP granted when controlling two outposts, similar to the existing rules."
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "Notes:"
+        },
+        {
+          "indent_level": 2,
+          "hide_dot": true,
+          "note": "Compared to the previous version at 10/20/30/40 minutes, total XP given per player changed from 150/500/1050/1800 to 110/420/930/1640."
+        },
+        {
+          "indent_level": 2,
+          "hide_dot": true,
+          "note": "The XP is provided on the minute mark"
+        },
+        {
+          "indent_level": 2,
+          "hide_dot": true,
+          "note": "The amount you get for each minute at the start is 2/4/6/8/10/12/14/16/18/20 for minutes 1 through 10"
+        },
+        {
+          "indent_level": 1,
+          "note": "Bounty Runes after the initial set are reduced by 10%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Bounty Runes no longer spawn in the river. The amount these runes gave is now provided automatically over time through GPM."
+        },
+        {
+          "indent_level": 1,
+          "note": "Bounty Runes now spawn every 3 minutes in the respective jungle area (total rune count reduced from 4 to 2)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Bounty Runes no longer disappear when new ones spawn, they now spawn alongside the previous one if it isn't picked up"
+        },
+        {
+          "indent_level": 1,
+          "note": "At minute 0, Bounty Runes spawn in the jungle and at the power rune locations (4 total at the start of the game)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Various cast ranges and movement speed talents/items/abilities have been replaced or toned down (these are included in-line with the item and hero sections below)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Hero kill assist gold now adjusted based on the relative NW difference between the two teams. For example, if your team is down 5,000 gold and the enemy has 50,000 total net worth, your assist gold will be worth 10% more."
+        },
+        {
+          "indent_level": 1,
+          "note": "Heroes now start the game with 1 TP scroll rather than 3"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heroes now gain 1 TP scroll on death"
+        },
+        {
+          "indent_level": 1,
+          "note": "TP Scroll cost increased from 90 to 100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heroes with 1.0 turn rate now have 0.9 turn rate"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heroes with 0.5 turn rate now have 0.6 turn rate"
+        },
+        {
+          "indent_level": 1,
+          "note": "Turn rate effect on time to turn improved by 20%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Aghanim's Scepter: Roshan drop now requires you to activate it to consume it (has no effect until consumed)",
+          "aghanims": "scepter"
+        },
+        {
+          "indent_level": 1,
+          "note": "Aghanim's Shard: Now drops on the second Roshan kill, and only that one (has same activation mechanics as the Scepter drop)",
+          "aghanims": "shard"
+        },
+        {
+          "indent_level": 1,
+          "note": "Increase building teleportation range from 575 to 800 (affects TP scrolls and Boots of Travel)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Outpost teleport base channel time reduced from 6 to 5 seconds"
+        },
+        {
+          "indent_level": 1,
+          "note": "Outpost vision reduced from 700 to 500"
+        },
+        {
+          "indent_level": 1,
+          "note": "Captains Mode initial picking phase changed from 1st-2nd-1st-2nd to 1st-2nd-2nd-1st"
+        },
+        {
+          "indent_level": 1,
+          "note": "Hoodwink added to Captains Mode"
+        },
+        {
+          "indent_level": 1,
+          "note": "Couriers no longer have vision when inside Roshan's pit"
+        },
+        {
+          "indent_level": 1,
+          "note": "Wards can now be denied from full health by any allied player if the ward is placed in a spawn camp box"
+        },
+        {
+          "indent_level": 1,
+          "note": "Ancient neutral creeps armor increased by 1 (except for the Ancient Golems)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Neutral Items now fly towards the killing hero, rather than spawning under the dead unit"
+        },
+        {
+          "indent_level": 1,
+          "note": "Hero ban count for matchmaking increased by 6 (still chance-based)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Buyback cost reduced from 200 + NetWorth/12 to 200 + NetWorth/13"
+        },
+        {
+          "indent_level": 1,
+          "note": "Courier respawn time reduced from 60 + 7*Level to 60 + 6*Level"
+        },
+        {
+          "indent_level": 1,
+          "note": "Backdoor protection damage reduction increased from 40% to 50%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Hero-to-hero item transfer range increased from 150 to 300"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tree respawn interval reduced from 5 to 3 minutes"
+        },
+        {
+          "indent_level": 1,
+          "note": "The following abilities no longer destroy trees: Earth Splitter, Mortimer Kisses, Meteor Hammer, Macropyre."
+        },
+        {
+          "indent_level": 1,
+          "note": "Reduced the radius of tree destruction on the following abilities: Wild Axes, Gust, Power Cogs, Vacuum, Fire Remnant, Relocate, Tether, Blinding Light, Skewer, Doppelganger, Telekinesis, Firesnap Cookie, Spit Out, Spider Legs, Blast Off!, Toss, Snowball, Powershot, Will-O-Wisp."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 44,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Shared tangos now expire after 40 seconds. Tango pooling has been removed from the Strategy Phase UI."
+        }
+      ]
+    },
+    {
+      "ability_id": 106,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed Item"
+        }
+      ]
+    },
+    {
+      "ability_id": 156,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 35 to 25"
+        },
+        {
+          "indent_level": 1,
+          "note": "Unholy Rage can no longer be dispelled"
+        },
+        {
+          "indent_level": 1,
+          "note": "Unholy Rage now applies a basic dispel on cast"
+        }
+      ]
+    },
+    {
+      "ability_id": 145,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen reduced from 3.25 to 2.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Creep cleave damage reduced from 50% to 40%"
+        }
+      ]
+    },
+    {
+      "ability_id": 223,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Stun duration reduced from 1.75 to 1.5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Building damage per second increased from 50 to 60"
+        }
+      ]
+    },
+    {
+      "ability_id": 208,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer has a blink effect. Now a melee ability."
+        },
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 1750 to 1550 (total cost is 300 cheaper with Vitality Booster cost reduction change)"
+        }
+      ]
+    },
+    {
+      "ability_id": 214,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 70 to 65"
+        }
+      ]
+    },
+    {
+      "ability_id": 100,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range reduced from 575 to 550"
+        }
+      ]
+    },
+    {
+      "ability_id": 610,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range reduced from 575 to 550"
+        }
+      ]
+    },
+    {
+      "ability_id": 48,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 110 to 100"
+        }
+      ]
+    },
+    {
+      "ability_id": 220,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 130 to 120"
+        }
+      ]
+    },
+    {
+      "ability_id": 603,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer ignores movement speed limit"
+        }
+      ]
+    },
+    {
+      "ability_id": 232,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range bonus reduced from 250 to 225"
+        }
+      ]
+    },
+    {
+      "ability_id": 235,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range bonus reduced from 250 to 225"
+        }
+      ]
+    },
+    {
+      "ability_id": 43,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 75 to 50"
+        },
+        {
+          "indent_level": 1,
+          "note": "True Sight radius reduced from 1000 to 900"
+        }
+      ]
+    },
+    {
+      "ability_id": 147,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Melee illusions incoming damage reduced from 350% to 300%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Ranged illusions incoming damage reduced from 400% to 300% (same as melee)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cooldown for ranged heroes reduced from 45 to 30 (same as melee)"
+        }
+      ]
+    },
+    {
+      "ability_id": 6,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Armor increased from 5 to 6"
+        }
+      ]
+    },
+    {
+      "ability_id": 151,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Armor increased from 5 to 6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Active health drain reduced from 50 to 40"
+        }
+      ]
+    },
+    {
+      "ability_id": 59,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 900 to 800"
+        }
+      ]
+    },
+    {
+      "ability_id": 61,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 1100 to 1000"
+        }
+      ]
+    },
+    {
+      "ability_id": 114,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 900 to 1300"
+        }
+      ]
+    },
+    {
+      "ability_id": 232,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 550 to 650"
+        }
+      ]
+    },
+    {
+      "ability_id": 256,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 1100 to 1200"
+        }
+      ]
+    },
+    {
+      "ability_id": 116,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown increased from 70 to 75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Duration rescaled from 10/9/8/7/6/5 to 9/8/7/6"
+        }
+      ]
+    },
+    {
+      "ability_id": 38,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Duration reduced from 30 to 25 (180 mana to 150)"
+        }
+      ]
+    },
+    {
+      "ability_id": 41,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost increased from 625 to 675"
+        },
+        {
+          "indent_level": 1,
+          "note": "Mana regen reduced from 75 to 65"
+        },
+        {
+          "indent_level": 1,
+          "note": "HP regen reduced from 125 to 115"
+        }
+      ]
+    },
+    {
+      "ability_id": 94,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides +0.5 HP regen to the holder"
+        }
+      ]
+    },
+    {
+      "ability_id": 88,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen aura reduced from 1.4 to 1"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now provides +0.6 mana regen to the holder"
+        }
+      ]
+    },
+    {
+      "ability_id": 86,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides +1 armor to the holder"
+        },
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 200 to 250 (matches the other early aura items)"
+        }
+      ]
+    },
+    {
+      "ability_id": 90,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "HP Regen aura increased from 2 to 2.5"
+        }
+      ]
+    },
+    {
+      "ability_id": 79,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "HP Regen aura increased from 2 to 2.5"
+        }
+      ]
+    },
+    {
+      "ability_id": 190,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen aura increased from 1.5 to 1.75"
+        }
+      ]
+    },
+    {
+      "ability_id": 81,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen aura increased from 1.4 to 1.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 600 to 500 (total cost reduced from 2750 to 2700)"
+        }
+      ]
+    },
+    {
+      "ability_id": 102,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Ring of Regeneration replaced with Fluffy Hat (+150 Health instead of regen)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Recipe reduced from 1000 to 950 (overall cost increased from 2175 to 2200)"
+        }
+      ]
+    },
+    {
+      "ability_id": 263,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now has +200 Health instead of +2.5 HP Regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 13 to 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 174,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Manabreak damage per mana burned increased from 80% to 100%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Manabreak on melee illusions reduced from 16 to 12"
+        },
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 20 to 24"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 10 to 12"
+        }
+      ]
+    },
+    {
+      "ability_id": 229,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe changed to Medallion, Crown, Wind Lace and a 900 gold recipe (1150 cheaper)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Armor reduced from +8 to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "All Stats reduced from +10 to +5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Shine active armor reduced from 8 to 6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Shine attack speed addition/removal reduced from 80 to 65"
+        }
+      ]
+    },
+    {
+      "ability_id": 125,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Block chance increased from 50% to 60%"
+        }
+      ]
+    },
+    {
+      "ability_id": 208,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Block chance increased from 50% to 60%"
+        }
+      ]
+    },
+    {
+      "ability_id": 242,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Block chance increased from 50% to 60%"
+        }
+      ]
+    },
+    {
+      "ability_id": 14,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 145 to 140"
+        }
+      ]
+    },
+    {
+      "ability_id": 13,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 145 to 140"
+        }
+      ]
+    },
+    {
+      "ability_id": 15,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 145 to 140"
+        }
+      ]
+    },
+    {
+      "ability_id": 73,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "HP regen increased from 0.75 to 1"
+        }
+      ]
+    },
+    {
+      "ability_id": 154,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack speed reduced from 16 to 12"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack speed reduced from 16 to 12"
+        }
+      ]
+    },
+    {
+      "ability_id": 259,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen amp increased from +24% to +50%"
+        }
+      ]
+    },
+    {
+      "ability_id": 273,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen amp increased from +30% to +50%"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen amp increased from +30% to +50%"
+        }
+      ]
+    },
+    {
+      "ability_id": 236,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 14 to 16"
+        }
+      ]
+    },
+    {
+      "ability_id": 79,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana cost reduced from 200 to 100"
+        }
+      ]
+    },
+    {
+      "ability_id": 598,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 600 to 400"
+        }
+      ]
+    },
+    {
+      "ability_id": 127,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 675 to 575"
+        }
+      ]
+    },
+    {
+      "ability_id": 252,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength increased from 12 to 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 164,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bounty reduced from 200 to 100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Creep movement speed reduced from 425 to 380 (affects the upgrade as well)"
+        }
+      ]
+    },
+    {
+      "ability_id": 635,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Renamed from Helm of the Dominator 2 to Helm of the Overlord and added to the shop UI as an independent item"
+        },
+        {
+          "indent_level": 1,
+          "note": "Can now dominate up to two units (150 bounty)"
+        }
+      ]
+    },
+    {
+      "ability_id": 152,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 28 to 25"
+        }
+      ]
+    },
+    {
+      "ability_id": 249,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen increased from 3 to 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence bonus increased from 10 to 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 133,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer provides True Strike"
+        },
+        {
+          "indent_level": 1,
+          "note": "Damage increased from 300 to 350"
+        }
+      ]
+    },
+    {
+      "ability_id": 135,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Proc chance increased from 75% to 80%"
+        }
+      ]
+    },
+    {
+      "ability_id": 158,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Chain Lightning damage increased from 170 to 180"
+        },
+        {
+          "indent_level": 1,
+          "note": "Static Charge damage increased from 200 to 225"
+        }
+      ]
+    },
+    {
+      "ability_id": 178,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 275 to 225"
+        }
+      ]
+    },
+    {
+      "ability_id": 11,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bonus damage reduced from 13 to 12"
+        }
+      ]
+    },
+    {
+      "ability_id": 534,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Poison attack now has True Strike"
+        }
+      ]
+    },
+    {
+      "ability_id": 119,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 30 to 27"
+        }
+      ]
+    },
+    {
+      "ability_id": 92,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regen reduced from 1.5 to 1.4"
+        }
+      ]
+    },
+    {
+      "ability_id": 96,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 22 to 20"
+        }
+      ]
+    },
+    {
+      "ability_id": 32,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cost reduced from 1400 to 1300"
+        }
+      ]
+    },
+    {
+      "ability_id": 190,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range increased from 1000 to 1200"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 25 to 22"
+        }
+      ]
+    },
+    {
+      "ability_id": 269,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Passive charge regeneration time reduced from 15 to 10 seconds"
+        }
+      ]
+    },
+    {
+      "ability_id": 265,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Minimum damage threshold increased from 50 to 75"
+        }
+      ]
+    },
+    {
+      "ability_id": 610,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 23 to 18"
+        }
+      ]
+    },
+    {
+      "ability_id": 104,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast range increased from 600/650/700/750/800 to 700/750/800/850/900"
+        },
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 1300 to 1250"
+        }
+      ]
+    },
+    {
+      "ability_id": 206,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Projectile speed increased from 1500 to 1750"
+        }
+      ]
+    },
+    {
+      "ability_id": 1466,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Projectile speed increased from 1500 to 1750"
+        }
+      ]
+    },
+    {
+      "ability_id": 250,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 1000 to 800"
+        }
+      ]
+    },
+    {
+      "ability_id": 216,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Can now be sold"
+        }
+      ]
+    },
+    {
+      "ability_id": 188,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now dispelled by the fountain"
+        }
+      ]
+    }
+  ],
+  "neutral_items": [
+    {
+      "ability_id": 305,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed Item"
+        }
+      ]
+    },
+    {
+      "ability_id": 355,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Damage increased from +12 to +14"
+        }
+      ]
+    },
+    {
+      "ability_id": 354,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "River HP/MP regen increased from 8/4 to 10/5"
+        }
+      ]
+    },
+    {
+      "ability_id": 565,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Health regen increased from 3.5 to 5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Return damage increased from 28/17 to 30/20"
+        }
+      ]
+    },
+    {
+      "ability_id": 356,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now drops an Enchanted Mango instead of a TP Scroll"
+        }
+      ]
+    },
+    {
+      "ability_id": 334,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Damage increased from +24 to +26"
+        }
+      ]
+    },
+    {
+      "ability_id": 290,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "GPM increased from +70 to +80"
+        }
+      ]
+    },
+    {
+      "ability_id": 306,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Secondary Attributes increased from +13 to +14"
+        }
+      ]
+    },
+    {
+      "ability_id": 288,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Magic resistance reduction increased from 12% to 15%"
+        }
+      ]
+    },
+    {
+      "ability_id": 680,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement Speed change reduced from 20% to 18%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 12 to 11"
+        },
+        {
+          "indent_level": 1,
+          "note": "Mana regen reduced from 3 to 2.5"
+        }
+      ]
+    },
+    {
+      "ability_id": 686,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Passive movement speed reduced from 5% to 4%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Active movement speed reduced from 5% to 4%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Active attack speed increased from 15 to 20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Projectile and Attack Animation increased from 30% to 40%"
+        }
+      ]
+    },
+    {
+      "ability_id": 309,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Silence duration increased from 1.5 to 1.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 15 to 12"
+        }
+      ]
+    },
+    {
+      "ability_id": 675,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence bonus increased from +12% to +16%"
+        }
+      ]
+    },
+    {
+      "ability_id": 573,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 8% to 7%"
+        }
+      ]
+    },
+    {
+      "ability_id": 326,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Active movement speed reduced from +24% to +22%"
+        }
+      ]
+    },
+    {
+      "ability_id": 376,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides +8% Spell Lifesteal"
+        }
+      ]
+    },
+    {
+      "ability_id": 336,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack and Cast Range reduced from 135 to 125"
+        }
+      ]
+    },
+    {
+      "ability_id": 363,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Illusion bonus damage reduced from 8% to 6%"
+        }
+      ]
+    },
+    {
+      "ability_id": 311,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "All stats reduced from +12 to +6"
+        }
+      ]
+    },
+    {
+      "ability_id": 335,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 40 to 35"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now always goes in a random forward direction with a random distance between 200 and 600"
+        }
+      ]
+    },
+    {
+      "ability_id": 379,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now grants +5 Armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attack speed reduced from 60 to 50"
+        }
+      ]
+    },
+    {
+      "ability_id": 362,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from +30 to +25"
+        },
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 20 to 24"
+        }
+      ]
+    },
+    {
+      "ability_id": 571,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer interrupts channeling abilities"
+        },
+        {
+          "indent_level": 1,
+          "note": "Active can now be dispelled"
+        },
+        {
+          "indent_level": 1,
+          "note": "Invisibility now provides phased movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now has a 0.2 second fade time"
+        }
+      ]
+    },
+    {
+      "ability_id": 638,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Melee attack range increased from +80 to +100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Maim chance increased from 20% to 25%"
+        }
+      ]
+    },
+    {
+      "ability_id": 374,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 30 to 25"
+        }
+      ]
+    },
+    {
+      "ability_id": 291,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now also provides +30 HP Regen"
+        }
+      ]
+    },
+    {
+      "ability_id": 294,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reveal cooldown reduced from 70 to 60"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reveal now grants True Sight at the destination"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reveal duration increased from 5 to 6"
+        }
+      ]
+    },
+    {
+      "ability_id": 370,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 90 to 80"
+        },
+        {
+          "indent_level": 1,
+          "note": "Units damage increased from +50% to +75%"
+        }
+      ]
+    },
+    {
+      "ability_id": 677,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 15 to 8"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 1,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Now causes Blink to have +300 range and reduces cooldown by 2"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +300 Blink Cast Range to +0.6% Max Mana Burn"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -2s Blink Cooldown to +1s Mana Void Stun"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5006,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost rescaled from 125/200/275 to 100/200/300"
+            }
+          ]
+        },
+        {
+          "ability_id": 543,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter illusion incoming damage reduced from 250% to 200%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter illusion outgoing damage increased from 50% to 75%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 2,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack point reduced from 0.5 to 0.4"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +1.75 Mana Regen to +1.5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +25 Attack Speed to +9 Strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5007,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter upgrade cooldown reduction increased from 2 to 3"
+            }
+          ]
+        },
+        {
+          "ability_id": 5009,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also increases proc chance by 10%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 3,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Causes Brain Sap to become a 550 target AoE spell. Secondary units heal for 25%."
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Scepter upgrade. Reduces Fiend's Grip cooldown by 45 seconds and causes Fiend's Grip to create two uncontrollable illusions that channel Fiend's Grip on the target. Illusions take 700% damage.",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +12% Spell Amplification to -3s Brain Sap cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +100 Cast Range to +5% Fiend's Grip Max Mana Drain"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5011,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.84 to 0.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5012,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage reduction increased from 25/35/45/55 to 45/50/55/60%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Health restoration reduction increased from 25/35/45/55 to 45/50/55/60%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 20/16/12/8 to 28/21/14/7"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1100 to 800/900/1000/1100"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 8 to 8/9/10/11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 4,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Armor to +7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +75 Blood Rite Damage to +85"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5015,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.63 to 0.4"
+            }
+          ]
+        },
+        {
+          "ability_id": 5018,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now deals 10% of the target’s current health as damage on cast"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 36/48/60% to 33/44/55%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Now allows you to move, cast, and attack during Freezing Field. Your movement speed is reduced by 75% during this and the Freezing Field follows your movement. Interruptions and Silences will still interrupt the spell.",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +75 Cast Range to +125 Crystal Nova AoE"
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack point reduced from 0.55 to 0.5"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -6s Multishot Cooldown to -8s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5019,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard burst slow increased from 25% to 40%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now affects creeps"
+            }
+          ]
+        },
+        {
+          "ability_id": 5632,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 90 to 70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 7,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +6 Armor to +7"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5024,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer has True Strike"
+            },
+            {
+              "indent_level": 1,
+              "note": "No longer gets consumed if the attack misses"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter leap range reduced from 1100 to 950"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now also provides +40% cleave with Enchant Totem buff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "abilities": [
+        {
+          "ability_id": 5030,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now provides Spell Immunity"
+            },
+            {
+              "indent_level": 1,
+              "note": "Attack rate multiplier reduced from 1.6 to 1.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 419,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 100 to 125"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 600 to 550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 15 + 1.5 to 19 + 1.8",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attribute Shift now has 10 mana cost per second to shift attributes"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attribute Shift interval rescaled from 1/4/10/25 to 3/6/12/24"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +10 Agility to +15% Magic Resistance"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +275 Waveform Range to +250"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +30 Attack Speed to +15 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +12% Cooldown Reduction to +20 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +30 Strength to Attribute Shift While Stunned"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5053,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 80 to 50/60/70/80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard no longer removes the 3 second Shard cooldown"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard increases stun duration by 1 second"
+            }
+          ]
+        },
+        {
+          "ability_id": 5052,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 150/155/160/165 to 140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 11,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack time reduced from 1.7 to 1.6",
+          "icon": "attack_time"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Shard has been reworked. Now causes Presence of the Dark Lord to reduce magic resistance by 14%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5062,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Soul lost on death reduced from 50% to 40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage range rescaled from 52-66 to 54-64",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -2s Spirit Lance Cooldown to -3"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +350 Phantom Rush Range to +300"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +4% Juxtapose Damage to +5%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5066,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 600 to 575"
+            }
+          ]
+        },
+        {
+          "ability_id": 1221,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Range reduced from 600/700/800/900 to 600/675/750/825"
+            }
+          ]
+        },
+        {
+          "ability_id": 5065,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard damage increased from +30% to +50%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +150 Cast Range to +0.75s Waning Rift Silence Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +50% Illusory Orb Distance/Speed to -4s Illusory Orb Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +275 Waning Rift AoE and Range to +250"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5072,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 6 to 7.5/7/6.5/6"
+            }
+          ]
+        },
+        {
+          "ability_id": 5071,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 16/15/14/13 to 19/17/15/13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 14,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attack range increased from 150 to 175",
+          "icon": "attack_range"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5075,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 21/18/15/12 to 18/16/14/12"
+            }
+          ]
+        },
+        {
+          "ability_id": 5077,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cast range on allies increased from 160 to 400"
+            }
+          ]
+        },
+        {
+          "ability_id": 5076,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter radius increased from 450 to 475"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter damage increased from +80 to +100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 15,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8 Agility to +9"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +12 Strength to +14"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5083,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Buff duration reduced from 18 to 15/16/17/18"
+            }
+          ]
+        },
+        {
+          "ability_id": 1224,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard damage increased from 120 to 150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +175 Health to +200"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +15% Caustic Finale Slow to +20%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +20 Health Regen to +25"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +4 Epicenter Pulses to +5"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5102,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter cast range reduced from 1400 to 1300"
+            }
+          ]
+        },
+        {
+          "ability_id": 5105,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard no longer triggers if there are no enemies nearby"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard radius increased from 400 to 475"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 17,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Electric Rave Shard upgrade is now an active on Overload instead of a dedicated hotkey"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +24 Overload Damage to 200 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +375 Health to +25 Attack Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +25 Attack Speed to -1.25s Static Remnant Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent improved from 600 Distance Auto Remnant to 550"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5101,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Travel speed rescaled from 1250/1875/2500 to 1400/1850/2300"
+            }
+          ]
+        },
+        {
+          "ability_id": 5100,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bounce talent is no longer applied to allies that have the Shard buff, only Storm Spirit benefits from it now"
+            },
+            {
+              "indent_level": 1,
+              "note": "Bounce talent now causes the secondary attacks to do 75% damage instead of 100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +2.5 Mana Regen to +15 Attack Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +7 Strength to +3s Warcry Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +4s Warcry Duration to +25% Great Cleave"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +1s Storm Hammer Stun Duration to +1.25"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -4s Storm Hammer Cooldown to +10 Warcry Armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5094,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also reduces cooldown by 4 seconds"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cast range reduced from 950 to 900"
+            }
+          ]
+        },
+        {
+          "ability_id": 5097,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 100/140/180% to 100/150/200%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 19,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base HP regen increased from 1 to 1.5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Now causes Tree Grab to have no charge limit."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +25 Damage to +10 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +5 Tree Grab Attack Charges to +15% Tree Grab Unit Damage Bonus"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +18 Strength to +15% Status Resistance"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5108,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 50 to 40"
+            }
+          ]
+        },
+        {
+          "ability_id": 5109,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Armor increased from 10/16/22 to 12/18/24"
+            }
+          ]
+        },
+        {
+          "ability_id": 7850,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1300 to 1200"
+            }
+          ]
+        },
+        {
+          "ability_id": 6937,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1300 to 1200"
+            }
+          ]
+        },
+        {
+          "ability_id": 5107,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range rescaled from 850/1000/1150/1300 to 900/1000/1100/1200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased from 41-49 to 44-50",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 290 to 295",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from -1 Wave of Terror Armor to +10 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +12 Agility to -2 Wave of Terror Armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +125 Cast Range to -15s Nether Swap Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5123,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter illusion movement speed reduced from 30% to 25%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5124,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 300 to 325"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard damage steal reduced from 25% to 20%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also steals 20% of the enemy base armor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "abilities": [
+        {
+          "ability_id": 5130,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 70/85/100/115 to 70/80/90/100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5131,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also reduces cooldown by 1.5 seconds"
+            },
+            {
+              "indent_level": 1,
+              "note": "Kill threshold no longer scales based on powershot channel"
+            }
+          ]
+        },
+        {
+          "ability_id": 5132,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter no longer unlocks max movement speed (still provides 2 charges)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now passively provides 30% Evasion"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now provides haste instead of increasing the speed from 60% to 100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +200 Health to +20 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Movement Speed to +350 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +275 Cast Range to +50% Spell Lifesteal"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5112,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduced from 14 to 11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 23,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base HP regen increased from 0.25 to 0.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 1.3 to 1.6",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +150 Cast Range to +0.4s Torrent Knock Up/Stun Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +8 Health Regen to +14 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +20 Strength to +70% Tidebringer Cleave"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +140% Tidebringer Cleave to -2s Tidebringer Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5031,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1500 to 1300"
+            }
+          ]
+        },
+        {
+          "ability_id": 605,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now causes affected units to be unable to attack for the pull duration"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now starts 900 units behind you instead of 600"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduced from 14 to 12"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard damage increased from 225 to 250"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +75 Cast Range to -2s Dragon Slave Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -5s Dragon Slave Cooldown to -25s Laguna Blade Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5041,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 80/120/160/200 to 80/130/180/230"
+            }
+          ]
+        },
+        {
+          "ability_id": 5043,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now removes the delay before damage is dealt"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cast range bonus increased from +150 to +250"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 26,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Causes Mana Drain to affect up to three enemies. You become Spell Immune while channeling."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15% Mana Drain Slow to +15 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +125 Cast Range to +70 Max Health per Finger of Death Kill"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +2 Mana Drain Multi Target to Mana Drain Restores Allies"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5046,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 16/12/8/4 to 15/12/9/6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Break distance reduced from 1200 to 1100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +100 Cast Range to +75 Serpent Wards Attack Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +340 Ether Shock Damage to +370"
+        }
+      ]
+    },
+    {
+      "hero_id": 28,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Sprint no longer unlocks max movement speed",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Sprint river speed rescaled from 10/20/30/40% to 25%"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +6 Health Regen to +7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +275 Health to +325"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5115,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now applies the debuff before the damage"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also increases the radius by 75"
+            }
+          ]
+        },
+        {
+          "ability_id": 5116,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now does double damage against creeps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 29,
+      "abilities": [
+        {
+          "ability_id": 5118,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost rescaled from 90/100/110/120 to 100/105/110/115"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 30,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +5 Armor to +200 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +80 Maeldict AoE to +100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +1.2% Max Health Voodoo Restoration to +1.5%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5138,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "hero damage increased from 50 to 50/60/70/80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 31,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +90 Frost Blast AoE Damage to +125 Frost Blast Radius and Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +100 Cast Range to +10% Frost Shield Damage Reduction"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5134,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 115/140/165/190 to 115/135/155/175"
+            },
+            {
+              "indent_level": 1,
+              "note": "Primary target damage reduced from 50/100/150/200 to 40/80/120/160"
+            },
+            {
+              "indent_level": 1,
+              "note": "Area damage increased from 75/100/125/150 to 80/120/160/200"
+            }
+          ]
+        },
+        {
+          "ability_id": 5137,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 200/325/500 to 200/350/500"
+            }
+          ]
+        },
+        {
+          "ability_id": 8028,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard health increased from 600 to 800"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard radius increased from 600 to 750"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard slow increased from 20% to 30%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Sleeping Dart Shard duration increased from 3 to 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Sleeping Dart Shard sleep no longer makes the target invulnerable to damage. They now wake up after taking 200 damage.",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +6 Health Regen to +8 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +20 Damage to 8% Cloak and Dagger Movement Speed While Invisible"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +475 Blink Strike Cast Range to -4s Blink Strike Replenish Time"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +125 Smoke Screen AoE to +175"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5143,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now provides +50% attack animation increase for the attack"
+            }
+          ]
+        },
+        {
+          "ability_id": 5145,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage reduced from 70/80/90/100% to 50%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now increases your agility by 55/70/85/100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 33,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Demonic Conversion cooldown increased from 35 to 50/45/40/35"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +150 Midnight Pulse Radius to +200"
+        }
+      ]
+    },
+    {
+      "hero_id": 34,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Defense Matrix Shard status resistance increased from 40% to 50%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Defense Matrix Shard health increased from 275 to 350"
+        },
+        {
+          "indent_level": 1,
+          "note": "Defense Matrix Shard duration increased from 12 to 15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heat-Seeking Missile mana cost reduced from 80/100/120/140 to 80/95/110/125"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +125 Cast Range to +8% Mana cost/Mana loss Reduction"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +9% Mana cost/Mana loss Reduction to +1 Heat-Seeking Missile"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5150,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter current health reduction reduced from 20% to 15%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5153,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.53 to 0"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 100/200/300 to 100/210/320"
+            },
+            {
+              "indent_level": 1,
+              "note": "Channel time increased from 3/1.5/0.75 to 3.5/2/1.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +5 Shrapnel to +6"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5156,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Active reworked. No longer gives double range for an attack. Now lasts 4 seconds and grants you True Strike and  +30% Headshot chance. Causes you to move 30% slower. Cooldown: 35/30/25/20. Manacost: 50"
+            }
+          ]
+        },
+        {
+          "ability_id": 694,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now knocks sniper back 450 units away from the target direction"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range increased from 550 to 600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 36,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack animation time reduced from 0.4 to 0.3"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attack projectile speed increased from 900 to 1200",
+          "icon": "projectile_speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 661,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard has been reworked. No longer does 50% more damage/heal. Instead it applies decrepify on the target enemy or ally for 2.5 seconds. Against enemies it reduces magic resistance by 25%. Mana cost: 100. Cooldown: 14."
+            }
+          ]
+        },
+        {
+          "ability_id": 1270,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow increased from 6/12/18/24% to 12/16/20/24%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5159,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Regen increased from 3.5/4.5/5.5/6.5 to 4/5/6/7"
+            },
+            {
+              "indent_level": 1,
+              "note": "Regen duration increased from 7 to 8"
+            }
+          ]
+        },
+        {
+          "ability_id": 5161,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.55 to 0.45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 37,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Shadow Ward Shard movement speed/slow reduced from 20% to 10%",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +150 Cast Range to +50 Chaotic Offering Golem Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from -5.5s Shadow Word Cooldown to -5s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +8 Armor to +40 Upheaval DPS"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from 500 Shadow Word AoE to +25 Shadow Word Heal/Damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5163,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also changes it to a 450 AoE spell"
+            }
+          ]
+        },
+        {
+          "ability_id": 5164,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast time improved from 0.5 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "AoE reduced from 650 to 500/550/600/650"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow cap rescaled from 84% to 40/60/80/100%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow per second rescaled from 7/14/21/28% to 12/17/22/27%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Max duration reduced from 16 to 10/12/14/16"
+            }
+          ]
+        },
+        {
+          "ability_id": 5165,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter spawn interval reduced from 0.4 to 0.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 38,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Divebomb Shard no longer grants free hawk control"
+        },
+        {
+          "indent_level": 1,
+          "note": "Divebomb Shard now has 1200 cast range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Divebomb Shard stun duration increased from 1 to 2 seconds"
+        },
+        {
+          "indent_level": 1,
+          "note": "Divebomb Shard damage increased from 175 to 250",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Divebomb Shard can now target couriers"
+        },
+        {
+          "indent_level": 1,
+          "note": "Hawk shard also lowers the cooldown by 15 seconds"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +25 Damage to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +6 Armor to +300 Health Beastmaster Controlled"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +50 Wild Axes Damage to -35s Primal Roar Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +20 Inner Beast Attack Speed to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +350 Health Beastmaster Controlled to +4% Wild Axes Damage Amp Per Stack"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5168,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter now also increases damage by +40"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 80 to 65"
+            }
+          ]
+        },
+        {
+          "ability_id": 5177,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed duration increased from 3 to 3/3.5/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 39,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack damage changed from 45-53 to 46-52",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +25% Spell Lifesteal to +30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +200 Sonic Wave Damage to -2s Blink Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5174,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 15/12/9/6 to 12/10/8/6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Distance reduced from 1300 to 1075/1150/1225/1300"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard silence duration increased from 1.5 to 1.75"
+            }
+          ]
+        },
+        {
+          "ability_id": 5176,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter bonus increased from 390/500/610 to 420/560/680"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 40,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased from 42-44 to 44-47",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Poison Nova radius increased from 575 to 630"
+        },
+        {
+          "indent_level": 1,
+          "note": "Poison Nova duration increased from 18 to 20"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15s Plague Ward Duration to +100 Attack Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +100 Attack Range to +12% Spell Lifesteal"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from -10% Poison Sting Slow to -8%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +12% Spell Lifesteal to -1.5s Plague Wards Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5179,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 9/11/13/15% to 8/10/12/14%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 41,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +8 Strength to +9"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +12 Damage to +7 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +250 Time Walk Cast Range to +300 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -1.75s Time Walk to -2s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5691,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.77 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now does 10/11/12/13 DPS per cooldown"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 40/34/28/22 to 28/24/20/16"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 8/10/12/14 to 8/9/10/11"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown slow reduced from 75% to 60%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost rescaled from 75 to 60/70/80/90"
+            }
+          ]
+        },
+        {
+          "ability_id": 5184,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 10/15/20/25 to 15/20/25/30"
+            }
+          ]
+        },
+        {
+          "ability_id": 5185,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.7 to 0.35"
+            },
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 450 to 500"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 600 to 500"
+            }
+          ]
+        },
+        {
+          "ability_id": 5182,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 675 to 650"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cast range increased from +200 to +400"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard return ability is now on its own hotkey"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 42,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from -1s Wraithfire Blast Cooldown to +0.5s Wraithfire Blast Stun Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +12 Strength to +25 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +30 Movement Speed to +16 Strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 43,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack point reduced from 0.56 to 0.5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced from 51-63 to 47-57",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 335 to 320",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Increases Spirit Siphon charges by 1 and causes enemies to be feared for 2 seconds if they are siphoned for 4 seconds consecutively."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +150 Cast Range to +6% Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -3s Crypt Swarm Cooldown to -3.5"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5090,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.87 to 0.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -1s Stifling Dagger Cooldown to -1.5s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +300 Phantom Strike Cast Range to +250"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5190,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Range rescaled from 525/750/975/1200 to 550/750/950/1150"
+            }
+          ]
+        },
+        {
+          "ability_id": 662,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard damage increased from 12% to 16%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard mana cost reduced from 125 to 50"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard impact time now matches the projectile visuals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 45,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased from 43-51 to 45-52",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from 1.5 Netherward Damage Per Mana to 1.75"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5186,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Delay reduced from 0.9 to 0.8"
+            }
+          ]
+        },
+        {
+          "ability_id": 5189,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard interval reduced from 1.75 to 1.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +20 Movement Speed to +80 Psi Blades Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Attack Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +160 Psionic Trap Damage to +180"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +6 Refraction Instance to +8"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5195,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 50 to 35/40/45/50"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 50/100/150/200 to 80/120/160/200"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 12/10/8/6 to 15/12/9/6"
+            }
+          ]
+        },
+        {
+          "ability_id": 5197,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard silence duration increased from 0.5/3 min/max to 1.5/3.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard increases vision from 400 to 525 radius"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 2000 to 1800"
+            }
+          ]
+        },
+        {
+          "ability_id": 7853,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter mana cost reduced from 100 to 50"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown reduced from 15 to 10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 47,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from Poison Attack Affects Buildings to 2x Corrosive Skin Slow and Resistance"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +5 Corrosive Skin Stats to +300 Health"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5218,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost rescaled from 25 to 20/22/24/26"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard armor reduction reduced from 1.5 to 1"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also causes it to affect buildings for 40% poison damage."
+            }
+          ]
+        },
+        {
+          "ability_id": 5221,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 125/175/225 to 100/150/200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +350 Cast Range to +0.4s Lucent Beam Stun"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5225,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.6 to 0.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5222,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard no longer increases stun duration"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard no longer provides you with movement speed"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now releases an attack at up to two random targets within 500 radius from the target location. These attacks bounce like glaives normally do. Lowers mana cost by 50."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 49,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -24% Breathe Fire Damage Reduction to -30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +2 Mana Regen to +15 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Damage to +0.5s Dragon Tail Stun Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +15% Cooldown Reduction to +150 Elder Dragon Form Attack Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from 1.8x Dragon Blood to +12 Dragon Blood Armor and Regeneration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +1.6s Dragon Tail to +375 AoE Dragon Tail During Dragon Form"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 660,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard can now be used in melee form. Has 600 cast range when used that way (compared to 1400 in dragon form)"
+            }
+          ]
+        },
+        {
+          "ability_id": 5227,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 100 to 70/80/90/100"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 12/11/10/9 to 16/14/12/10"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 50/75/100/125 to 70/100/130/160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Turn rate improved from 0.6 to 0.7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Now causes Poison Touch to hex affected targets for 1.25 seconds."
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 increased from +35 Attack Speed to +60",
+          "icon": "attack_speed"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +150 Cast Range to 250 Heal On Shallow Grave End"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5233,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now does its first instance of damage immediately on impact"
+            }
+          ]
+        },
+        {
+          "ability_id": 5235,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter heal increased from +60 to +100"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter damage increased from +80 to +100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5234,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast time improved from 0.4 to 0.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 42/34/26/18 to 36/30/24/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 51,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +4 Armor to +5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 630,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard movement speed bonus reduced from 22% to 20%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduced from 20 to 16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 52,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +12 Strength to +100 Lightning Storm Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "level 20 Talent changed from +1s Lightning Storm Slow to +20 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +175 Lightning Storm Damage to +30% Magic Resistance"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5243,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.4 to 0.3"
+            }
+          ]
+        },
+        {
+          "ability_id": 5244,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 475 to 525"
+            }
+          ]
+        },
+        {
+          "ability_id": 5241,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard pulse count increased from 2 to 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +25 Wraith of Nature Base Damage to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from 2x Treant HP/Damage to 2.5x"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5247,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage rescaled from 22/26/30/34 to 18/24/30/36"
+            }
+          ]
+        },
+        {
+          "ability_id": 5246,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 50/40/30/20 to 65/50/35/20"
+            }
+          ]
+        },
+        {
+          "ability_id": 5248,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base damage increased from 110/140/170 to 115/150/185"
+            },
+            {
+              "indent_level": 1,
+              "note": "Increment per bounce reduced from 11% to 10%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter root duration increased from 1.6/3.4 to 2.0/3.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 3",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +200 Health to +20 Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +20 Movement Speed to +325 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +8% Ghoul Frenzy Slow to +10%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5250,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now does 0.6/0.8/1/1.2% of target max health as damage"
+            }
+          ]
+        },
+        {
+          "ability_id": 5251,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also causes all hero attacks on the target to deal 2% of the target's max health as damage"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduced from 25 to 15"
+            }
+          ]
+        },
+        {
+          "ability_id": 5252,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter hero duration increased from 4 to 5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown reduced from 25 to 20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 55,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +60 Vacuum AoE to +6 Armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +6 Armor to +100 Vacuum AoE"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +1s Wall of Replica slow to -30s Wall of Replica cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5256,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage interval increased from 0.1 to 0.15"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 24/46/68/90 to 30/50/70/90"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 100/110/120/130 to 110/120/130/140"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter max health reduced from 350 to 300"
+            }
+          ]
+        },
+        {
+          "ability_id": 5255,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.7 to 0.4"
+            }
+          ]
+        },
+        {
+          "ability_id": 687,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard max distance required reduced from 1500 to 900"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard illusion outgoing damage increased from 40% to 80%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard illusion incoming damage reduced from 300% to 200%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength changed from 14 + 2.2 to 16 + 2.0",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +25 Searing Arrows Damage to +30"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 1120,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 40/50/60/70 to 70"
+            }
+          ]
+        },
+        {
+          "ability_id": 5261,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard skeleton duration reduced from 60 to 45 seconds"
+            }
+          ]
+        },
+        {
+          "ability_id": 7319,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter spawn interval reduced from 0.7 to 0.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown reduced from 90 to 80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 2",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 310 to 315",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heavenly Grace strength bonus increased from 7/14/21/28 to 8/16/24/32",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +40 Base Damage to +50"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 656,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage rescaled from 50 + 150% to 60 + 115%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 6 to 4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 30 to 20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5267,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed slow increased from 100/140/180 to 120/160/200"
+            }
+          ]
+        },
+        {
+          "ability_id": 5269,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Wisp count rescaled from 4/6/8/10 to 8"
+            },
+            {
+              "indent_level": 1,
+              "note": "Heal per wisp rescaled from 7/9/11/13 to 4/8/12/16"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 11 to 12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 59,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 3.2 to 3.4",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +200 Attack Range to +25% Spell Lifesteal"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7300,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Knockback duration increased from 0.6 to 1"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard upgrade can now be cast while disabled (does not remove the disable)"
+            }
+          ]
+        },
+        {
+          "ability_id": 5272,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cost reduce from 4% of current health to 3%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 60,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +4 Armor to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +30 Movement Speed to -4s Crippling Fear Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5277,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard is no longer restricted from player units (cannot affect special units like Golems or Spirit Bears)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard can now be cast during the day on non-ancient units"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard healing increased from 25% to 35%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased by 4",
+          "icon": "agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Spawn Spiderling debuff duration increased from 5 to 20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Spawn Spiderling debuff stacks (multiple instances of spiders will come out)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola is now a basic ability and no longer roots"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola slows enemies by 25/35/45/55% for 6 seconds"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola now causes the enemy to miss 40% of attacks"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola deals 100/120/140/160 impact damage",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola causes attacks on the target to deal +5/6/7/8 magical damage per hit",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola costs 70/75/80/85 mana and has 24/20/16/12 cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Silken Bola cast range is 750"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Now causes Silken Bola to be a 550 AoE spell and increases the miss rate to 80%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5280,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Count/charges increased from 2/4/6/8 to 3/5/7/9"
+            },
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 25/35/45/55 to 18/30/42/54%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Replenish time improved from 45 to 40"
+            }
+          ]
+        },
+        {
+          "ability_id": 5281,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Has been removed."
+            }
+          ]
+        },
+        {
+          "ability_id": 5282,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Is now a basic ability."
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 100 to 50/60/70/80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 60/100/140 to 35/40/45/50"
+            },
+            {
+              "indent_level": 1,
+              "note": "Lifesteal rescaled from 60/100/140 to 70/80/90/100%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 45 to 40/35/30/25"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 14 to 8/10/12/14"
+            }
+          ]
+        },
+        {
+          "ability_id": 5279,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Is now an ultimate ability"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 11/10/9/8 to 9/8/7"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 70/140/210/280 to 300/370/440"
+            },
+            {
+              "indent_level": 1,
+              "note": "Spawn count rescaled from 1/2/3/4 to 3/4/5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range increased from 700 to 900"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 62,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Shadow Walk now grants you 40% reduced incoming damage while invisible. Attacking out of invisibility stuns the target for 1 second. Lowers cooldown by 5 seconds.",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5287,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow no longer pierces Spell Immunity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 63,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15 Damage to +0.2 Swarm Armor Reduction"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +0.4 Swarm Armor Reduction to +35 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +4 Swarm Attacks To Kill to +3"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +160 Shukuchi Movement Speed to 2 Shukuchi Charges"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5290,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer unlocks max movement speed"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now moves at haste speed always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 64,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 10 to 15",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from -1.5s Ice Path Cooldown to -50 Liquid Fire Attack Speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +25 Dual Breath Damage to +325 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -50 Liquid Fire Attack Speed to +0.5s Ice Path Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +325 Dual Breath Range to +30 Macropyre Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from Macropyre Pure and Pierces Immunity to 2x Dual Breath Damage and Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +1s Ice Path duration to -2.5s Ice Path Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5297,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Delay between waves reduced from 0.3 to 0.2"
+            }
+          ]
+        },
+        {
+          "ability_id": 1317,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also stuns targets initially for 0.4 seconds"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard slow reduced from 30% to 20%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5300,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter no longer increases damage from 100/140/180 to 125/175/225"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now causes it to become Pure damage and pierce Spell Immunity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 65,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Now causes Flamebreak to have two charges and apply a Sticky Napalm charge on impact."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +4 Armor to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from 2 Flamebreak Charges to +20% Magic Resistance"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5321,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.63 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Range reduced from 1500 to 1300"
+            },
+            {
+              "indent_level": 1,
+              "note": "Debuff no longer stacks with multiple instances, but instead adds to the duration"
+            }
+          ]
+        },
+        {
+          "ability_id": 5323,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.63 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage per second increased from 20/40/60 to 35/55/75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 66,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base mana regen increased from 0 to 0.5",
+          "icon": "mana_regen"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +175 Cast Range to Penitence Deals 250 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +800 Holy Persuasion Minimum Health to +1200"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -24s Hand of God cooldown to -40s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5331,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Heal increased from 250/425/600 to 275/450/625"
+            }
+          ]
+        },
+        {
+          "ability_id": 7306,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard mana cost reduced from 200 to 100"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cast range increased from 500 to 600"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduced from 35 to 25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 67,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5335,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 15/30/45/60 to 18/32/46/60"
+            }
+          ]
+        },
+        {
+          "ability_id": 5334,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 2000 to 1800"
+            }
+          ]
+        },
+        {
+          "ability_id": 1679,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 35 to 30"
+            }
+          ]
+        },
+        {
+          "ability_id": 5336,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard can now target any enemy hero that damaged you in the last 8 seconds. Can ground target to find the closest valid target."
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard mana cost reduced from 150 to 50."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 68,
+      "abilities": [
+        {
+          "ability_id": 5346,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 40/55/70/85 to 40/50/60/70"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 4 to 7/6/5/4"
+            }
+          ]
+        },
+        {
+          "ability_id": 5347,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter now reduces mana cost by 50%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 69,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased from 0 to 3",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base damage increased from 54-70 to 58-68",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base attack time improved from 2.0 to 1.9",
+          "icon": "attack_time"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +3s Doom Duration to +12% Magic Resistance"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +10% Scorched Earth Movement Speed to +20 Scorched Earth Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +30 Scorched Earth Damage to -10s Scorched Earth Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +120 Devour Bonus Gold to Devour Can Target Ancients"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from Devour Can Target Ancients to +15% Scorched Earth Movement Speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5339,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer provides health regen"
+            },
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.93 to 0.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Gold bonus increased from 50/100/150/200 to 60/120/180/240"
+            }
+          ]
+        },
+        {
+          "ability_id": 5340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.83 to 0.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5342,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.73 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter no longer reduces cooldown"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now also increases Doom duration by 6 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Now causes Earthshock to apply a 1.5 second Enrage buff on yourself. Reduces cooldown by 2 seconds."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +1.5 Mana Regen to +1.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +12 Agility to +10 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -3s Earthshock Cooldown to +10% Enrage Status Resistance"
+        }
+      ]
+    },
+    {
+      "hero_id": 71,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +650 Health to +800"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5356,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast time reduced from 1.2 to 1"
+            }
+          ]
+        },
+        {
+          "ability_id": 7301,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Speed reduced from 12/18/24/30% to 10/16/22/28%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 72,
+      "abilities": [
+        {
+          "ability_id": 5363,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack count increased from 2/3/4/5 to 3/4/5/6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 18 to 24/22/20/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 73,
+      "abilities": [
+        {
+          "ability_id": 1333,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Gold bonus cap reduced from 18/21/24/27 to 15/18/21/24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 74,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Causes two extra Chaos Meteors to land alongside the primary cast at slight angles. Reduces cooldown by 15 seconds."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +40 DPS Ice Wall to +60"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5370,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Regen reduced from 1/3/5/7/9/11/13 to 1/2/3/4/5/6/7"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now provides +2 Strength per level  (Invoker does not have attribute levels)"
+            }
+          ]
+        },
+        {
+          "ability_id": 5372,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 2/6/10/14/18/22/26 to 2/4/6/8/10/12/14"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now provides +2 Intelligence per level"
+            }
+          ]
+        },
+        {
+          "ability_id": 5371,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now provides +2 Agility per level"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 75,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 Armor to +6"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5379,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 115 to 100/105/110/115"
+            }
+          ]
+        },
+        {
+          "ability_id": 5377,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 16/26/36/46 to 16/24/32/40"
+            },
+            {
+              "indent_level": 1,
+              "note": "No longer pauses damage when the debuff duration is delayed"
+            }
+          ]
+        },
+        {
+          "ability_id": 5378,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard damage behavior fixed (was reducing non-glaives damage to the secondary target too much)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "abilities": [
+        {
+          "ability_id": 5684,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now has a 0.75 second cast time instead of a 1.5 second channel"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now transfers 100% of the health/mana instead of 75%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5392,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point increased from 0.25 to 0.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter no longer increases cast range by 150"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now also increases damage by 140"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now also causes it to do damage in a 400 AoE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 1 to 1.4",
+          "icon": "agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attack backswing reduced from 0.55 to 0.25"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +75 Shapeshift Movement Speed to +175 Summon Wolves Health"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5395,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 145 to 125/130/135/140"
+            }
+          ]
+        },
+        {
+          "ability_id": 5397,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage increased from 12/22/32/42% to 12/24/36/48%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5398,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Transformation time reduced from 1.25 to 1.1"
+            },
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 650 to 550"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 22 to 28"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now increases Lycan's health by 150/250/350"
+            }
+          ]
+        },
+        {
+          "ability_id": 333,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now grants Shapeshift to the target only, rather than the target and units it controls"
+            },
+            {
+              "indent_level": 1,
+              "note": "Can now target creep-hero units like Spirit Bear and Golem"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 78,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 305 to 310",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +1s Thunder Clap Slow to +200 Thunder Clap AoE"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +12 Damage to +15"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5402,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Passive evasion increased from 6/12/18/24% to 10/15/20/25%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5403,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Split time reduced from 0.65 to 0.55"
+            },
+            {
+              "indent_level": 1,
+              "note": "Storm health increased from 1000/1400/1800 to 1000/1500/2000"
+            },
+            {
+              "indent_level": 1,
+              "note": "Fire health increased from 1300 to 1300/1450/1600"
+            },
+            {
+              "indent_level": 1,
+              "note": "Earth health increased from 1400/2200/3000 to 1400/2300/3200"
+            },
+            {
+              "indent_level": 1,
+              "note": "Void health increased from 1200/1400/1600 to 1200/1500/1800"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown for Astral Pulse reduced from 20 to 12"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard Void Astral Pulse cast point reduced from 0.25 to 0.15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 79,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 21 + 3.3 to 22 + 3.6",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15 Intelligence to +15% Shadow Poison Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +75 Cast Range to +10 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +20% Shadow Poison Damage to +200 Demonic Purge Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +20 Movement Speed to +25"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -5s Soul Catcher Cooldown to -6s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +400 Demonic Purge Damage to -30s Demonic Purge Cooldown"
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Ranged base attack time improved from 1.7 to 1.6",
+          "icon": "attack_time"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5414,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also applies a basic dispel on you and the Spirit Bear"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also causes the roar to happen on both locations regardless of the casting state on the other side"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +14% Cooldown Reduction to +35% Cleave"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +8s Phantasm Duration to +0.5s Min/Max Chaos Bolt Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +1s Min/Max Chaos Bolt Duration to +10s Phantasm Duration"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5426,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.73 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard illusion now always lasts 6 seconds, rather than the duration of the stun."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 82,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Collision size reduced from 24 to 8"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Now allows you to Poof to allies within a max range of 2000 when directly targeting them."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increase from +15 Damage to +20 Base Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +35 Poof Damage to +50"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +325 Health to +375"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5431,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 375 to 400"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 70/90/110/130 to 60/80/100/120"
+            }
+          ]
+        },
+        {
+          "ability_id": 547,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter duration increased from 3.5 to 4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter health restored increased from 25% to 40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +60 Damage to +1.75 Mana Regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from Nature's Guise Invisibility to -5s Nature's Grasp Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +24 Nature's Grasp Damage to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +12% Cooldown Reduction to +8 Living Armor Bonus Armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent 450 AoE Living Armor now works on creeps"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5434,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now also grants invisibility near trees"
+            }
+          ]
+        },
+        {
+          "ability_id": 5435,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 110/120/130/140 to 80/90/100/110"
+            }
+          ]
+        },
+        {
+          "ability_id": 5436,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast time reduced from 0.4 to 0.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 84,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +75 Cast Range to -1s Fireblast Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +40 Bloodlust Attack Speed to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +30 Strength to +25"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 648,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard incoming damage reduction increased from 70% to 85%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard mana cost reduced from 75 to 50"
+            }
+          ]
+        },
+        {
+          "ability_id": 5439,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.45 to 0.35"
+            }
+          ]
+        },
+        {
+          "ability_id": 5440,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 65 to 50/55/60/65"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 0.8 to 1.2",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +40 Decay Duration to +5 Armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +125 Cast Range to -15s Tombstone Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +10 Soul Rip Damage/Heal to +12"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5442,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 85/95/105/115 to 85/90/95/100"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now deals double damage to creeps"
+            }
+          ]
+        },
+        {
+          "ability_id": 5447,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Illusions no longer apply the debuff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +150 Health to +175 Telekinesis Landing Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +100 Cast Range to +0.6s Telekinesis Lift Duration"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5448,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard throw range increased from 60% to 85%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 34/30/26/22 to 28/26/24/22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 87,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +1.5s Static Storm Duration to +2s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +125 Cast Range to +275 Glimpse Arrival Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from Kinetic Field Grants True Sight to +2s Kinetic Field Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from -8s Glimpse Cooldown to -11"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +3s Kinetic Field Duration to +275 Static Storm AoE"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5458,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard radius increased from 500 to 650"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now always increases the radius, rather than only on allies"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard allied bonus duration increased from 1 to 1.25 seconds"
+            }
+          ]
+        },
+        {
+          "ability_id": 5459,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 60/46/32/18 to 48/38/28/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 88,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +140 Impale Damage to +130"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +75% Spiked Carapace Damage to -3.5s Spiked Carapace Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5465,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now provides +50% attack animation speed"
+            }
+          ]
+        },
+        {
+          "ability_id": 5666,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter damage reduction increased from 40% to 50%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 89,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from +25% Evasion to -10s Mirror Image Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5468,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 14 to 23/20/17/14"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 2/3/4/5 to 2.75/3.5/4.25/5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 650 to 575/600/625/650"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cooldown reduction increased from -5 to -6"
+            }
+          ]
+        },
+        {
+          "ability_id": 5469,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard no longer has an active."
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard armor reduction increased from -2 to -4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also adds 20% slow when it procs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased from 16 to 18",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Now grants you Recall during Spirit Form"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +200 Cast Range to 2 Solar Bind Charges"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from -8s Blinding Light Cooldown to -4s Chakra Magic Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -4s Chakra Magic Cooldown to Chakra Magic Dispels"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +160 Illuminate Damage to +180"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5474,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer grants Recall"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now causes Illuminate to heal for 30/40/50% of its damage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 91,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Attack Talent now only attacks if Io is capable of attacking (not when stunned/disarmed/etc)"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +35 Damage to +30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +4 Health Regen to +5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +325 Spirits Max Range to +300"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +10% Spell Lifesteal to +15%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -25s Relocate Cooldown -30s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +700 Health to +900"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5485,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1800 to 1600"
+            },
+            {
+              "indent_level": 1,
+              "note": "No longer unlocks max movement speed"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now stuns upon connecting with the Tether, rather than on Tether Break. Does not affect the same unit more than once every 7 seconds."
+            }
+          ]
+        },
+        {
+          "ability_id": 5486,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max distance reduced from 700 to 650"
+            },
+            {
+              "indent_level": 1,
+              "note": "Collision damage reduced from 10/20/30/40 to 10/15/20/25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 92,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack animation improved from 0.46 to 0.4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +75 Cast Range to -3s Grave Chill Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5481,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost decreased from 135/140/145/150 to 125"
+            }
+          ]
+        },
+        {
+          "ability_id": 5482,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard mana cost reduced from 200 to 125"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard heal increased from 25% to 35%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 93,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Grants Depth Shroud. Creates a 300 AoE cloud at the target location for 3 seconds. All allies inside the radius are hidden and have increased regeneration and movement speed. Cast Range: 800. Cooldown: 75. Manacost: 75",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +7 Agility to +8"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +15% Lifesteal to +18%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5497,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed rescaled from 20/35/50% to 24/36/48%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base HP regen increased from 0 to 0.25"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 4 to 3.6",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +32% Mystic Snake mana gain to +35%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5506,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now passively provides +100/150/200/250 mana"
+            }
+          ]
+        },
+        {
+          "ability_id": 5505,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter stone duration rescaled from 1 + 0.3 per bounce to 1.5 + 0.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 95,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Whirling Axes Ranged mana cost increased from 50 to 60"
+        },
+        {
+          "indent_level": 1,
+          "note": "Whirling Axes Ranged distance reduced from 1000 to 950"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Grants Rampage. Globally causes all allied heroes to gain +70 Attack Speed or +25% Status resistance for 5 seconds based on whichever stance Troll is currently in. Ranged provides attack speed and melee provides status resistance. Cooldown: 80. Manacost: 75.",
+          "icon": "attack_speed"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +200 Health to +225"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +8 Agility to +7"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5508,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus armor rescaled from 6 to 4/5/6/7"
+            }
+          ]
+        },
+        {
+          "ability_id": 5512,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced form 30/35/40% to 25/30/35%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 96,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 Health Regen to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +1s Stampede Duration to +6 Armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5514,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 315 to 330"
+            }
+          ]
+        },
+        {
+          "ability_id": 5515,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.4 to 0.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard slow increased from 15% to 25%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard buff duration increased from 12 to 15 seconds"
+            }
+          ]
+        },
+        {
+          "ability_id": 5516,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Strength damage return increased from 20/25/30/35% to 20/26/32/38%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5517,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 110/100/90 to 90"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 200/250/300% to 150/225/300%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter now also increases duration by 1 second"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +0.3s Shockwave Slow Duration to +0.5s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -5s Skewer Cooldown to -7s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +10 Strength to +12"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5519,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 11/18/25/32% to 12/20/28/36%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5518,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 90/100/110/120 to 80/90/100/110"
+            }
+          ]
+        },
+        {
+          "ability_id": 5520,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 70/140/210/280 to 70/150/230/310"
+            },
+            {
+              "indent_level": 1,
+              "note": "Speed reduced from 950 to 900"
+            }
+          ]
+        },
+        {
+          "ability_id": 5521,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 200/250/300 to 150/225/300"
+            }
+          ]
+        },
+        {
+          "ability_id": 649,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard landing stun duration increased from 0.25 to 0.75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 98,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +8 Reactive Armor Stacks to +6 Reactive Armor Stacks and Duration"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5526,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 10/13/16/19 to 10/12/14/16"
+            },
+            {
+              "indent_level": 1,
+              "note": "Regen per stack reduced from 1/1.1/1.2/1.3 to 0.7/0.9/1.1/1.3"
+            }
+          ]
+        },
+        {
+          "ability_id": 5525,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 800/1000/1200/1400 to 800/950/1100/1250"
+            },
+            {
+              "indent_level": 1,
+              "note": "Travel speed increased from 1900/2200/2500/2800 to 2200/2400/2600/2800"
+            }
+          ]
+        },
+        {
+          "ability_id": 651,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard no longer ignores Ancients"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now affects buildings for 40% damage"
+            }
+          ]
+        },
+        {
+          "ability_id": 5524,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Debuff duration rescaled from 14 to 12/13/14/15"
+            }
+          ]
+        },
+        {
+          "ability_id": 5527,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter damage per second increased by 20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 99,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base mana regen increased from 0 to 0.25",
+          "icon": "mana_regen"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +2.5 Mana Regen to +2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +15 Attack Speed to +20"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5549,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base damage increased from 20/40/60/80 to 25/45/65/85"
+            },
+            {
+              "indent_level": 1,
+              "note": "Stack damage reduced from 30/32/34/36 to 28/30/32/34"
+            }
+          ]
+        },
+        {
+          "ability_id": 5548,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Armor loss per stack increased from 1.4/1.9/2.4/2.9 to 1.5/2/2.5/3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter removes cast time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 100,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base HP regen reduced from 1 to 0.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Frozen Sigil Shard no longer reduces attack speed",
+          "icon": "attack_speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Frozen Sigil Shard attacks to destroy increased from 4 to 6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Frozen Sigil Shard vision radius increased from 400 to 650"
+        },
+        {
+          "indent_level": 1,
+          "note": "Frozen Sigil Shard movement speed increased from 340 to 375",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Frozen Sigil Shard manacost reduced from 100 to 70"
+        },
+        {
+          "indent_level": 1,
+          "note": "Frozen Sigil Shard slow increased from 35% to 40%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Walrus Punch now does the attack animation 40% faster"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7322,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 25/50/75/100 to 20/45/70/95"
+            }
+          ]
+        },
+        {
+          "ability_id": 5566,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1250 to 1150"
+            }
+          ]
+        },
+        {
+          "ability_id": 5565,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 2000 to 1800"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 100/105/110/115 to 100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 101,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 2",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Every time you cast abilities you gain +5 Intelligence and +1 Armor for 35 seconds. Stacks independently.",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +15 Movement Speed to +175 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +480 Mystic Flare Damage to +450"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5582,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 18/16/14/12 to 15/14/13/12"
+            }
+          ]
+        },
+        {
+          "ability_id": 5581,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage multiplier reduced from 1.6 to 1.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Base damage increased from 60/80/100/120 to 60/85/110/135"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 102,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen increased from 0.5 to 1",
+          "icon": "health_regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Shard upgrade now also reduces Mist Coil and Aphotic Shield cooldowns by 1 second."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +50 Mist Coil Heal/Damage to +55"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +8 Armor to +9"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from 425 AoE Mist Coil to 500"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5585,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.67 to 0.4"
+            },
+            {
+              "indent_level": 1,
+              "note": "Heal/damage rescaled from 120/165/210/255 to 110/160/210/260"
+            },
+            {
+              "indent_level": 1,
+              "note": "Self damage is now 50% of the values instead of fixed numbers"
+            }
+          ]
+        },
+        {
+          "ability_id": 5586,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.5 to 0.33"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 100/105/110/115 to 100/110/120/130"
+            }
+          ]
+        },
+        {
+          "ability_id": 5588,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter duration increased from 6/7/8 to 7/8/9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "abilities": [
+        {
+          "ability_id": 5594,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 100 to 120/110/100"
+            },
+            {
+              "indent_level": 1,
+              "note": "Delay from 3.14 to 2.8"
+            }
+          ]
+        },
+        {
+          "ability_id": 5589,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 85/90/95/100 to 100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 104,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard. Causes Press The Attack to apply Spell Immunity for 1.75 seconds. Reduces cooldown by 3 seconds."
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from -9s Overwhelming Odds Cooldown to +75 Overwhelming Odds Damage Per Hero"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5595,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 330 to 330/340/350/360"
+            }
+          ]
+        },
+        {
+          "ability_id": 5598,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter no longer grants spell immunity"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter damage immunity from non-duel participants changed from 100% to 50%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter reduces cooldown by 20 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 105,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed increased from 310 to 320",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Remote Mines cast time improved from 1 to 0.75"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +240 Blast Off! Damage to +300"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +5 Mana Regen to +4"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5644,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Can no longer be placed in fountain areas"
+            }
+          ]
+        },
+        {
+          "ability_id": 5601,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cast range reduced from +600 to +300"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard stun radius increased from 200 to 400 (same as damage radius)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard stun duration increased from 1.5 to 1.75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +0.8s Searing Chains to +1s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5603,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 0.87 to 0.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5605,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Backswing reduced from 1.07 to 0.6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 8/12/16/20 to 11/14/17/20"
+            }
+          ]
+        },
+        {
+          "ability_id": 5606,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard now provides you with a charge when killing enemy heroes, rather than spawning a Fire Remnant (except in the case where you die)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1500 to 1400"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter cast range reduced from 4500 to 3500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 107,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +50 Damage to +60"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +6 Armor to +8"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +16% Spell Amplification to +18%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5608,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stone slow reduced from 60% to 50%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5610,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Remnant pull speed reduced from 1000 to 900 (same as Boulder Smash)"
+            }
+          ]
+        },
+        {
+          "ability_id": 1395,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Vision radius reduced from 400 to 375"
+            }
+          ]
+        },
+        {
+          "ability_id": 5648,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter damage increased from 300 to 450"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter radius increased from 300 to 450"
+            }
+          ]
+        },
+        {
+          "ability_id": 5609,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Distance reduced from 800 to 750"
+            },
+            {
+              "indent_level": 1,
+              "note": "Stone distance reduced from 1600 to 1500"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 70/80/90/100 to 70/90/110/130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 108,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack range increased from 175 to 200",
+          "icon": "attack_range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Dark Rift Scepter now also increases radius from 600 to 900"
+        },
+        {
+          "indent_level": 1,
+          "note": "Dark Rift Scepter no longer reduces cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Dark Rift Scepter now causes it to have two charges"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +2 Firestorm Wave Count to +125 Firestorm Radius"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +50 Attack Speed to +60"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from 15% Firestorm Building Damage to 40% Atrophy Allied Hero Bonus"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5613,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius rescaled from 400/430/460/490 to 425"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard no longer provides healing"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also increases the Firestorm wave count by 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 109,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base HP regen increased from 0 to 1"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 4",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 2",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5621,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage bonus reduced from 20/40/60/80 to 15/30/45/60"
+            },
+            {
+              "indent_level": 1,
+              "note": "Attack range bonus reduced from 400 to 340/360/380/400"
+            }
+          ]
+        },
+        {
+          "ability_id": 5619,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Illusion damage increased from 40/60/80/100% to 55/70/85/100%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow rescaled from 25% to 15/20/25/30%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration rescaled from 3.25/4/4.75/5.5 to 5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 22/20/18/16 to 28/24/20/16"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 50 to 35/40/45/50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Shard has been reworked. Now causes Sun Ray to slow enemies by 12% and to be castable during Supernova"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +1100 Icarus Dive Cast Range to +1000"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from Sun Ray During Supernova to +0.5s Supernova Stun Duration"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5626,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max health damage reduced from 1.5/3.25/5/6.75 to 1/2.75/4.5/6.25"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1300 to 1200"
+            }
+          ]
+        },
+        {
+          "ability_id": 5630,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius reduced from 1300 to 1200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 111,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 4.0 to 3.8",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +125 Cast Range to +15 Armor False Promise"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -1s Purifying Flames Cooldown to -1.25s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -50% Purifying Flames Allied Damage to +30% Purifying Flames Enemy Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from -1.5s Fortune's End Max Channel Time to Instant Fortune's End"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5637,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage rescaled from 120/150/180/210 to 100/160/220/280"
+            }
+          ]
+        },
+        {
+          "ability_id": 5640,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard fade delay reduced from 0.3 to 0.15"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 115/80/45 to 120/90/60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 112,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +1% Cold Embrace Heal to +1.5%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -4s Cold Embrace cooldown to +100 Splinter Blast Damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5651,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 50/40/30/20 to 42/36/28/20"
+            }
+          ]
+        },
+        {
+          "ability_id": 5654,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now ends if there are no enemies in the area for 2.5 seconds"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 90 to 80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 4/4.75/5.5 to 4.5/5/5.5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Curse radius increased from 500 to 525"
+            },
+            {
+              "indent_level": 1,
+              "note": "Attack speed increased from 55 to 65"
+            }
+          ]
+        },
+        {
+          "ability_id": 5653,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard no longer increases Splinter Blast damage by +80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also reduces cooldown by 5 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 113,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +200 Flux Cast Range to +175"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +200 Health to +225"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5678,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard magic resistance increased from 20% to 40%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard now also slows enemies by 20%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen reduced from 1.5 to 1",
+          "icon": "health_regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Wukong’s Command soldiers fixed to no longer ignore their attack cooldown when they miss"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +475 Tree Dance Cast Range to +450"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +350 Primal Spring Damage to -7s Boundless Strike Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent change from +200 Armor Wukong's Command to 0 Cooldown Primal Spring"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5721,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Ground-to-tree range reduced from 1000 to 900"
+            }
+          ]
+        },
+        {
+          "ability_id": 5716,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1200 to 1100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5725,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter soldiers no longer attack Roshan"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter soldiers now die when Monkey King dies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 119,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen increased from 0 to 0.5",
+          "icon": "health_regen"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +125 Cast Range to +160 Cursed Crown AoE"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6341,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 32/26/20/14 to 26/22/18/14"
+            }
+          ]
+        },
+        {
+          "ability_id": 6339,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage rescaled from 125/150/175/200 to 120/160/200/240"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1100/1200/1300/1400 to 1000/1100/1200/1300"
+            }
+          ]
+        },
+        {
+          "ability_id": 8340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1300 to 1200"
+            }
+          ]
+        },
+        {
+          "ability_id": 6342,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard also reduces delay by 1 second"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 120,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +2 Mana Regen to +1.5"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6344,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 900 to 850"
+            }
+          ]
+        },
+        {
+          "ability_id": 6343,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Speed reduced from 600 to 550"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 8 to 10"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 200/275/350 to 180/260/340"
+            }
+          ]
+        },
+        {
+          "ability_id": 6461,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost reduced from 80/90/110/110 to 60/70/80/90"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage reduction increased from 9/12/15/18% to 12/14/16/18%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 121,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reworked Shard upgrade. Causes Ink Swell to deal 50% more damage and heal the target for 50% of the damage Ink Swell deals. Upon expiration, the target will receive a strong dispel.",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -4s Ink Swell Cooldown to -6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +100 Cast Range to +50 Phantom's Embrace DPS"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 8006,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage per second increased from 6/14/22/30 to 10/20/30/40"
+            }
+          ]
+        },
+        {
+          "ability_id": 6491,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Latch radius increased from 550 to 600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 123,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Added Aghanim's Scepter. Grants new active ability - Hunter's Boomerang.  Tosses a boomerang in an arc at the target enemy. Upon contact, it returns to Hoodwink.  The boomerang will deal 350 damage as it passes through or hits enemies, and apply a Hunter's Mark that causes affected enemies to be slowed by 20% and take 25% more spell damage and have 25% reduced status resistance for 7 seconds.  Cooldown: 18. Manacost: 125",
+          "icon": "damage",
+          "aghanims": "scepter"
+        },
+        {
+          "indent_level": 1,
+          "note": "Added Aghanim's Shard. Grants new active ability - Decoy.  Hoodwink sends a decoy illusion with Scurry to the target location.  When the illusion is attacked or hit by a targeted ability, it is destroyed and plants a tree in its place that applies a lesser Bushwhack to enemy heroes around it. The Illusion lasts 12 seconds. Cooldown: 60. Manacost: 50",
+          "aghanims": "shard"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 8429,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage reworked from 100% + 20/40/60/80 to 65% + 50/75/100/125"
+            },
+            {
+              "indent_level": 1,
+              "note": "Initial projectile now uses the attacker's projectile speed (halved for bounces)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Planted tree is no longer considered special for Tango usage"
+            },
+            {
+              "indent_level": 1,
+              "note": "May now be placed on auto-cast to always use ground targeting"
+            }
+          ]
+        },
+        {
+          "ability_id": 8158,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius decreased from 275 to 250"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage decreased from 90/180/270/360 to 75/150/225/300"
+            },
+            {
+              "indent_level": 1,
+              "note": "Stun duration increased from 1.3/1.6/1.9/2.2 to 1.4/1.7/2.0/2.3"
+            },
+            {
+              "indent_level": 1,
+              "note": "Fixed units dying during Bushwhack sometimes destroying trees and freeing other units from Bushwhack"
+            }
+          ]
+        },
+        {
+          "ability_id": 9501,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Active speed reduced from 25/30/35/40% to 20/25/30/35%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Charge replenish time reduced from 30/25/20/15 to 30/24/18/12"
+            }
+          ]
+        },
+        {
+          "ability_id": 8106,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max damage reduced from 600/1000/1400 to 550/900/1250"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now has a minimum power level of 20%, and scales normally from there"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost rescaled from 150 to 125/175/225"
+            },
+            {
+              "indent_level": 1,
+              "note": "Movement slow reduced from 50% to 30/40/50%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Max debuff duration reduced from 6 to 5"
+            },
+            {
+              "indent_level": 1,
+              "note": "No longer grants vision along the sight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 126,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from -5s Astral Step Charge Restore Time to -4"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6470,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard damage increased from +125 to +200"
+            }
+          ]
+        },
+        {
+          "ability_id": 7701,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1000 to 850"
+            }
+          ]
+        },
+        {
+          "ability_id": 7705,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 700/900/1100 to 700/850/1000"
+            },
+            {
+              "indent_level": 1,
+              "note": "Replenish time improved from 30/25/20 to 28/23/18"
+            }
+          ]
+        },
+        {
+          "ability_id": 7710,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana cost increased from 100/110/120/130 to 115/120/125/130"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 16 to 18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 128,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 18 to 21",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +60 Scatterblast Damage to +75"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6488,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 20/40/60/80 to 20/45/70/95"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana cost rescaled from 75/80/85/90 to 50/60/70/80"
+            },
+            {
+              "indent_level": 1,
+              "note": "Armor reduction duration increased from 4 to 5"
+            }
+          ]
+        },
+        {
+          "ability_id": 6480,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard stun duration increased from 1.5 to 2"
+            }
+          ]
+        },
+        {
+          "ability_id": 6483,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Jump distance reduced from 450 to 425"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 24/21/18/15 to 21/19/17/15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 129,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain increased from 1.6 to 2.2",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 1.9 to 1.7",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15 Movement Speed to +20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +6 Armor to +8"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +120 HP Regen Arena of Blood to +180"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6495,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage vs heroes reduced from 35 to 20/25/30/35"
+            }
+          ]
+        },
+        {
+          "ability_id": 6582,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter attack slow increased from 20% to 30%"
+            }
+          ]
+        },
+        {
+          "ability_id": 1416,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 100/175/250 to 100/160/220"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

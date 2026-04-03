@@ -1,0 +1,2023 @@
+{
+  "result": {
+    "data": {
+      "heroes": [
+        {
+          "id": 138,
+          "name": "npc_dota_hero_muerta",
+          "order_id": 124,
+          "name_loc": "Muerta",
+          "bio_loc": "There are as many stories about Muerta as there are graves in the Carrion Fields of Gorm. Some tell their children ghost stories of a young peasant girl returned from the dead to punish the bandits who killed her family. Others, drunk in dark taverns, slur conspiracy theories about kidnappings and phantom guilds of killers.<br><br>One constant bleeds through every tale: of a woman so consumed by hate for those who killed her that she refused to die. And of Death, so impressed by whatever hate-filled engine that drove this woman that he gave her Mercy and Grace — twin ethereal pistols — and made her his second in command. Now she hunts down wayward souls whose last grains have tumbled from their hourglass, and drags them kicking and screaming to their eternal reward.",
+          "hype_loc": "Muerta is a master of death who stalks the lands of life, corralling targets with <b>fearsome trickshots</b> and <b>summoning revenants</b> to smother her foes. Always ready to <b>pick off unwary targets</b> with her spare gunhand, Muerta is at her most menacing when she <b>crosses the veil of the dead</b> to strike her enemies with the ethereal fury of the damned.",
+          "npe_desc_loc": "Blasts fearsome trickshots and unleashes ethereal ruin",
+          "facets": [],
+          "str_base": 19,
+          "str_gain": 2,
+          "agi_base": 21,
+          "agi_gain": 2.7,
+          "int_base": 23,
+          "int_gain": 3.6,
+          "primary_attr": 2,
+          "complexity": 1,
+          "attack_capability": 2,
+          "role_levels": [
+            3,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "damage_min": 47,
+          "damage_max": 55,
+          "attack_rate": 1.7,
+          "attack_range": 575,
+          "projectile_speed": 3000,
+          "armor": 3.5,
+          "magic_resistance": 25,
+          "movement_speed": 295,
+          "turn_rate": 0.7,
+          "sight_range_day": 1800,
+          "sight_range_night": 800,
+          "max_health": 538,
+          "health_regen": 2.15,
+          "max_mana": 351,
+          "mana_regen": 1.15,
+          "abilities": [
+            {
+              "id": 5751,
+              "name": "muerta_dead_shot",
+              "name_loc": "Dead Shot",
+              "desc_loc": "Muerta fires a ghostly trickshot at an enemy unit or tree. When the bullet strikes, it damages and briefly slows, then ricochets in the targeted direction.<br><br>The ricochet damages all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet are feared away from the impact.",
+              "lore_loc": "A steady gunhand and an eternity of practice produce trickshots that defy the mortal mind.",
+              "notes_loc": [
+                "Feared enemies are phased and unslowable.",
+                "The ricochet will travel %ricochet_distance_multiplier%x Dead Shot's cast range.",
+                "Can ricochet off of magic immune targets."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "Dead Shot damage is increased. Dead Shot expands after it ricochets and pierces through enemy heroes as it fears them.",
+              "facets_loc": [
+                "",
+                "",
+                "Dead Shot fears increase Gunslinger chance to %gunslinger_buffed_chance_multiplier%x for %gunslinger_buffed_chance_duration%s."
+              ],
+              "type": 0,
+              "behavior": "1073741832",
+              "target_team": 2,
+              "target_type": 83,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 4,
+              "dispellable": 2,
+              "max_level": 4,
+              "cast_ranges": [
+                1000
+              ],
+              "cast_points": [
+                0.15
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                16,
+                14,
+                12,
+                10
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                100,
+                120,
+                140,
+                160
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "damage",
+                  "values_float": [
+                    100,
+                    175,
+                    250,
+                    325
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    125
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "speed",
+                  "values_float": [
+                    2000
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "radius",
+                  "values_float": [
+                    150
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "ricochet_radius_start",
+                  "values_float": [
+                    115
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "ricochet_radius_end",
+                  "values_float": [
+                    115
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "ricochet_radius_expansion_per_second",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    300
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "ricochet_distance_multiplier",
+                  "values_float": [
+                    1.5
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "ricochet_fear_duration",
+                  "values_float": [
+                    0.8,
+                    0.95,
+                    1.1,
+                    1.25
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "RICOCHET FEAR DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "impact_slow_percent",
+                  "values_float": [
+                    -100
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "IMPACT SLOW PERCENT:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "impact_slow_duration",
+                  "values_float": [
+                    1
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "IMPACT SLOW DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "scepter_pierces",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    1
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    1000
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_dead_shot_range",
+                      "value": 300,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.15
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCharges",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_dead_shot_charges",
+                      "value": 2,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    100,
+                    120,
+                    140,
+                    160
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    16,
+                    14,
+                    12,
+                    10
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": true,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5752,
+              "name": "muerta_the_calling",
+              "name_loc": "The Calling",
+              "desc_loc": "Summons a group of %num_revenants% revenants that slowly circle the targeted location. Enemies within the area are slowed. Revenants deal damage and silence enemies as they pass through them.",
+              "lore_loc": "Muerta's family are forever beyond the spirit veil, but her deal with Death allows her to briefly call on them in times of want or need.",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "Heroes killed inside The Calling refresh its duration, create another Revenant, and expand the radius of The Calling by %kill_radius_expansion%.",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "4294967344",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 4,
+              "dispellable": 2,
+              "max_level": 4,
+              "cast_ranges": [
+                600
+              ],
+              "cast_points": [
+                0.1
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                30,
+                28,
+                26,
+                24
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                135,
+                150,
+                165,
+                180
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "damage",
+                  "values_float": [
+                    45,
+                    90,
+                    135,
+                    180
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "duration",
+                  "values_float": [
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "hit_radius",
+                  "values_float": [
+                    120
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "dead_zone_distance",
+                  "values_float": [
+                    340
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "num_revenants",
+                  "values_float": [
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_the_calling_num_revenants",
+                      "value": 2,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "speed_initial",
+                  "values_float": [
+                    0.2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "speed_max",
+                  "values_float": [
+                    1
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "acceleration",
+                  "values_float": [
+                    0.75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "aura_movespeed_slow",
+                  "values_float": [
+                    -20
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "MOVEMENT SLOW:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "silence_duration",
+                  "values_float": [
+                    1.5,
+                    2,
+                    2.5,
+                    3
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "SILENCE DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "rotation_direction",
+                  "values_float": [
+                    -1
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "hp_regen_pct",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_calling_hp_regen",
+                      "value": 3,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    600
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.1
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    135,
+                    150,
+                    165,
+                    180
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    30,
+                    28,
+                    26,
+                    24
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5753,
+              "name": "muerta_gunslinger",
+              "name_loc": "Gunslinger",
+              "desc_loc": "Toggleable. When toggled on, Muerta's attacks have a chance to fire a second shot at another target.",
+              "lore_loc": "Muerta offers all of her victims Mercy. Some are fortunate enough to also earn Grace.",
+              "notes_loc": [
+                "If no other units are in range, she fires both guns at the original target.",
+                "Secondary shots can hit units within Muerta's attack range plus %target_search_bonus_range%.",
+                "The secondary shot can trigger attack modifiers.",
+                "Prioritizes heroes, then non-hero units, then buildings."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                "Gunslinger procs reduce Dead Shot cooldown by %dead_shot_cooldown_reduction_on_proc%s."
+              ],
+              "type": 0,
+              "behavior": "137438956036",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "double_shot_chance",
+                  "values_float": [
+                    18,
+                    27,
+                    36,
+                    45
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "CHANCE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_gunslinger_double_shot_chance",
+                      "value": 20,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "target_search_bonus_range",
+                  "values_float": [
+                    175
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_damage",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "BONUS DAMAGE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_gunslinger_bonus_damage",
+                      "value": 55,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1785,
+              "name": "muerta_spectral_slug",
+              "name_loc": "Spectral Slug",
+              "desc_loc": "Muerta shoots a spectral bullet at an enemy, dealing damage, knocking them back, and turning them ethereal for %duration%s - rendering them immune to physical damage and unable to attack. The target is slowed and %bonus_spell_damage_pct%%% more vulnerable to magic damage. Enemies will not be knocked out of Muerta's attack range.",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "8589934601",
+              "target_team": 2,
+              "target_type": 19,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 4,
+              "dispellable": 2,
+              "max_level": 1,
+              "cast_ranges": [
+                500
+              ],
+              "cast_points": [
+                0.2
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                12
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                75
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "projectile_speed",
+                  "values_float": [
+                    2500
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage",
+                  "values_float": [
+                    225
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "knockback_distance",
+                  "values_float": [
+                    250
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "MAX KNOCKBACK DISTANCE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "knockback_duration",
+                  "values_float": [
+                    0.2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "duration",
+                  "values_float": [
+                    3
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "slow_pct",
+                  "values_float": [
+                    -30
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "MOVEMENT SLOW:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_spell_damage_pct",
+                  "values_float": [
+                    -20
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "INCREASED MAGIC DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    500
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    12
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": true,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5754,
+              "name": "muerta_pierce_the_veil",
+              "name_loc": "Pierce the Veil",
+              "desc_loc": "Muerta transforms, becoming ethereal, gaining bonus base damage and phased movement.<br><br>Passively allows Muerta to always attack ethereal targets and attack when she is ethereal. When either she or her target is ethereal, all of her attack damage is dealt as magical damage and her physical lifesteal is treated as spell lifesteal.<br><br>DISPEL TYPE: Basic Dispel",
+              "lore_loc": "Muerta sheds her corporeal form, crossing the spirit veil and striking her enemies with the fury of the damned.",
+              "notes_loc": [
+                "Muerta will dodge projectiles upon transformation.",
+                "Muerta cannot attack buildings while transformed."
+              ],
+              "shard_loc": "Muerta gains %spell_lifesteal%%% Spell Lifesteal during Pierce the Veil.<br>While Pierce the Veil is active Muerta permanently gains %spell_amp_steal%%% spell amplification each time she kills an enemy Hero or they die in her vicinity. Bonus applies retroactively.",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 1,
+              "behavior": "4",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 0,
+              "dispellable": 3,
+              "max_level": 3,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                75,
+                60,
+                45
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                150,
+                250,
+                350
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "duration",
+                  "values_float": [
+                    8
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DURATION:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_muerta_pierce_the_veil_duration",
+                      "value": 2,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "transform_duration",
+                  "values_float": [
+                    0.35
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "TRANSFORM DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "base_damage_percent",
+                  "values_float": [
+                    70,
+                    85,
+                    100
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "BASE DAMAGE BONUS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "modelscale",
+                  "values_float": [
+                    30
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    150,
+                    250,
+                    350
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    75,
+                    60,
+                    45
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1436,
+              "name": "muerta_supernatural",
+              "name_loc": "Supernatural",
+              "desc_loc": "Whenever an enemy hero dies within %stack_collection_range% units of Muerta, she gains a stack of %spell_amp_per_stack%%% spell amplification. When Muerta dies she loses half the stacks, rounded down.",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "562949953421315",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 1,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "stack_collection_range",
+                  "values_float": [
+                    925
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "COLLECTION RANGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "spell_amp_per_stack",
+                  "values_float": [
+                    1
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "SPELL AMP PER STACK:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "max_stacks_tooltip",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "MAX AMP:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": true,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            }
+          ],
+          "talents": [
+            {
+              "id": 5757,
+              "name": "special_bonus_unique_muerta_dead_shot_range",
+              "name_loc": "+{s:bonus_AbilityCastRange} Dead Shot Cast Range",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5906,
+              "name": "special_bonus_attack_speed_20",
+              "name_loc": "+{s:value} Attack Speed",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "value",
+                  "values_float": [
+                    20
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1438,
+              "name": "special_bonus_unique_muerta_calling_hp_regen",
+              "name_loc": "+{s:bonus_hp_regen_pct}% Max HP Regen while inside The Calling",
+              "desc_loc": "Only applies to Muerta.",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5991,
+              "name": "special_bonus_intelligence_15",
+              "name_loc": "+{s:value} Intelligence",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "value",
+                  "values_float": [
+                    15
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1629,
+              "name": "special_bonus_unique_muerta_pierce_the_veil_duration",
+              "name_loc": "+{s:bonus_duration}s Pierce the Veil Duration",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5758,
+              "name": "special_bonus_unique_muerta_the_calling_num_revenants",
+              "name_loc": "The Calling summons {s:bonus_num_revenants} additional revenants",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5759,
+              "name": "special_bonus_unique_muerta_gunslinger_double_shot_chance",
+              "name_loc": "+{s:bonus_double_shot_chance}% Gunslinger chance",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5755,
+              "name": "special_bonus_unique_muerta_dead_shot_charges",
+              "name_loc": "{s:bonus_AbilityCharges} Dead Shot Charges",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            }
+          ],
+          "facet_abilities": []
+        }
+      ]
+    }
+  }
+}

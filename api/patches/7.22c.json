@@ -1,0 +1,859 @@
+{
+  "patch_number": "7.22c",
+  "patch_name": "7.22c",
+  "patch_timestamp": 1560063600,
+  "items": [
+    {
+      "ability_id": 88,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bonus damage increased from +7 to +8"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 2,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 10",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 4,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 9,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base mana regen increased from 0 to 0.4",
+          "icon": "mana_regen"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5051,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.5 to 0.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "abilities": [
+        {
+          "ability_id": 5052,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 17/15/13/11 to 20/17/14/11"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 140/155/160/165 to 150/155/160/165"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +15% Evasion to +20%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5067,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Illusion damage increased from 16% to 18%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen increased from 0 to 0.5",
+          "icon": "health_regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Dreamcoil talent no longer requires enemies to be in attack range of puck, as long as Puck is within 200 range of the edge of the circle",
+          "icon": "attack_range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Dreamcoil talent attack interval reduced from every 0.6 seconds to every 0.7 seconds"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +5 All Stats to +6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +125 Cast Range to +150"
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.2 to 3",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Sandstorm manacost increased from 60 to 75"
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "abilities": [
+        {
+          "ability_id": 5094,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration reduced from 1.7/1.8/1.9/2 to 1.4/1.6/1.8/2"
+            }
+          ]
+        },
+        {
+          "ability_id": 5096,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 40 to 60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "abilities": [
+        {
+          "ability_id": 5122,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 10 to 9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed reduced from 100 to 90",
+          "icon": "attack_speed"
+        }
+      ]
+    },
+    {
+      "hero_id": 28,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen increased from 0 to 0.5",
+          "icon": "health_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 31,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 2",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from 50% slow to 60%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7325,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 30 to 30/28/26/24"
+            }
+          ]
+        },
+        {
+          "ability_id": 5137,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 250/375/500 to 250/400/550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 33,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 3.9 to 3.6",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 34,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +30 Movement Speed to +150 Gold/Min"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +10% Spell Lifesteal to +15%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +8 March of the Machines to +10"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5152,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 145/150/165/190 to 130/150/170/190"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 36,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Heartstopper heal regen per stack increased from 2/3.5/5/6.5 to 3.5/4.5/5.5/6.5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Heartstopper mana regen per stack increased from 3/4/5/6 to 3.5/4.5/5.5/6.5",
+          "icon": "mana_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 37,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +5% Fatal Bonds Damage to +4%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5162,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 13/17/21/25% to 12/16/20/24%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 41,
+      "abilities": [
+        {
+          "ability_id": 5185,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 425 to 450"
+            }
+          ]
+        },
+        {
+          "ability_id": 5184,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Chance increased from 10/14/18/22% to 12/16/20/24%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen increased from 0 to 0.5",
+          "icon": "health_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 49,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 3",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -25% Breathe Fire Damage Reduction to -30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +350 Health to +400"
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bad Juju cooldown reduction increased from 20/35/50% to 26/38/50%"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +200 Health to +30% XP Gain"
+        }
+      ]
+    },
+    {
+      "hero_id": 51,
+      "abilities": [
+        {
+          "ability_id": 5237,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 32/28/24/20 to 24/22/20/18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 55,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +100 Ion Shell Damage to +80"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5257,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Reduced from 30/45/60/75% to 25/40/55/70%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +5 Armor to +8 Agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +12% Magic Resistance to +10 Strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +15 Strength to -30s Burning Army Cooldown"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +3s Strafe Duration to +4s"
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5270,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Range increased from 550 to 575 (matching the hero's attack range)"
+            }
+          ]
+        },
+        {
+          "ability_id": 5268,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 22/18/14/10 to 20/16/12/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 59,
+      "abilities": [
+        {
+          "ability_id": 5274,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow increased from 40/50/60% to 60%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 63,
+      "abilities": [
+        {
+          "ability_id": 5291,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage from 10/20/30/40 to 10/25/40/55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 65,
+      "abilities": [
+        {
+          "ability_id": 5323,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 100/80/60 to 100/90/80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 66,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +35% XP Gain to +30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +10 Divine Favor Damage to +20 Holy Persuasion Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +7 Armor to -30s Divine Favor Cooldown"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 7306,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Aura no longer provides +4/8/12/16 damage"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now has the Recall ability instead of Holy Persuasion with a 60 second cooldown"
+            },
+            {
+              "indent_level": 1,
+              "note": "HP regen increased from 1/2/3/4 to 2/3/4/5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5330,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now provides +8/16/24/32 bonus damage to the converted creep"
+            }
+          ]
+        },
+        {
+          "ability_id": 5328,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 70 to 70/80/90/100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 74,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "abilities": [
+        {
+          "ability_id": 5426,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 140 to 110/120/130/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5437,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 3.25/4/4.75 to 3.5/4.25/5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed the +5 Tombstone Attack talent not causing the right amount of health change"
+        },
+        {
+          "indent_level": 1,
+          "note": "Fixed Soul Rip not healing Tombstone for the intended amount"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5443,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max unit count reduced from 10/12/14/16 to 8/10/12/14"
+            },
+            {
+              "indent_level": 1,
+              "note": "Heal/Damage from 18/22/26/30 to 22/26/30/34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 88,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen reduced from 3.25 to 2.5",
+          "icon": "health_regen"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5464,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 2.25 to 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "abilities": [
+        {
+          "ability_id": 7316,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 675 to 700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 91,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack range reduced from 575 to 500",
+          "icon": "attack_range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 2.5 to 3",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +20% XP Gain to Spirits Apply Slow"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5485,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Regen reduced from 105/120/135/150% to 90/110/130/150%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cancel now has a 0.25s cooldown to prevent accidental uses"
+            }
+          ]
+        },
+        {
+          "ability_id": 5486,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer slow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 1.3 to 1.5",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 95,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Whirling Axes Melee damage reduced from 75/125/175/225 to 50/100/150/200",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 98,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 2",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base mana regen increased from 0 to 0.25",
+          "icon": "mana_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 99,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 100,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed increased by 5",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 101,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +8 Intelligence to +30% XP Gain"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5582,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 70/140/210/280 to 100/160/220/280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "abilities": [
+        {
+          "ability_id": 1392,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage bonus per hero increased from 15/30/60/80 to 20/40/60/80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 108,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 109,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 1.5 to 1.7",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "abilities": [
+        {
+          "ability_id": 5623,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 36 to 36/34/32/30"
+            }
+          ]
+        },
+        {
+          "ability_id": 5625,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Release cast point changed from 0.01 to 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 119,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed increased from 100 to 115",
+          "icon": "attack_speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6341,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max damage duration reduced from 4 to 3.5 seconds"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

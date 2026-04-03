@@ -1,0 +1,664 @@
+{
+  "patch_number": "7.21d",
+  "patch_name": "7.21d",
+  "patch_timestamp": 1553410800,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Dire hard camp pull is now easier to do"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 256,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 1250 to 1100"
+        }
+      ]
+    },
+    {
+      "ability_id": 231,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 1700 to 1800"
+        }
+      ]
+    },
+    {
+      "ability_id": 206,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown increased from 16 to 18"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cast range reduced from 1150 to 1100"
+        }
+      ]
+    },
+    {
+      "ability_id": 229,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Target attack speed increase/reduction changed from 70 to 80"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 2,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 3.2 to 3.4",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.5 to 2.8",
+          "icon": "agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base agility increased by 6 (base damage unchanged)",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 7,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 2",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "abilities": [
+        {
+          "ability_id": 5030,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 130 to 140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +5 Armor to +125 Cast Range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +10 Intelligence to +5 All Stats"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5073,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer latches on Spell Immune units for non-scepter version (primarily affects new leashed status effect)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 14,
+      "abilities": [
+        {
+          "ability_id": 1223,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Regeneration increased from 3/6/9/12 to 5/8/11/14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "abilities": [
+        {
+          "ability_id": 5103,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 20/40/60/80 to 20/45/70/95"
+            }
+          ]
+        },
+        {
+          "ability_id": 5102,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range increased from 350/450/550/650 to 400/500/600/700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 17,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 22 + 3.7 to 23 + 3.9",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5098,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 120/170/220/270 to 120/175/230/285"
+            }
+          ]
+        },
+        {
+          "ability_id": 5099,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Pull distance increased from 140/180/220/260 to 180/220/260/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 1",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5133,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed changed from 425 to 450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 20 + 3.1 to 21 + 3.3",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5112,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 4/6/8/10% to 5/7/9/11%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 16 + 1.5 to 23 + 1.8",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence reduced by 2",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "abilities": [
+        {
+          "ability_id": 5154,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Replenish time reduced from 50 to 40"
+            }
+          ]
+        },
+        {
+          "ability_id": 5156,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Active cooldown reduced from 15/12/9/6 to 9/8/7/6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 39,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 40,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Poison Nova scepter damage increased from 60/85/110 to 75/100/125",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.8 to 3.2",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5195,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Debuff duration increased from 10 to 12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 47,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 2.8 to 2.5",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5219,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 5 to 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 49,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -20% Breath Fire Damage to -25%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +300 Health to +350"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +150 Gold/Min to +180"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent increased from +1.75s Dragon Tail to +2s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5229,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow increased from 30 to 40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 52,
+      "abilities": [
+        {
+          "ability_id": 5242,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 11/22/33/44 to 8/20/32/44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "abilities": [
+        {
+          "ability_id": 5249,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 16 to 18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 1",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased from 17 to 19",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 66,
+      "abilities": [
+        {
+          "ability_id": 7306,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 14 to 8/10/12/14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 71,
+      "abilities": [
+        {
+          "ability_id": 5353,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 12 to 11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 72,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +200 Health to +250"
+        }
+      ]
+    },
+    {
+      "hero_id": 75,
+      "abilities": [
+        {
+          "ability_id": 5378,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 25/40/55/70% to 25/45/65/85%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 89,
+      "abilities": [
+        {
+          "ability_id": 5467,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Illusion incoming damage reduced from 400% to 350%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 96,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +50 Retaliate Damage to +70"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5515,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 40/60/80/100% to 60/80/100/120%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 101,
+      "abilities": [
+        {
+          "ability_id": 5584,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 600/1000/1400 to 700/1150/1600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 111,
+      "abilities": [
+        {
+          "ability_id": 5640,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 100/65/30 to 115/80/45"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 100 to 100/150/200"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range rescaled from 1000 to 700/850/1000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 113,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.1 to 2.4",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5683,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 16/18/20 to 16/20/24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 120,
+      "abilities": [
+        {
+          "ability_id": 7307,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Can no longer apply both silence and disarm at the same time"
+            },
+            {
+              "indent_level": 1,
+              "note": "Chance reduced from 20% to 17%"
+            }
+          ]
+        },
+        {
+          "ability_id": 6343,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 100 to 100/150/200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 129,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.6 to 3.2",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +1.5s Spears of Mars Stun to +1s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6583,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Vision AoE reduced from 500 to 300"
+            }
+          ]
+        },
+        {
+          "ability_id": 6495,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 55/60/65/70 to 65/70/75/80"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

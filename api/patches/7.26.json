@@ -1,0 +1,38 @@
+{
+  "patch_number": "7.26",
+  "patch_name": "7.26",
+  "patch_timestamp": 1587106800,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "This release is focused only on the following systemic changes. Once these changes settle a bit, there will be follow up hero and item specific adjustments."
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attributes no longer provide Magic Resistance, Spell Amplification and Movement Speed for Strength, Intelligence and Agility respectively."
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Gold bounties reduced by 10% (affects buildings, lane creeps, neutrals and heroes)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Kill streak gold is reduced by 50%"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

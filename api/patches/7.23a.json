@@ -1,0 +1,500 @@
+{
+  "patch_number": "7.23a",
+  "patch_name": "7.23a",
+  "patch_timestamp": 1574841600,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Neutral drops will now always drop only 3 items per tier, rather than having a chance to get more"
+        },
+        {
+          "indent_level": 1,
+          "note": "Neutral drops no longer have an end period in terms of when they can drop, just a start period (now 5/15/25/40/70). Higher tier items will always roll first"
+        },
+        {
+          "indent_level": 1,
+          "note": "Neutral drop rate changed from 10/5/2.5/1.25/etc to 9/6/3"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 239,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown increased from 20 to 25"
+        }
+      ]
+    },
+    {
+      "ability_id": 354,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Health/Mana regen reduced from 10/5 to 6/3"
+        },
+        {
+          "indent_level": 1,
+          "note": "All stats increased from 4 to 5"
+        }
+      ]
+    },
+    {
+      "ability_id": 287,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regeneration reduced from 1.5 to 1.25"
+        }
+      ]
+    },
+    {
+      "ability_id": 308,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Moved from Tier 2 to Tier 3"
+        }
+      ]
+    },
+    {
+      "ability_id": 327,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Moved from Tier 2 to Tier 3"
+        }
+      ]
+    },
+    {
+      "ability_id": 307,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Removed"
+        }
+      ]
+    },
+    {
+      "ability_id": 334,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Critical Strike reduced from 1.6 to 1.4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Damage increased from 18 to 20"
+        }
+      ]
+    },
+    {
+      "ability_id": 331,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Moved from Tier 3 to Tier 2 (stats lowered to just the components of the recipe)"
+        }
+      ]
+    },
+    {
+      "ability_id": 360,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Moved from Tier 3 to Tier 2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Mana regen reduced from 3 to 2"
+        }
+      ]
+    },
+    {
+      "ability_id": 309,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Manabreak reduced from 30 to 20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Magic resistance increased from 15% to 25%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Mana steal now only has half effect on creeps"
+        }
+      ]
+    },
+    {
+      "ability_id": 300,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Debuff duration amp reduced from 35% to 25%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Spell Amp increased from 10% to 15%"
+        }
+      ]
+    },
+    {
+      "ability_id": 330,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now provides +1000 Health and -400 Mana"
+        }
+      ]
+    },
+    {
+      "ability_id": 311,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer has an active. Now provides 20% Cooldown Reduction, +12 All stats and +4 Mana Regen"
+        }
+      ]
+    },
+    {
+      "ability_id": 363,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now increases damage of your player controlled units as well."
+        }
+      ]
+    },
+    {
+      "ability_id": 379,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer has a cleave or splash effect. Now has +25% Demolish"
+        }
+      ]
+    },
+    {
+      "ability_id": 294,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cast Range reduced from 500 to 450"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vision range reduced from 800 to 450"
+        }
+      ]
+    },
+    {
+      "ability_id": 301,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer has a 75% chance, instead has a 4 second cooldown."
+        }
+      ]
+    },
+    {
+      "ability_id": 368,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Health regen increased from 50 to 70"
+        }
+      ]
+    },
+    {
+      "ability_id": 370,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cooldown increased from 75 to 90"
+        },
+        {
+          "indent_level": 1,
+          "note": "Duration reduced from 90 to 75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Fixed previous summons not disappearing"
+        }
+      ]
+    },
+    {
+      "ability_id": 293,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "No longer Gives +30 All stats."
+        },
+        {
+          "indent_level": 1,
+          "note": "Health restore reduced from 100% to 50%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now refreshes your non-ultimate abilities upon triggering"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 1,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 3.2 to 3.0",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5003,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Reduced from 2/3/4/5% to 1/2/3/4%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base mana regen from 1 to 1.5",
+          "icon": "mana_regen"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5128,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Magic resistance reduced from 4/6/8/10 to 5/6/7/8"
+            },
+            {
+              "indent_level": 1,
+              "note": "Mana regen from 1/1.5/2/2.5 to 0.5/1/1.5/2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "abilities": [
+        {
+          "ability_id": 343,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 32/28/24/20 to 26/24/22/20"
+            }
+          ]
+        },
+        {
+          "ability_id": 5022,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Aura increased from 25/30/35 to 30/35/40"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 40/50/60 to 70/80/90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence from 13 + 1.1 to 15 + 1.5",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base strength increased from 20 to 22",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attribute Shift stats increased from 1/3/5/7 to 3/5/7/9"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent from +10 Agility to +12"
+        }
+      ]
+    },
+    {
+      "hero_id": 15,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Agility reduced from 15 to 10",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5085,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Passive shock damage reduced from 80/110/140 to 60/100/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base agility reduced from 27 to 20 (base damage unchanged)",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +10 Attributes to +8"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from Vengeance Aura Illusion Casts Spells to +200 Magic Missile Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +400 Magic Missile Damage to Vengeance Aura Illusion Casts Spells"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5123,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack Range bonus from 60/100/140/180 to 60/90/120/150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5357,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow from 25/35/45/55% 10/25/40/55%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5360,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 50/40/30 to 70/50/30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 28 + 3.5 to 30 + 4.2",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Strength increased from 19 + 2.6 to 21 + 2.9",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5394,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana per charge increased from 30/40/50 to 40/50/60"
+            },
+            {
+              "indent_level": 1,
+              "note": "Multiplier increased from 0.4/0.5/0.6 to 0.5/0.6/0.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Spirit Bear base attack time increased from 1.65/1.55/1.45/1.35 to 1.7/1.6/1.5/1.4",
+          "icon": "attack_time"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from -0.5 Spirit Bear Attack Time to -0.25"
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "abilities": [
+        {
+          "ability_id": 5447,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow from 30/35/40% to 40/45/50%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Strength multiplier from 30/40/50% to 40/50/60%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

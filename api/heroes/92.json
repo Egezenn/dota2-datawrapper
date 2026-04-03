@@ -1,0 +1,2053 @@
+{
+  "result": {
+    "data": {
+      "heroes": [
+        {
+          "id": 92,
+          "name": "npc_dota_hero_visage",
+          "order_id": 90,
+          "name_loc": "Visage",
+          "bio_loc": "Perched atop the entrance to the Narrow Maze sit the looming shapes of sneering gargoyles, the paths into the hereafter forever in their gaze.  Beasts and birds, men and monsters, all creatures that die and choose to travel beyond must someday pass beneath their sight.  For an untethered spirit, the decision to journey through the veil of death is irrevocable.  When chance comes, and by craft or cunning some restless soul escapes their hells and heavens, it is the dreaded gargoyle Visage, the bound form of the eternal spirit Necro'lic, who is dispatched to reclaim them.  Ruthless and efficient, unhindered by the principles of death and fatigue, Visage stalks its prey without mercy or end, willingly destroying all which may give shelter to the fugitive essence.  That which flaunts the laws of the afterlife may never rest, for while it is true that the dead may be revived, it is only a matter of time before Visage finds and returns them to their proper place.",
+          "hype_loc": "As his <b>deadly familiars</b> scout the field, Visage <b>cloaks himself in armor</b> and seeks the next battle. Once near a skirmish, he <b>gathers soul energy</b> from damage inflicted upon nearby fighters before releasing it in a devastating attack.",
+          "npe_desc_loc": "Scouts and attacks with his familiars",
+          "facets": [],
+          "str_base": 22,
+          "str_gain": 2.8,
+          "agi_base": 11,
+          "agi_gain": 1.3,
+          "int_base": 22,
+          "int_gain": 2.9,
+          "primary_attr": 3,
+          "complexity": 3,
+          "attack_capability": 2,
+          "role_levels": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "damage_min": 21,
+          "damage_max": 31,
+          "attack_rate": 1.7,
+          "attack_range": 600,
+          "projectile_speed": 1400,
+          "armor": 1.8333334,
+          "magic_resistance": 25,
+          "movement_speed": 285,
+          "turn_rate": 0.6,
+          "sight_range_day": 1800,
+          "sight_range_night": 800,
+          "max_health": 604,
+          "health_regen": 2.45,
+          "max_mana": 339,
+          "mana_regen": 1.1,
+          "abilities": [
+            {
+              "id": 5480,
+              "name": "visage_grave_chill",
+              "name_loc": "Grave Chill",
+              "desc_loc": "Visage drains the movement and attack speed of the targeted unit, gaining the drained speed for itself and nearby Familiars.",
+              "lore_loc": "The warmth of the sun is never felt in the dark cold of the Narrow Maze.",
+              "notes_loc": [
+                "The two buffs can be removed separately by dispels.",
+                "The speed gained is independent of the speed lost on the target.",
+                "Familiars within %radius% range of Visage will also receive bonuses from Grave Chill."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "8",
+              "target_team": 2,
+              "target_type": 19,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 4,
+              "dispellable": 2,
+              "max_level": 4,
+              "cast_ranges": [
+                625
+              ],
+              "cast_points": [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                17,
+                15,
+                13,
+                11
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                75
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "chill_duration",
+                  "values_float": [
+                    5
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DURATION:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_grave_chill_duration",
+                      "value": 2,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "movespeed_bonus",
+                  "values_float": [
+                    12,
+                    18,
+                    24,
+                    30
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "MOVE SPEED DRAIN:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "attackspeed_bonus",
+                  "values_float": [
+                    25,
+                    40,
+                    55,
+                    70
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "ATTACK SPEED DRAIN:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "radius",
+                  "values_float": [
+                    900
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    625
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    17,
+                    15,
+                    13,
+                    11
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5481,
+              "name": "visage_soul_assumption",
+              "name_loc": "Soul Assumption",
+              "desc_loc": "Visage gathers charges of soul essence each time nearby heroes take more than %damage_limit% damage. When the essence is released, it deals base damage as well as damage for each gathered soul charge.",
+              "lore_loc": "The collected souls of the dead reach out to bring another into their fold.",
+              "notes_loc": [
+                "Charges are only gained for damage greater than %damage_min% and less than %damage_max% that is dealt by a player or Roshan.  Self-damage or Soul Assumption damage isn't counted."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                "Soul Assumption kills give %bonus_soul_charge_gold% gold per soul charge, up to %bonus_gold_max_tooltip% gold. Reduced gold from creeps. Enemy heroes killed within %gold_grace_period_hero%s of being affected by Soul Assumption also give gold."
+              ],
+              "type": 0,
+              "behavior": "8",
+              "target_team": 2,
+              "target_type": 19,
+              "flags": 0,
+              "damage": 2,
+              "immunity": 4,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                1000
+              ],
+              "cast_points": [
+                0.2
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                4
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                110
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "bolt_speed",
+                  "values_float": [
+                    1000
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "soul_base_damage",
+                  "values_float": [
+                    20
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BASE DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "soul_charge_damage",
+                  "values_float": [
+                    70
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "DAMAGE PER CHARGE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_4",
+                      "value": 30,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "stack_limit",
+                  "values_float": [
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "MAX CHARGES:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "stack_duration",
+                  "values_float": [
+                    6
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "CHARGE DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_limit",
+                  "values_float": [
+                    100
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "GATHER DAMAGE THRESHOLD:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "radius",
+                  "values_float": [
+                    1800
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "GATHER DAMAGE RADIUS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_min",
+                  "values_float": [
+                    2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_max",
+                  "values_float": [
+                    3000
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "target_count",
+                  "values_float": [
+                    1
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_3",
+                      "value": 3,
+                      "operation": 5
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastRange",
+                  "values_float": [
+                    1000
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCastPoint",
+                  "values_float": [
+                    0.2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    110
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_soul_assumption_cooldown",
+                      "value": 1,
+                      "operation": 2
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5482,
+              "name": "visage_gravekeepers_cloak",
+              "name_loc": "Gravekeeper's Cloak",
+              "desc_loc": "Visage generates a layered barrier that protects him from damage.  If he receives damage from a player, one layer is removed, and takes time to recover.<br><br>Visage's Familiars are protected by his cloak when within %radius% range of him, based on the number of layers Visage has.",
+              "lore_loc": "Visage's tough scales share equal properties of ghost and stone, making it nearly impervious to blade and magical assault.",
+              "notes_loc": [
+                "Each time Visage receives damage greater than the Minimum Damage that was not self-inflicted and was from a player owned source, a layer is removed.",
+                "Familiars within %radius% range of Visage will receive the current damage reduction from Gravekeeper's Cloak.",
+                "Break disables the gaining of new stacks.",
+                "Break does not disable the bonuses from existing stacks."
+              ],
+              "shard_loc": "Gains an active component, allowing Visage to use Stone Form, stunning enemies for <span class=\"GameplayVariable\">0.8 / 1.0 / 1.2</span> seconds in an <span class=\"GameplayVariable\">375</span> area around it, dealing <span class=\"GameplayVariable\">60 / 100 / 140</span> damage and becoming invulnerable for <span class=\"GameplayVariable\">6</span> seconds.  Restores up to %shard_hp_restoration_pct%%% of your health.",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "max_layers",
+                  "values_float": [
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "MAX LAYERS:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "damage_reduction",
+                  "values_float": [
+                    8,
+                    12,
+                    16,
+                    20
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "DAMAGE REDUCTION PER LAYER:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "recovery_time",
+                  "values_float": [
+                    7,
+                    6,
+                    5,
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "LAYER RECOVERY TIME:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_cloak_recovery_time",
+                      "value": 2,
+                      "operation": 2
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "minimum_damage",
+                  "values_float": [
+                    40
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "MINIMUM DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "radius",
+                  "values_float": [
+                    900
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "max_damage_reduction",
+                  "values_float": [
+                    32,
+                    48,
+                    64,
+                    80
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "MAX DAMAGE REDUCTION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "shard_hp_restoration_pct",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [
+                    25
+                  ],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "shard_cooldown",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "COOLDOWN:",
+                  "bonuses": [],
+                  "values_shard": [
+                    65
+                  ],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "shard_manacost",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "MANA COST:",
+                  "bonuses": [],
+                  "values_shard": [
+                    125
+                  ],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": true,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 683,
+              "name": "visage_silent_as_the_grave",
+              "name_loc": "Silent as the Grave",
+              "desc_loc": "Visage gains flying movement and bonus movement speed.  Upon attacking or casting, the speed and flying movement are lost and Visage and his familiars deal additional attack damage for %bonus_duration%s.",
+              "lore_loc": "Those on the mortal plane are blind to the stirrings of the agents of the afterlife.",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "Increases movement speed, damage, and duration. Turns Visage and familiars invisible for the duration until the flying movement is lost.",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 0,
+              "behavior": "4196356",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 4,
+              "dispellable": 3,
+              "max_level": 1,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                45.75
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                50
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "flight_duration",
+                  "values_float": [
+                    20
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FLIGHT DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    10
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "movespeed_bonus",
+                  "values_float": [
+                    12
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "BONUS MOVESPEED:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    12
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_duration",
+                  "values_float": [
+                    2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "BONUS DAMAGE DURATION:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    2
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_damage",
+                  "values_float": [
+                    10
+                  ],
+                  "is_percentage": true,
+                  "heading_loc": "BONUS DAMAGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    10
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "invis",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    1
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "fly_timer",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [
+                    0
+                  ],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    50
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    45.75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "COOLDOWN:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": true,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": true,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 5483,
+              "name": "visage_summon_familiars",
+              "name_loc": "Summon Familiars",
+              "desc_loc": "Conjures %familiar_count% blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.\n\nThe ability can be cast in the alt-cast state to recall Visages familiars after %recall_duration%s, during which they cannot attack or act.",
+              "lore_loc": "Guardians of the Narrow Maze, Necro'lic's Familiars stand watch over his domain.",
+              "notes_loc": [
+                "Casting Summon Familiars will replace any existing Familiars.",
+                "Familiars within range of Visage will receive bonuses from Gravekeeper's Cloak and Grave Chill."
+              ],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "The ability can be cast in the alt-cast state to recall Visages familiars after %recall_duration%s, during which they cannot attack or act.",
+                "Familiars will automatically attack the target Visage tried to attack last, and will return if that target is out of Visage's attack range, or Visage issues the cancel current action or hold position commands.<br><br>The ability can be toggled to the Auto-Cast state to command the Familiars to return to Visage and not leave his side until the state has been disabled.",
+                "The ability can be cast in the alt-cast state to recall Visages familiars after %recall_duration%s, during which they cannot attack or act."
+              ],
+              "type": 1,
+              "behavior": "2052",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 1,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 3,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0,
+                0,
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                120,
+                110,
+                100
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                150,
+                150,
+                150
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [
+                {
+                  "name": "familiar_hp",
+                  "values_float": [
+                    450,
+                    600,
+                    750
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FAMILIAR HEALTH:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_familiar_armor_hp",
+                      "value": 25,
+                      "operation": 3
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "familiar_armor",
+                  "values_float": [
+                    2,
+                    3,
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FAMILIAR ARMOR:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_familiar_armor_hp",
+                      "value": 25,
+                      "operation": 3
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "familiar_attack_range",
+                  "values_float": [
+                    180
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FAMILIAR ATTACK RANGE:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "visage_faithful_followers",
+                    "values": [
+                      170
+                    ],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "familiar_base_movespeed",
+                  "values_float": [
+                    430
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FAMILIAR SPEED:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "visage_faithful_followers",
+                    "values": [
+                      40
+                    ],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "familiar_bounty",
+                  "values_float": [
+                    100
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FAMILIAR GOLD BOUNTY:",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "visage_faithful_followers",
+                    "values": [
+                      50
+                    ],
+                    "operation": 5
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "familiar_attack_damage",
+                  "values_float": [
+                    25,
+                    50,
+                    75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "FAMILIAR ATTACK DAMAGE:",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_7",
+                      "value": 6,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "visage_base_damage",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_7",
+                      "value": 6,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "bonus_damage",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_7",
+                      "value": 0,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "familiar_count",
+                  "values_float": [
+                    2
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_6",
+                      "value": 1,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "armor_reduction_per_hit",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_1",
+                      "value": 1,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "armor_reduction_duration",
+                  "values_float": [],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [
+                    {
+                      "name": "special_bonus_unique_visage_1",
+                      "value": 10,
+                      "operation": 0
+                    }
+                  ],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "in_formation",
+                  "values_float": [
+                    0
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "visage_faithful_followers",
+                    "values": [
+                      1
+                    ],
+                    "operation": 0
+                  },
+                  "required_facet": "visage_faithful_followers"
+                },
+                {
+                  "name": "back_distance",
+                  "values_float": [
+                    75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "side_distance",
+                  "values_float": [
+                    75
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "return_distance",
+                  "values_float": [
+                    1200
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "recall_duration",
+                  "values_float": [
+                    4
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "max_distance",
+                  "values_float": [
+                    3500
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "attack_range_buffer",
+                  "values_float": [
+                    200
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "additional_target_search_radius",
+                  "values_float": [
+                    300
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityManaCost",
+                  "values_float": [
+                    150
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                },
+                {
+                  "name": "AbilityCooldown",
+                  "values_float": [
+                    120,
+                    110,
+                    100
+                  ],
+                  "is_percentage": false,
+                  "heading_loc": "",
+                  "bonuses": [],
+                  "values_shard": [],
+                  "values_scepter": [],
+                  "facet_bonus": {
+                    "name": "",
+                    "values": [],
+                    "operation": 0
+                  },
+                  "required_facet": ""
+                }
+              ],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            }
+          ],
+          "talents": [
+            {
+              "id": 1833,
+              "name": "special_bonus_unique_visage_soul_assumption_cooldown",
+              "name_loc": "-{s:bonus_AbilityCooldown}s Soul Assumption Cooldown",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 626,
+              "name": "special_bonus_unique_visage_7",
+              "name_loc": "+{s:bonus_familiar_attack_damage} Visage and Familiars Base Damage",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1148,
+              "name": "special_bonus_unique_visage_grave_chill_duration",
+              "name_loc": "+{s:bonus_chill_duration}s Grave Chill Duration",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 6522,
+              "name": "special_bonus_unique_visage_3",
+              "name_loc": "Soul Assumption Hits {s:bonus_target_count} Targets",
+              "desc_loc": "A second Soul Assumption is launched towards a random enemy unit within the cast range, prioritizing Heroes.",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 6983,
+              "name": "special_bonus_unique_visage_4",
+              "name_loc": "+{s:bonus_soul_charge_damage} Soul Assumption Damage Per Charge",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 6031,
+              "name": "special_bonus_unique_visage_1",
+              "name_loc": "+{s:bonus_armor_reduction_per_hit} Armor Corruption to Visage and Familiars",
+              "desc_loc": "This effect can stack among multiple sources and lasts {s:bonus_armor_reduction_duration}s.",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 1712,
+              "name": "special_bonus_unique_visage_cloak_recovery_time",
+              "name_loc": "-{s:bonus_recovery_time}s Gravekeeper's Cloak Recovery Time",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            },
+            {
+              "id": 6985,
+              "name": "special_bonus_unique_visage_6",
+              "name_loc": "+{s:bonus_familiar_count} Familiar",
+              "desc_loc": "",
+              "lore_loc": "",
+              "notes_loc": [],
+              "shard_loc": "",
+              "scepter_loc": "",
+              "facets_loc": [
+                "",
+                "",
+                ""
+              ],
+              "type": 2,
+              "behavior": "2",
+              "target_team": 0,
+              "target_type": 0,
+              "flags": 0,
+              "damage": 0,
+              "immunity": 0,
+              "dispellable": 0,
+              "max_level": 4,
+              "cast_ranges": [
+                0
+              ],
+              "cast_points": [
+                0
+              ],
+              "channel_times": [
+                0
+              ],
+              "cooldowns": [
+                0
+              ],
+              "durations": [
+                0
+              ],
+              "damages": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "mana_costs": [
+                0
+              ],
+              "gold_costs": [],
+              "health_costs": [],
+              "special_values": [],
+              "is_item": false,
+              "ability_has_scepter": false,
+              "ability_has_shard": false,
+              "ability_is_granted_by_scepter": false,
+              "ability_is_granted_by_shard": false,
+              "ability_is_innate": false,
+              "item_cost": 0,
+              "item_initial_charges": 0,
+              "item_neutral_tier": 4294967295,
+              "item_stock_max": 0,
+              "item_stock_time": 0,
+              "item_quality": 0
+            }
+          ],
+          "facet_abilities": []
+        }
+      ]
+    }
+  }
+}

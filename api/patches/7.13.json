@@ -1,0 +1,306 @@
+{
+  "patch_number": "7.13",
+  "patch_name": "7.13",
+  "patch_timestamp": 1523516400,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Aegis now has an alt tooltip that explains how to pronounce the item"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 1 Tower Team Bounty reduced from 120 to 100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 2 Tower Team Bounty reduced from 200 to 120"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 3 Tower Team Bounty reduced from 200 to 140"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 4 Tower Team Bounty reduced from 200 to 160"
+        },
+        {
+          "indent_level": 1,
+          "note": "Range barracks team bounty reduced from 150 to 100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Filler buildings gold bounty from 125 to 75"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Ranged creep average gold bounty reduced from 57 to 54"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Glyph duration increased from 5 to 6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Melee Barracks HP increased from 1500 to 1800"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Shrines HP increased from 1500 to 1750"
+        },
+        {
+          "indent_level": 1,
+          "note": "Shrines now have 5 HP regen"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Rescaled Level 12->25 respawn time curve to be slightly less early and the same later on ",
+          "info": "Changed from 48/52/54/56/58/60/70/74/76/78/82/86/90/100 to 44/46/48/50/52/54/65/70/75/80/85/90/95/100"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Removed hero class specific perks, the bonuses now affect all classes."
+        },
+        {
+          "indent_level": 1,
+          "note": "Removed Status Resistance as a Strength based attribute bonus"
+        },
+        {
+          "indent_level": 1,
+          "note": "Rebalanced str/int/agi bonuses below (they still provide +1 bonus damage to primary attribute holders)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Primary Attribute now provides +25% more benefit to the bonuses it provides"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\tOld Strength:"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t--"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t20 Health"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.71% HP Regen"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.15% Status Resistance"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\tNew Strength:"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t--"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t18 Health (+25% for str heroes: 22.5)"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.55% HP Regen  (+25% for str heroes: 0.68%)"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t+0.08% Magic Resistance (+25% for str heroes: 0.1%)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\tOld Intelligence:"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t--"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t12 Mana"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t2% Mana Regen"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.07% Spell Amplication"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t+0.15% Magic Resistance"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\tNew Intelligence:"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t--"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t12 Mana (+25% for int heroes: 15)"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t1.8% Mana Regen (+25% for int heroes: 2.25)"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.07% Spell Amplication (+25% for int heroes: 0.087%)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\tOld Agility:"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t--"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.17 Armor"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t1 Attack Speed"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.06% Movement Speed"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\tNew Agility:"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t--"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.16 Armor (+25% for agi heroes: 0.2)"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t1 Attack Speed (+25% for agi: 1.25)"
+        },
+        {
+          "indent_level": 3,
+          "hide_dot": true,
+          "note": "General:Default:\t0.05% Movement Speed (+25% for agi: 0.062%)"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

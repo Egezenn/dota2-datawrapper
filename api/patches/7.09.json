@@ -1,0 +1,62 @@
+{
+  "patch_number": "7.09",
+  "patch_name": "7.09",
+  "patch_timestamp": 1518681600,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Courier cost reduced from 200 to 50"
+        },
+        {
+          "indent_level": 1,
+          "note": "Starting gold is reduced from 625 to 600<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tangoes now come with 3 charges and cost 90 gold<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Initial bounty rune now gives +40 gold to all heroes instead of 100 to the hero that picks it up ",
+          "info": "Those bounty runes look slightly different"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Killing a neutral camp stack now gives a bonus 15% gold bounty to the hero that stacked it. No bonus is given if the stack is cleared by an enemy or the hero that stacked it. ",
+          "info": "New audio is now played once a stack is successful. Stacked neutrals have a buff with the stacker's hero icon on it"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Tier 1 mid lane towers are now a bit closer to the river"
+        },
+        {
+          "indent_level": 1,
+          "note": "Removed a tree in the radiant jungle ",
+          "info": "To the top right of the blue crystals near the ancients"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Range creep attack acquisition range reduced from 800 to 600"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

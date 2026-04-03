@@ -1,0 +1,858 @@
+{
+  "patch_number": "7.29b",
+  "patch_name": "7.29b",
+  "patch_timestamp": 1618556400,
+  "heroes": [
+    {
+      "hero_id": 1,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "abilities": [
+        {
+          "ability_id": 5019,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 15/30/45/60% to 10/25/40/55%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +16% Evasion to +150 Health"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +200 Health to +16% Evasion"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5065,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard no longer increases cast range by 200"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard damage reduced from 50% to 40%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard bounce range reduced from 900 to 750"
+            }
+          ]
+        },
+        {
+          "ability_id": 1221,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Agility bonus reduced from 11/22/33/44 to 10/20/30/40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +30 Damage to +25"
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "abilities": [
+        {
+          "ability_id": 5097,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 100/150/200% to 120/160/200%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 23,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed increased from 300 to 305",
+          "icon": "movement"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +14 Strength to +16"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5033,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 38/30/22/14 to 24/20/16/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 1.8 to 2.1",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -2s Dragon Slave Cooldown to -2.5s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5041,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 100/110/120/130 to 100/105/110/115"
+            },
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 225 to 250"
+            }
+          ]
+        },
+        {
+          "ability_id": 5042,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stack duration increased from 10 to 12 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "abilities": [
+        {
+          "ability_id": 5156,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Active movement speed penalty reduced from 30% to 25%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 38,
+      "abilities": [
+        {
+          "ability_id": 5168,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Scepter bonus damage reduced from +40 to +30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 43,
+      "abilities": [
+        {
+          "ability_id": 5090,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 85/110/135/160 to 80/95/110/125"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 2",
+          "icon": "damage"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -1.5s Stiffling Dagger Cooldown to -2s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +150 Health to +175"
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +80 Psi Blades Range to +100"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5195,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 15/12/9/6 to 11/9/7/5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +250 Heal On Shallow Grave End to +225"
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed increased from 290 to 295",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5247,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Treant attack damage increased from 18/24/30/36 to 18/26/34/42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5250,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Lifesteal reduced from 1.8/2.4/3/3.6% to 1.6/2.2/2.8/3.4%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 59,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility reduced from 15 + 1.8 to 13 + 1.6",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +6 Burning Spears DPS to +5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +40% Berserker's Blood Regen to +35%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5273,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max regen reduced from 25/45/65/85% to 20/40/60/80%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5274,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 12 to 16/14/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "abilities": [
+        {
+          "ability_id": 5282,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Lifesteal no longer works when attacking allies"
+            }
+          ]
+        },
+        {
+          "ability_id": 5279,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Count increased from 3/4/5 to 4/5/6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 62,
+      "abilities": [
+        {
+          "ability_id": 5287,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard damage reduction reduced from 40% to 35%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 63,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased from 16 to 20",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base agility increased from 14 to 17",
+          "icon": "agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Attack animation time reduced from 0.64 to 0.55"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +11 Strength to +12"
+        }
+      ]
+    },
+    {
+      "hero_id": 65,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 69,
+      "abilities": [
+        {
+          "ability_id": 5339,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown and duration reduced from 70 to 60"
+            }
+          ]
+        },
+        {
+          "ability_id": 5342,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage per second increased from 25/40/55 to 30/45/60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.4 to 2.6",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5357,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduction from -2 to -1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 74,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Meteor shard spread reduced from 225 distance to 200"
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        },
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 1.4 to 1.7",
+          "icon": "agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain increased from 1.4 to 1.7",
+          "icon": "intelligence"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +175 Summon Wolves Health to +200"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from 8% Cooldown Reduction to 12%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +25% Feral Impulse Damage to +30%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +5s Shapeshift Duration to +6s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5395,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cripple now also slows movement speed by 15%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Health increased from 300/350/400/450 to 325/375/425/475"
+            }
+          ]
+        },
+        {
+          "ability_id": 5398,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Health bonus increased from 150/250/350 to 200/300/400"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 79,
+      "abilities": [
+        {
+          "ability_id": 5421,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Illusion duration increased from 8/10/12/14 to 11/12/13/14"
+            }
+          ]
+        },
+        {
+          "ability_id": 5425,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 200 to 150/175/200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Spirit Bear health increase per level from 75 to 90"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from -40s True Form Cooldown to -50s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5414,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 1.2/1.6/2/2.4 to 1.4/1.8/2.2/2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "abilities": [
+        {
+          "ability_id": 5448,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration increased from 1/1.25/1.5/1.75 to 1.2/1.4/1.6/1.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 88,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from -3.5s Spiked Carapace Cooldown to +0.6s Spiked Carapace Stun"
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "abilities": [
+        {
+          "ability_id": 5474,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 90/80/70 to 80/75/70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 3.6 to 3.4",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "abilities": [
+        {
+          "ability_id": 5521,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 50/125/200 to 75/150/225"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 98,
+      "abilities": [
+        {
+          "ability_id": 651,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard debuff duration reduced from 3 to 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "abilities": [
+        {
+          "ability_id": 5594,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Delay reduced from 2.8 to 2.7182"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 104,
+      "abilities": [
+        {
+          "ability_id": 5596,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduction from -3s to -2s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 105,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed reduced from 100 to 90",
+          "icon": "attack_speed"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +4 Mana Regen to +3"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5601,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Suicide death no longer grants you TP scroll (this is a general change for self kill)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "abilities": [
+        {
+          "ability_id": 5604,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Creep damage reduction reduced from 50% to 40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 109,
+      "abilities": [
+        {
+          "ability_id": 5622,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 200/100/50 to 150/100/50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 112,
+      "abilities": [
+        {
+          "ability_id": 5651,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 90 to 100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5654,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 80 to 90/85/80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +100 Jingu Mastery Damage to +130"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5721,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard cooldown reduced from 0.4 to 0.3"
+            }
+          ]
+        },
+        {
+          "ability_id": 5725,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 130/110/90 to 120/100/80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 121,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from -6s Ink Swell cooldown to -5s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 8007,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Shard bonus damage reduced from +50% to +40%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Shard heal reduced 50% to 40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 123,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 1.8 to 2.0",
+          "icon": "strength"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from -3s Bushwhack Cooldown to -4s"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent increased from +175 Health to +200"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +14 Agility to +16"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 8429,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 65% to 75%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,1118 @@
+{
+  "patch_number": "7.12",
+  "patch_name": "7.12",
+  "patch_timestamp": 1522306800,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Enabled Pangolier in Captain's Mode"
+        },
+        {
+          "indent_level": 1,
+          "note": "Neutral Creep Stack bounty increased from 15% to 20%"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 38,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana Regeneration reduced from 3.2 to 3.0"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 114,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength increased from 40 to 45"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 247,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack Speed increased from 120 to 130"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 225,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Projectile speed decreased from 1200 to 900"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 110,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Mana regeneration increased from 3 to 5"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 156,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Duration increased from 4.5 to 5 seconds"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 249,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Break duration decreased from 5 to 4 seconds"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cooldown reduced from 24 to 22"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 143,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bash duration increased from 1.4 to 1.5"
+        }
+      ]
+    },
+    {
+      "ability_id": 208,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bash duration increased from 1.4 to 1.5"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 267,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Enemy current health based damage changed from 3% Direct HP modification to 4.5% Magical Damage"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 1,
+      "abilities": [
+        {
+          "ability_id": 5006,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 0.6/0.85/1.1 to 0.8/0.95/1.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 2,
+      "abilities": [
+        {
+          "ability_id": 5008,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 10 to 12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 4,
+      "abilities": [
+        {
+          "ability_id": 5017,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Linger bonus duration increased from 2 to 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 5,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 3",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5128,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Self mana regen increased from 1/2/3/4 to 1.3/2.2/3.1/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 6,
+      "abilities": [
+        {
+          "ability_id": 1205,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack damage bonus increased from 10/18/26/34% to 10/20/30/40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 9,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack damage range from 39-50 to 43-48",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 15,
+      "abilities": [
+        {
+          "ability_id": 5083,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 600 to 550 (break range still 800)"
+            }
+          ]
+        },
+        {
+          "ability_id": 5084,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 100/130/160/190 to 60/100/140/180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed reduced from 295 to 290",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5102,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration rescaled from 2.17 to 1.9/2.0/2.1/2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 19,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base Health Regen reduced from 2.5 to 1.5",
+          "icon": "health_regen"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5106,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 17 to 20/19/18/17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Fixed some clunkiness with how Windranger attacks the target during Focus Fire"
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attack range increased from 350 to 380",
+          "icon": "attack_range"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 5",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 26,
+      "abilities": [
+        {
+          "ability_id": 5044,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost rescaled from 100/120/140/160 to 70/100/130/160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 28,
+      "abilities": [
+        {
+          "ability_id": 5114,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer has a 15% damage amplification"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 12 to 10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 31,
+      "abilities": [
+        {
+          "ability_id": 1245,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Mana conversion increased from 30/50/70/90 to 55/70/85/100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "abilities": [
+        {
+          "ability_id": 5145,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Reworked. Instead of hitting every hero in the AoE once per second, it hits a random hero once per 0.5/0.45/0.4 seconds."
+            },
+            {
+              "indent_level": 1,
+              "note": "Will hit creeps if there are no heroes available"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 3/4/5 to 4/5/6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "abilities": [
+        {
+          "ability_id": 5157,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 175/275/375 to 175/225/275"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 36,
+      "abilities": [
+        {
+          "ability_id": 5159,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Increased from 0.5/1/1.5/2% to 0.5/1.1/1.7/2.3%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5158,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost rescaled from 125/145/165/185 to 100/130/160/190"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 37,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Golem's attack damage increased from 75/100/125 to 75/125/175",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 43,
+      "abilities": [
+        {
+          "ability_id": 5685,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Charge restore time increased from 45 to 60/55/50/45"
+            }
+          ]
+        },
+        {
+          "ability_id": 5091,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 80 to 80/90/100/110"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "abilities": [
+        {
+          "ability_id": 5190,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Can be targeted on Spell Immune (the slow won't have any effect, but the physical damage will go through)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed increased from 300 to 310",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "abilities": [
+        {
+          "ability_id": 5233,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 10/20/30/40 to 10/24/38/52"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 52,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 325 to 330",
+          "icon": "movement"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5243,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage rescaled from 50/100/150/200 to 80/120/160/200"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow duration rescaled from 0.7/0.8/0.9/1.0 to 0.4/0.6/0.8/1.0"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.45 to 0.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "abilities": [
+        {
+          "ability_id": 5251,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 140/130/120/110 to 140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 55,
+      "abilities": [
+        {
+          "ability_id": 5255,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 250/350/450/550 to 400/450/500/550"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 32 to 60/50/40/30"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cast range rescaled from 500 to 450/500/550/600"
+            },
+            {
+              "indent_level": 1,
+              "note": "Pull duration increased from 0.5 to 0.3/0.4/0.5/0.6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Damage rescaled from 40/80/120/160 to 25/50/100/200"
+            }
+          ]
+        },
+        {
+          "ability_id": 5258,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Incoming illusion damage reduced from 400% to 300%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Width increased from 1000 to 1300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "abilities": [
+        {
+          "ability_id": 1120,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 3 to 3.5 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "abilities": [
+        {
+          "ability_id": 895,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 50 to 85"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5267,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow rescaled from 40/70/100/130 to 20/60/100/140"
+            }
+          ]
+        },
+        {
+          "ability_id": 5268,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown rescaled from 30/24/18/12 to 55/40/25/10"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow increased from 2.25/3.5/4.75/6 to 3/4/5/6"
+            },
+            {
+              "indent_level": 1,
+              "note": "Dominate duration rescaled from 80 to 50/60/70/80"
+            }
+          ]
+        },
+        {
+          "ability_id": 5270,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost rescaled from 55/60/65 to 40/55/70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 62,
+      "abilities": [
+        {
+          "ability_id": 1314,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 120/130/140/150 to 150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 66,
+      "abilities": [
+        {
+          "ability_id": 5330,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Can no longer target non-player allied creeps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 67,
+      "abilities": [
+        {
+          "ability_id": 5334,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 50/100/150/200 to 90/140/190/240"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 71,
+      "abilities": [
+        {
+          "ability_id": 1757,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Active no longer reduces your movement speed afterwards"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 12 to 20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 72,
+      "abilities": [
+        {
+          "ability_id": 5363,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 30 to 40"
+            }
+          ]
+        },
+        {
+          "ability_id": 5362,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Hits to destroy reduced from 3/3/4/4 to 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 79,
+      "abilities": [
+        {
+          "ability_id": 5425,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow now always scales linearly with time from 100% to 20%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 40 to 60 (affects charge replenish)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 5 to 7 seconds"
+            },
+            {
+              "indent_level": 1,
+              "note": "No longer roots non-hero units for 3 seconds"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now continuously dispels the target"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 3",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 84,
+      "abilities": [
+        {
+          "ability_id": 5441,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer increases Fire Blast manacost"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 85,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Undying Zombie critical health attack speed boost increased from 50 to 75",
+          "icon": "attack_speed"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5447,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Hero kill heal increased from 10% to 15/20/25%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "abilities": [
+        {
+          "ability_id": 5448,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 22 to 28/26/24/22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 87,
+      "abilities": [
+        {
+          "ability_id": 5461,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer lingers on your hero for 0.5 seconds after walking away from the AoE (it already ends immediately once the spell is over)"
+            }
+          ]
+        },
+        {
+          "ability_id": 5460,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 13/12/11/10 to 19/16/13/10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 91,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 4",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5485,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now sets your movement speed to match the tethered target's speed"
+            },
+            {
+              "indent_level": 1,
+              "note": "No longer has a duration"
+            },
+            {
+              "indent_level": 1,
+              "note": "Movement speed rescaled from 10/12/14/16% to 7/10/13/16%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Regen sharing rescaled from 1.5x to 1.2/1.3/1.4/1.5"
+            }
+          ]
+        },
+        {
+          "ability_id": 5488,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 120/100/80 to 130/110/90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 93,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base HP regen increased from 1.5 to 2.75"
+        },
+        {
+          "indent_level": 1,
+          "note": "Turn rate improved from 0.5 to 0.6"
+        }
+      ]
+    },
+    {
+      "hero_id": 95,
+      "abilities": [
+        {
+          "ability_id": 5508,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Base attack time improved from 1.5 to 1.45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "abilities": [
+        {
+          "ability_id": 5520,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 125 to 135"
+            }
+          ]
+        },
+        {
+          "ability_id": 5521,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration increased from 2.25/3/3.75 to 2.75/3.25/3.75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 98,
+      "abilities": [
+        {
+          "ability_id": 5527,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost per second reduced from 20/25/30 to 16/23/30"
+            },
+            {
+              "indent_level": 1,
+              "note": "Initial manacost reduced from 100/150/200 to 80/140/200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 100,
+      "abilities": [
+        {
+          "ability_id": 5565,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 19/16/13/10 to 21/18/15/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "abilities": [
+        {
+          "ability_id": 5589,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Initial Stun duration reduced from 0.8 to 0.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "abilities": [
+        {
+          "ability_id": 5630,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 1000 to 1300"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now turns night into day for the duration (has highest priority)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 112,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 1",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5651,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack range changed from 275/375/475/575 to 350/425/500/575"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 113,
+      "abilities": [
+        {
+          "ability_id": 5677,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 18 to 16"
+            }
+          ]
+        },
+        {
+          "ability_id": 5678,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "AoE increased from 275 to 300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "abilities": [
+        {
+          "ability_id": 5725,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Soldier attack rate improved from 1.4 to 1.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 119,
+      "abilities": [
+        {
+          "ability_id": 8340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast time increased from 0.8 to 1.0"
+            }
+          ]
+        },
+        {
+          "ability_id": 6340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 40/30/20 to 40/35/30"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

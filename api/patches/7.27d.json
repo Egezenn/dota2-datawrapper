@@ -1,0 +1,609 @@
+{
+  "patch_number": "7.27d",
+  "patch_name": "7.27d",
+  "patch_timestamp": 1598425200,
+  "items": [
+    {
+      "ability_id": 185,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "All stats reduced from +6 to +4"
+        }
+      ]
+    },
+    {
+      "ability_id": 210,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now has a 400 gold recipe cost"
+        }
+      ]
+    },
+    {
+      "ability_id": 178,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost reduced from 350 to 275"
+        }
+      ]
+    },
+    {
+      "ability_id": 164,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Minimum health reduced from 1500 to 1000"
+        },
+        {
+          "indent_level": 1,
+          "note": "Now grants +4 Armor to the dominated creep"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 3,
+      "abilities": [
+        {
+          "ability_id": 5011,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 110/130/150/170 to 120/140/160/180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 4,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 2",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5015,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max health cost reduced from 2.2/2.4/2.6/2.8% to 2.2/2.3/2.4/2.5%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Spell amp increased from 6/12/18/24% to 15/20/25/30%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 19,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 310 to 300",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 22,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength reduced from 21 to 19",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base mana regen reduced from 0.25 to 0",
+          "icon": "mana_regen"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +1.75 Mana Regen to +1.5"
+        }
+      ]
+    },
+    {
+      "hero_id": 40,
+      "abilities": [
+        {
+          "ability_id": 5180,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 20 to 20/22/24/26"
+            },
+            {
+              "indent_level": 1,
+              "note": "Gold bounty increased from 14-17 to 15/17/19/21"
+            }
+          ]
+        },
+        {
+          "ability_id": 5179,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 8/16/24/32 to 6/14/22/30"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 11/13/15/17% to 9/11/13/15%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 41,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength reduced from 24 to 22",
+          "icon": "strength"
+        },
+        {
+          "indent_level": 1,
+          "note": "Timelock damage reduced from 25/30/35/40 to 20/25/30/35",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 25 Backtrack Talent can now be disabled with Break"
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 2",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 49,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 2",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 51,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from 315 to 310",
+          "icon": "movement"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +1 Power Cogs Hit To Kill to +2"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5239,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Vision duration reduced from 8 to 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 52,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased from 18 to 20",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5244,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 450 to 475"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 55,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from Ion Shell Provides 400 Max Health to 350"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5257,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now acts like haste, rather than granting a bonus speed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 57,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased from 305 to 310",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5268,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max health reduced from 200/400/800/1200 to 200/300/400/500"
+            },
+            {
+              "indent_level": 1,
+              "note": "Now provides +2/4/6/8 Armor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "abilities": [
+        {
+          "ability_id": 5280,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed rescaled from 20/35/50/65% to 25/35/45/55%"
+            },
+            {
+              "indent_level": 1,
+              "note": "Scepter movement speed rescaled from 30/50/70/90% to 35/50/65/80%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 67,
+      "abilities": [
+        {
+          "ability_id": 5334,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 90/140/190/240 to 75/130/185/240"
+            }
+          ]
+        },
+        {
+          "ability_id": 5335,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 24/36/48/60 to 15/30/45/60"
+            }
+          ]
+        },
+        {
+          "ability_id": 5337,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 180/150/120 to 180/160/140"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 69,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +13% Scorched Earth Movement Speed to +10%"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration reduced from 16 to 15"
+            }
+          ]
+        },
+        {
+          "ability_id": 5339,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Hp regen reduced from 2/6/10/14 to 1/5/9/13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +175 Health to +1.5 Mana Regen"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +2 Mana Regen to +300 Health"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5358,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 55/60/65/70 to 40/50/60/70"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 75,
+      "abilities": [
+        {
+          "ability_id": 5379,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 80/120/160/200 to 120/160/200/240"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "abilities": [
+        {
+          "ability_id": 5391,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 6/8/10/12% to 7.5/9/10.5/12%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 81,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base agility increased from 14 to 18",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed reduced from 110 to 100",
+          "icon": "attack_speed"
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage increased by 2",
+          "icon": "damage"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5507,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 200 to 100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from +200 Health to +0.3s Shockwave Slow Duration"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent changed from +8 Armor to +350 Health"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5519,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Self multiplier reduced from 100% to 75%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 99,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage changed from 47-57 to 52-58",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 108,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from -3s Firestorm Cooldown to -4s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5613,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 675 to 600/625/650/675"
+            }
+          ]
+        },
+        {
+          "ability_id": 5614,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 18/17/16/15 to 21/19/17/15"
+            },
+            {
+              "indent_level": 1,
+              "note": "Disable duration increased from 0.9/1.2/1.5/1.8 to 1.2/1.4/1.6/1.8"
+            }
+          ]
+        },
+        {
+          "ability_id": 5615,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Creep bonus changed from 4/5/6/7 to 2/4/6/8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 110,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.7 to 3.5",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5626,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 26 to 30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 113,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +350 Flux Cast Range to +300"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5683,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer breaks Smoke of Deceit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "abilities": [
+        {
+          "ability_id": 5716,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration increased from 0.4/0.8/1.2/1.6 to 0.7/1/1.3/1.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 129,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence from 20 + 1.4 to 21 + 1.6",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Base mana regen increased from 0 to 0.5",
+          "icon": "mana_regen"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

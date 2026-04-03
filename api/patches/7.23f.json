@@ -1,0 +1,257 @@
+{
+  "patch_number": "7.23f",
+  "patch_name": "7.23f",
+  "patch_timestamp": 1578297600,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Gold bonus for the team that is behind is no longer considered if the difference is only 1k or less"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 6,
+      "abilities": [
+        {
+          "ability_id": 343,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost from 50/60/70/80 to 50/70/90/110"
+            },
+            {
+              "indent_level": 1,
+              "note": "Arrow slow duration rescaled from 1/2/3/4 to 1.25/2/2.75/3.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base damage reduced by 2",
+          "icon": "damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Fixed Phase Shift attacking Zombies"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent changed from Phase Shift Attacks to +30 Damage"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent changed from +90 Damage to Phase Shift Attacks"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5071,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer moves your hero if you are rooted on cast (but still casts the spell)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 19,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base attack speed reduced from 100 to 90",
+          "icon": "attack_speed"
+        },
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 4.1 to 3.8",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5107,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast range reduced from 1300 to 1000/1100/1200/1300"
+            }
+          ]
+        },
+        {
+          "ability_id": 5108,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed penalty increased from 25 to 30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 20,
+      "abilities": [
+        {
+          "ability_id": 5122,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 9 to 12/11/10/9"
+            }
+          ]
+        },
+        {
+          "ability_id": 5125,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point increased from 0.3 to 0.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 47,
+      "abilities": [
+        {
+          "ability_id": 5218,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 20 to 25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 69,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Starting strength reduced by 2",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5340,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 20/35/50/65 to 15/30/45/60"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 60/65/70/75 to 60/70/80/90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "abilities": [
+        {
+          "ability_id": 5357,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer moves your hero if you are rooted on cast (but still casts the spell)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 76,
+      "abilities": [
+        {
+          "ability_id": 5394,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage multipler reduced from 0.5 to 0.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 80,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Spirit Bear level 1 base damage reduced by 5",
+          "icon": "damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 83,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.7 to 3.5",
+          "icon": "strength"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5435,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 26/34/42/50% to 18/24/30/36%"
+            }
+          ]
+        },
+        {
+          "ability_id": 5437,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 150/175/200 to 200/250/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 128,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor reduced by 1",
+          "icon": "armor"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 6482,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 90 to 110"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,617 @@
+{
+  "patch_number": "7.21c",
+  "patch_name": "7.21c",
+  "patch_timestamp": 1551513600,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "XP earned when being denied increased from 30% to 35%"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 65,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Gold bonus reduced from 180 to 160"
+        }
+      ]
+    },
+    {
+      "ability_id": 185,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 500 to 600"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 8,
+      "abilities": [
+        {
+          "ability_id": 5029,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 400 to 350"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 9,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence increased from 17 + 1.7 to 19 + 1.9",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 10,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 2.6 to 3.0",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 11,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base strength increased by 2",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 12,
+      "abilities": [
+        {
+          "ability_id": 1221,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus agility increased from 9/18/27/36 to 11/22/33/44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 3",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 17,
+      "abilities": [
+        {
+          "ability_id": 5099,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer slows your hero"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 18,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.5 to 3.2",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 21,
+      "abilities": [
+        {
+          "ability_id": 5130,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown reduced from 18/16/14/12 to 16/14/12/10"
+            }
+          ]
+        },
+        {
+          "ability_id": 5133,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed increased from 400 to 425"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 23,
+      "abilities": [
+        {
+          "ability_id": 5032,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer provides a bonus on denies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 25,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +25/2% Fiery Soul Per Stack to +30/2%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent increased from +12% Spell Amplification to +14%"
+        }
+      ]
+    },
+    {
+      "hero_id": 27,
+      "abilities": [
+        {
+          "ability_id": 5080,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 10 to 16/14/12/10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 29,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.8 to 3.5",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 32,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed increased by 5",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 35,
+      "abilities": [
+        {
+          "ability_id": 5155,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 20/50/80/110 to 30/60/90/120"
+            }
+          ]
+        },
+        {
+          "ability_id": 5154,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Charge replenish rate improved from 55 to 50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 39,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base intelligence increased by 3 (base damage unchanged)",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5176,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 320/410/500 to 340/430/520"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 43,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +150 Cast Range to +175"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5091,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cast point reduced from 0.5 to 0.4"
+            }
+          ]
+        },
+        {
+          "ability_id": 5090,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Manacost reduced from 105/120/140/165 to 85/110/135/160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 3.7 to 3.4",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 46,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.6 to 2.8",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5194,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage increased from 20/40/60/80 to 25/50/75/100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 47,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 3.3 to 2.8",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5219,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Aoe damage no longer stacks with itself"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 75 to 70/80/90/100"
+            }
+          ]
+        },
+        {
+          "ability_id": 5218,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 25/30/35/40% to 10/20/30/40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 48,
+      "abilities": [
+        {
+          "ability_id": 5225,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max beams increased from 5/8/11 to 6/9/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "abilities": [
+        {
+          "ability_id": 5247,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Treant damage reduced from 36 to 27/30/33/36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 54,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.2 to 2.9",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 58,
+      "abilities": [
+        {
+          "ability_id": 5270,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage increased from 16/20/24% to 16/22/28%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 61,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.5 to 2.8",
+          "icon": "agility"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent increased from +15 Agility to +20"
+        }
+      ]
+    },
+    {
+      "hero_id": 62,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain reduced from 3.1 to 2.6",
+          "icon": "agility"
+        }
+      ]
+    },
+    {
+      "hero_id": 66,
+      "abilities": [
+        {
+          "ability_id": 7306,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage reduced from 12/24/36/48 to 8/16/24/32"
+            },
+            {
+              "indent_level": 1,
+              "note": "Non-hero damage multiplier increased from 2x to 3x"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 68,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain increased from 3 to 3.4",
+          "icon": "intelligence"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5348,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Duration increased from 9/10/11 to 10/11/12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 70,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced by 5",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 71,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base health regen increased by 0.75",
+          "icon": "health_regen"
+        }
+      ]
+    },
+    {
+      "hero_id": 73,
+      "abilities": [
+        {
+          "ability_id": 5365,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Radius increased from 400/475/550/625 to 475/525/575/625"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 77,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Strength gain reduced from 3.8 to 3.4",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 82,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility increased from 23 + 1.6 to 24 + 1.8",
+          "icon": "agility"
+        },
+        {
+          "indent_level": 1,
+          "note": "Strength gain increased from 1.6 to 1.8",
+          "icon": "strength"
+        }
+      ]
+    },
+    {
+      "hero_id": 94,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain increased from 2.1 to 2.6",
+          "icon": "intelligence"
+        }
+      ]
+    },
+    {
+      "hero_id": 95,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 20 talent reduced from +50 damage to +40"
+        }
+      ]
+    },
+    {
+      "hero_id": 102,
+      "abilities": [
+        {
+          "ability_id": 5585,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage/heal increased from 100/150/200/250 to 120/165/210/255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "abilities": [
+        {
+          "ability_id": 1392,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Bonus damage from creeps reduced from 6/9/12/15 to 3/7/11/15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 105,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Remote Mines cooldown reduced from 10 to 8"
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "abilities": [
+        {
+          "ability_id": 5719,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now makes you immune to damage briefly, rather than invulnerable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 120,
+      "abilities": [
+        {
+          "ability_id": 7307,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "No longer triggers off of Pangolier illusions"
+            },
+            {
+              "indent_level": 1,
+              "note": "Slow reduced from 40% to 35%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}

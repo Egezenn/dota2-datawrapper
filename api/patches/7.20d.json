@@ -1,0 +1,505 @@
+{
+  "patch_number": "7.20d",
+  "patch_name": "7.20d",
+  "patch_timestamp": 1543564800,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Melee heroes below 300 base movement speed increased by 5"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 214,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed reduced from +28% to +24%"
+        }
+      ]
+    },
+    {
+      "ability_id": 63,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Attribute bonus increased from 12 to 14"
+        }
+      ]
+    },
+    {
+      "ability_id": 50,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Now has the active again instead of the passive"
+        }
+      ]
+    },
+    {
+      "ability_id": 172,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed changed from +12% to +25 constant"
+        }
+      ]
+    },
+    {
+      "ability_id": 170,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed changed from +8% to +25 constant"
+        }
+      ]
+    },
+    {
+      "ability_id": 147,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed changed from +8% to +25 constant"
+        }
+      ]
+    },
+    {
+      "ability_id": 154,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed changed from +12% to +35 constant"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Movement speed changed from +12% to +35 constant"
+        }
+      ]
+    },
+    {
+      "ability_id": 75,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 220 to 240"
+        }
+      ]
+    },
+    {
+      "ability_id": 73,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 220 to 240"
+        }
+      ]
+    },
+    {
+      "ability_id": 77,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Recipe cost increased from 220 to 240"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "hero_id": 2,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +4 Mana Regen to +3"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5009,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 75/110/145/180 to 60/100/140/180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 8,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +25 Attack Speed to +20"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5030,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now removes debuffs on cast"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 13,
+      "abilities": [
+        {
+          "ability_id": 5073,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Stun duration from 1.5/2.25/3 to 1.8/2.4/3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 16,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Burrow Strike stun duration from 1.9/2/2.1/2.2 to 1.6/1.8/2/2.2"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +50 Sand Storm DPS to +40"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5103,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown from 40/32/24/16 to 40/34/28/22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 31,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base movement speed reduced from 315 to 310",
+          "icon": "movement"
+        }
+      ]
+    },
+    {
+      "hero_id": 41,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 Talent reduced from +20 Damage to +15"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5184,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Chance reduced from 10/15/20/25% to 10/14/18/22%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 44,
+      "abilities": [
+        {
+          "ability_id": 5191,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Attack speed duration reduced from 2.5 to 2.25"
+            }
+          ]
+        },
+        {
+          "ability_id": 5192,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now has a 0.4 second cast point"
+            }
+          ]
+        },
+        {
+          "ability_id": 5193,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 230/340/450% to 210/330/450%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 50,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Intelligence gain reduced from 3.4 to 3.2",
+          "icon": "intelligence"
+        },
+        {
+          "indent_level": 1,
+          "note": "Bad Juju cooldown reduction reduced from 30/40/50% to 20/35/50%"
+        }
+      ]
+    },
+    {
+      "hero_id": 53,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Agility gain increased from 2.8 to 3.3",
+          "icon": "agility"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5248,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "S max targets increased from 16 to 18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 56,
+      "abilities": [
+        {
+          "ability_id": 7319,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage type changed from Pierce to Hero type (50% vs heroes to 100%)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Base attack time increased from 1.5/1.35/1.2 to 1.75/1.6/1.45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 71,
+      "abilities": [
+        {
+          "ability_id": 5355,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Damage reduced from 12/20/28/36% to 8/16/24/32%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 78,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 10 talent reduced from +30 Damage to +20"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5403,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 140/120/100 to 140/130/120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 86,
+      "abilities": [
+        {
+          "ability_id": 5448,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cooldown increased from 28/26/24/22 to 34/30/26/22"
+            },
+            {
+              "indent_level": 1,
+              "note": "Lift duration reduced from 1.1/1.5/1.9/2.3 to 1/1.4/1.8/2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 90,
+      "abilities": [
+        {
+          "ability_id": 7316,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Now has a 100/125/150 gold bounty"
+            },
+            {
+              "indent_level": 1,
+              "note": "Manacost increased from 200/300/400 to 250/350/450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 91,
+      "abilities": [
+        {
+          "ability_id": 5485,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Heal/mp transfer rate from 1.2/1.3/1.4/1.5 to 1.05/1.2/1.35/1.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 93,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Leash distance increased from 350 to 400"
+        }
+      ],
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent reduced from +100s Essense Shift Duration to +80s"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5497,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Movement speed reduced from 30/40/50% to 20/35/50%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 97,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 15 Talent reduced from +15 Strength to +12"
+        },
+        {
+          "indent_level": 1,
+          "note": "Level 20 Talent reduced from +12 Armor to +10"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 5519,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Cleave damage reduced from 30/45/60/75% to 20/38/56/74%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 103,
+      "talent_notes": [
+        {
+          "indent_level": 1,
+          "note": "Level 25 Talent changed from Astral Spirit Grants Spell Immunity to +600 Echo Stomp Wake Damage"
+        }
+      ]
+    },
+    {
+      "hero_id": 106,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Base armor increased by 1",
+          "icon": "armor"
+        }
+      ]
+    },
+    {
+      "hero_id": 114,
+      "abilities": [
+        {
+          "ability_id": 5719,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Invulnerability duration reduced from 0.3 to 0.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero_id": 121,
+      "hero_notes": [
+        {
+          "indent_level": 1,
+          "note": "Soul Bind cooldown increased from 80/65/50 to 90/70/50"
+        }
+      ],
+      "abilities": [
+        {
+          "ability_id": 8007,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Max damage reduced from 160/240/320/400 to 100/200/300/400"
+            },
+            {
+              "indent_level": 1,
+              "note": "Max stun duration reduced from 2/2.6/3.2/3.8 to 1.7/2.4/3.1/3.8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "success": true
+}
