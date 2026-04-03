@@ -50,10 +50,10 @@ async function main() {
        } else if (item === 'constants') {
          // Constants were downloaded by fetch-all to data/constants
          copyRecursive(srcPath, path.join(targetDir, 'constants'));
-       } else if (item === 'ability-lookup.json') {
+       } else if (item === 'ability_lookup.json' || item === 'ability-lookup.json') {
          const constTarget = path.join(targetDir, 'constants');
          if (!fs.existsSync(constTarget)) fs.mkdirSync(constTarget, { recursive: true });
-         fs.copyFileSync(srcPath, path.join(constTarget, 'ability-lookup.json'));
+         fs.copyFileSync(srcPath, path.join(constTarget, 'ability_lookup.json'));
        } else {
          const destName = item.endsWith('.json') ? item : `${item}.json`;
          if (fs.statSync(srcPath).isDirectory()) {
@@ -63,6 +63,13 @@ async function main() {
          }
        }
     }
+  }
+
+  // 2. Create .nojekyll to prevent Jekyll from skipping underscore files/folders
+  const noJekyllPath = path.join(rootDir, 'docs', 'public', '.nojekyll');
+  if (!fs.existsSync(noJekyllPath)) {
+    fs.writeFileSync(noJekyllPath, '');
+    console.log('[Static Export] Created .nojekyll in docs/public');
   }
 
   console.log('[Static Export] Done. All data bundled in docs/public/api');

@@ -337,6 +337,7 @@ declare class Dota2Datafeed {
     private clientDf;
     private clientConstants;
     private language;
+    private useJsonExtension;
     static urls: typeof Dota2Urls;
     static utils: typeof utils;
     constructor(config?: Dota2DatafeedConfig);

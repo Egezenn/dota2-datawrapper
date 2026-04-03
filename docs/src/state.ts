@@ -27,7 +27,7 @@ export const setHeroId = (id: number | null) => { (currentHeroId as any) = id; }
 export const setItemId = (id: number | null) => { (currentItemId as any) = id; };
 export const setPatchVersion = (version: string | null) => { (currentPatchVersion as any) = version; };
 
-import abilityLookupStatic from './ability-lookup.json';
+import abilityLookupStatic from './ability_lookup.json';
 
 // dotaconstants data stores
 export let constantsHeroes: any = null;

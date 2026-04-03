@@ -72,6 +72,11 @@ h3,
   z-index: 100;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   font-size: 24px;
   font-weight: 700;

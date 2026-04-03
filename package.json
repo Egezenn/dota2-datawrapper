@@ -24,7 +24,7 @@
     "docs": "npm run dev --prefix docs",
     "gen-lookup": "npx ts-node scripts/generate-ability-lookup.ts",
     "docs:static-build": "npm run fetch-all && npm run gen-lookup && npx ts-node scripts/prepare-static.ts && cd docs && npm run build",
-    "docs:deploy": "npm run docs:static-build && gh-pages -d docs/dist",
+    "docs:deploy": "npm run docs:static-build && gh-pages -d docs/dist -a",
     "fetch-all": "npx ts-node scripts/fetch-all.ts",
     "serve": "npx ts-node src/server.ts"
   },

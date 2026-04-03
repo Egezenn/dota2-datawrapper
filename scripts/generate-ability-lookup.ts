@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const ITEM_ABILITIES_JSON_PATH = path.resolve(__dirname, '../data/itemabilities.json');
 const ASSETS_ABILITIES_PATH = path.resolve(__dirname, '../data/assets/images/dota_react/abilities');
-const OUTPUT_PATH = path.resolve(__dirname, '../docs/src/ability-lookup.json');
+const OUTPUT_PATH = path.resolve(__dirname, '../docs/src/ability_lookup.json');
 
 async function getAbilitiesJson() {
     const localPath = path.resolve(__dirname, '../dotaconstants/build/abilities.json');
@@ -61,7 +61,7 @@ async function generate() {
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(lookup, null, 2));
     
     // Also save to data/ for the local server
-    const DATA_OUTPUT_PATH = path.resolve(__dirname, '../data/ability-lookup.json');
+    const DATA_OUTPUT_PATH = path.resolve(__dirname, '../data/ability_lookup.json');
     fs.writeFileSync(DATA_OUTPUT_PATH, JSON.stringify(lookup, null, 2));
     
     console.log(`Generated lookup for ${Object.keys(lookup).length} abilities`);

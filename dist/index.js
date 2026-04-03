@@ -344,10 +344,12 @@ var Dota2Datafeed = class {
   clientDf;
   clientConstants;
   language;
+  useJsonExtension;
   static urls = Dota2Urls;
   static utils = utils_exports;
   constructor(config = {}) {
     this.language = config.language || "english";
+    this.useJsonExtension = !!config.useJsonExtension;
     const timeout = config.timeout || 12e4;
     this.clientDf = import_axios.default.create({
       baseURL: config.dfBaseURL || config.baseURL || "https://www.dota2.com/datafeed",
@@ -357,11 +359,16 @@ var Dota2Datafeed = class {
       baseURL: config.constantsBaseURL || (config.baseURL ? `${config.baseURL}/constants` : "https://raw.githubusercontent.com/odota/dotaconstants/master/build"),
       timeout
     });
-    if (config.useJsonExtension) {
+    if (this.useJsonExtension) {
       [this.clientDf, this.clientConstants].forEach((c) => {
         c.interceptors.request.use((req) => {
-          if (req.url && !req.url.endsWith(".json") && !req.url.includes("?")) {
-            req.url += ".json";
+          if (req.url && !req.url.endsWith(".json")) {
+            if (req.url.includes("?")) {
+              const [path, query] = req.url.split("?");
+              if (!path.endsWith(".json")) req.url = `${path}.json?${query}`;
+            } else {
+              req.url += ".json";
+            }
           }
           return req;
         });
@@ -387,12 +394,9 @@ var Dota2Datafeed = class {
    */
   async getHeroData(heroId) {
     try {
-      const response = await this.clientDf.get("/herodata", {
-        params: {
-          hero_id: heroId,
-          language: this.language
-        }
-      });
+      const path = this.useJsonExtension ? `/heroes/${heroId}` : "/herodata";
+      const params = this.useJsonExtension ? { language: this.language } : { hero_id: heroId, language: this.language };
+      const response = await this.clientDf.get(path, { params });
       return response.data?.result?.data?.heroes?.[0] || null;
     } catch (error) {
       this.handleError("getHeroData", error);
@@ -449,12 +453,9 @@ var Dota2Datafeed = class {
    */
   async getPatchNotes(version) {
     try {
-      const response = await this.clientDf.get("/patchnotes", {
-        params: {
-          version,
-          language: this.language
-        }
-      });
+      const path = this.useJsonExtension ? `/patches/${version}` : "/patchnotes";
+      const params = this.useJsonExtension ? { language: this.language } : { version, language: this.language };
+      const response = await this.clientDf.get(path, { params });
       return response.data;
     } catch (error) {
       this.handleError("getPatchNotes", error);
