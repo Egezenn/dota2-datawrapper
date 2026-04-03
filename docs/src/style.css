@@ -1,0 +1,8 @@
+@import "./css/base.css";
+@import "./css/components.css";
+
+@import "./css/modal.css";
+@import "./css/hero-details.css";
+@import "./css/hero-stats.css";
+@import "./css/abilities.css";
+@import "./css/item-details.css";

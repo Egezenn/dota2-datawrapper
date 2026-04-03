@@ -1,0 +1,65 @@
+{
+  "name": "dota2-dotawrapper",
+  "version": "1.0.0",
+  "description": "Universal Data Normalization & Enrichment Library for Dota 2",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "docs": "npm run dev --prefix docs",
+    "gen-lookup": "npx ts-node scripts/generate-ability-lookup.ts",
+    "docs:static-build": "npm run fetch-all && npm run gen-lookup && npx ts-node scripts/prepare-static.ts && cd docs && npm run build",
+    "docs:deploy": "npm run docs:static-build && gh-pages -d docs/dist",
+    "fetch-all": "npx ts-node scripts/fetch-all.ts",
+    "serve": "npx ts-node src/server.ts"
+  },
+  "keywords": [
+    "dota2",
+    "datawrapper",
+    "dotaconstants",
+    "valve",
+    "api",
+    "normalization"
+  ],
+  "author": "Egezenn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Egezenn/dota2-datawrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Egezenn/dota2-datawrapper/issues"
+  },
+  "homepage": "https://github.com/Egezenn/dota2-datawrapper#readme",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "gh-pages": "^6.3.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}

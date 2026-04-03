@@ -1,0 +1,42 @@
+name: Deploy Explorer to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'src/**'
+      - 'scripts/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node 🟢
+        uses: actions/setup-node@v4
+        with:
+          node-with-package-json: 'package.json'
+
+      - name: Install dependencies 📦
+        run: npm install
+
+      - name: Fetch Dota 2 Data 📡
+        run: npm run fetch-all
+
+      - name: Build Static Explorer 🏗️
+        run: npm run docs:static-build
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs/dist
+          branch: gh-pages
