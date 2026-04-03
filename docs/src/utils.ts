@@ -7,15 +7,19 @@ export function getAttributeName(attr: number | string) {
   const a = typeof attr === 'string' ? attr.toLowerCase() : attr;
   switch (a) {
     case 0:
+    case '0':
     case 'str': 
       return 'Strength';
     case 1:
+    case '1':
     case 'agi': 
       return 'Agility';
     case 2:
+    case '2':
     case 'int': 
       return 'Intelligence';
     case 3:
+    case '3':
     case 'all':
     case 'uni':
       return 'Universal';

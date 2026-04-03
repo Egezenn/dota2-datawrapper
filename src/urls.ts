@@ -117,6 +117,7 @@ export class Dota2Urls {
       'agi': 'agility',
       'int': 'intelligence',
       'uni': 'universal',
+      'all': 'universal',
     };
     const key = mapping[String(attr)] || 'strength';
     return ASSET_URLS.ATTRIBUTE_ICON(key);

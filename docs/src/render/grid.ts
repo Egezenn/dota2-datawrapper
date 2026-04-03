@@ -14,7 +14,9 @@ export function render(data: any[]) {
   const filtered = data.filter(item => {
     // Hero attribute filtering
     if (currentMode === 'heroes' && currentHeroCategory !== 'all') {
-      if (item.primary_attr !== parseInt(currentHeroCategory)) return false;
+      const heroAttr = getAttributeName(item.primary_attr).toLowerCase();
+      const targetAttr = getAttributeName(currentHeroCategory).toLowerCase();
+      if (heroAttr !== targetAttr) return false;
     }
 
     // Hide recipes from the main list
