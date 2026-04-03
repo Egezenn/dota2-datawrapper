@@ -1,4 +1,4 @@
-# Dota2 dotawrapper
+# Dota2 datawrapper
 
 This repository is a **Universal Data Normalization & Enrichment Library** that merges Valve's official Dota 2 data feeds with the `dotaconstants` community dataset. It is designed to be consumed by any platform (Node.js, Browser, Static Sites).
 

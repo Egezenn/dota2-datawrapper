@@ -1,5 +1,5 @@
 {
-  "name": "dota2-dotawrapper",
+  "name": "dota2-datawrapper",
   "version": "1.0.1",
   "description": "Universal Data Normalization & Enrichment Library for Dota 2",
   "main": "dist/index.js",
@@ -26,7 +26,11 @@
     "docs:static-build": "npm run fetch-all && npm run gen-lookup && npx ts-node scripts/prepare-static.ts && cd docs && npm run build",
     "docs:deploy": "npm run docs:static-build && gh-pages -d docs/dist -a",
     "fetch-all": "npx ts-node scripts/fetch-all.ts",
+    "prepublishOnly": "npm run build",
     "serve": "npx ts-node src/server.ts"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "dota2",

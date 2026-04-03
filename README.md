@@ -1,8 +1,8 @@
-# dota2-dotawrapper
+# dota2-datawrapper
 
 A high-fidelity **Data Normalization & Enrichment Layer** for Dota 2. It seamlessly merges Valve's official live Datafeed API with the community-driven `dotaconstants` dataset to provide a single, consistent source of truth for heroes, items, abilities, and patches.
 
-[![npm version](https://img.shields.io/npm/v/dota2-dotawrapper.svg)](https://www.npmjs.com/package/dota2-datawrapper)
+[![npm version](https://img.shields.io/npm/v/dota2-datawrapper.svg)](https://www.npmjs.com/package/dota2-datawrapper)
 
 ## 🚀 Key Features
 
@@ -16,13 +16,13 @@ A high-fidelity **Data Normalization & Enrichment Layer** for Dota 2. It seamles
 ## 📦 Installation
 
 ```shell
-npm install dota2-dotawrapper
+npm install dota2-datawrapper
 ```
 
 ## 🛠 Usage
 
 ```typescript
-import { Dota2Datafeed } from 'dota2-dotawrapper';
+import { Dota2Datafeed } from 'dota2-datawrapper';
 
 // Initialize with optional configuration
 const api = new Dota2Datafeed({ 
