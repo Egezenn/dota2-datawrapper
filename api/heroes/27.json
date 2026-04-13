@@ -16,7 +16,7 @@
           "agi_base": 16,
           "agi_gain": 1.6,
           "int_base": 23,
-          "int_gain": 3.5,
+          "int_gain": 3.3,
           "primary_attr": 2,
           "complexity": 1,
           "attack_capability": 2,
@@ -874,7 +874,7 @@
                 ""
               ],
               "type": 0,
-              "behavior": "4398046511106",
+              "behavior": "2",
               "target_team": 0,
               "target_type": 0,
               "flags": 0,
