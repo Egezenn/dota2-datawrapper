@@ -55,6 +55,50 @@ export async function processImages(container: HTMLElement) {
   }
 }
 
+export function getSearchScore(text: string, query: string): number {
+  if (!query) return 1;
+  text = text.toLowerCase();
+  query = query.toLowerCase();
+  
+  let score = 0;
+  if (text === query) score = 100;
+  else {
+    // Acronym match check (e.g. bkb -> Black King Bar)
+    const words = text.split(/[\s\-_]+/).filter(w => w.length > 0);
+    if (words.length >= query.length && query.length > 1) {
+      let qIdx = 0;
+      for (let i = 0; i < words.length && qIdx < query.length; i++) {
+        if (words[i][0] === query[qIdx]) qIdx++;
+      }
+      if (qIdx === query.length) score = 95;
+    }
+  }
+
+  if (score === 0) {
+    if (text.startsWith(query)) score = 80;
+    else if (text.includes(query)) score = 50;
+    else {
+    // Basic fuzzy: check if characters appear in order
+    let textIdx = 0;
+    let queryIdx = 0;
+    while (textIdx < text.length && queryIdx < query.length) {
+      if (text[textIdx] === query[queryIdx]) {
+        queryIdx++;
+      }
+      textIdx++;
+    }
+    if (queryIdx === query.length) score = 10;
+    }
+  }
+  
+  // Devalue recipes unless explicitly searching for them
+  if (score > 0 && text.includes('recipe') && !query.includes('recipe')) {
+    score -= 5;
+  }
+
+  return score;
+}
+
 export function debounce(fn: Function, delay: number) {
   let timeoutId: any;
   return function(...args: any[]) {

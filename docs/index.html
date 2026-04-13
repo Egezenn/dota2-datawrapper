@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="api/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dota2 datawrapper Explorer</title>
+    <title>Dota2 Datawrapper Explorer</title>
     <link rel="stylesheet" href="src/css/patches.css" />
   </head>
   <body>
@@ -25,6 +25,7 @@
         <div class="search-bar">
           <img src="api/assets/images/dota_react/icons/search.svg" class="search-icon" />
           <input type="text" id="search-input" placeholder="Search..." />
+          <button id="main-search-clear" class="clear-input-btn hidden">&times;</button>
         </div>
       </header>
       <nav class="category-nav hidden" id="hero-categories">
@@ -55,6 +56,7 @@
           <div class="modal-header">
             <div class="modal-search-container">
               <input type="text" id="modal-search" placeholder="Quick switch (Ctrl+K)..." autocomplete="off" />
+              <button id="modal-search-clear" class="clear-input-btn hidden">&times;</button>
               <div id="modal-search-results" class="search-results hidden"></div>
             </div>
             <button id="modal-close" class="close-btn">&times;</button>

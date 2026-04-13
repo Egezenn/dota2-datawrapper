@@ -1,7 +1,8 @@
 import { 
   api, modalBody, modalEl, constantsHeroes, constantsItems, constantsAbilities, abilityLookup, constantsAbilityIds, valveHeroes, valveItems,
-  setPatchVersion, setHeroId, setItemId
+  setPatchVersion, setHeroId, setItemId, searchInput, allData
 } from '../state';
+import { render } from './grid';
 import { LocalCache } from '../cache';
 import { Dota2Datafeed } from '@core/client';
 import { processImages } from '../utils';
@@ -15,6 +16,12 @@ export async function showPatchDetails(version: string) {
   modalBody.innerHTML = '<div class="loader"></div>';
   modalEl.classList.remove('hidden');
   document.body.classList.add('no-scroll');
+  searchInput.blur();
+  if (searchInput.value) {
+    searchInput.value = '';
+    document.getElementById('main-search-clear')?.classList.add('hidden');
+    render(allData);
+  }
   
   try {
     await ensureConstants();

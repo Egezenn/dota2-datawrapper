@@ -266,3 +266,9 @@
   margin-left: 2px;
   font-weight: 500;
 }
+@media (max-width: 1280px) {
+  .stats-condensed-section h3,
+  .talents-section h3 {
+    text-align: center;
+  }
+}

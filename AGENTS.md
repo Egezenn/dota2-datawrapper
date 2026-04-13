@@ -53,6 +53,11 @@ The library provides `withConstants` wrappers that automatically merge:
 
 When Dota 2 updates, the following flow is used:
 
+1. `npm run data:refresh`: Fast refresh of all JSON data (Valve/Odota) skipping image assets.
+2. `npm run docs:static-build`: Full rebuild (runs fetch-all, gen-lookup, and prepare-static including assets).
+
+### Internal Steps:
+
 1. `npm run fetch-all`: Syncs latest Valve data and assets to `data/`.
 2. `npm run gen-lookup`: Updates ability/innate mappings.
-3. `npm run docs:static-build`: Regenerates the static JSON snapshots for the Explorer and publishes them.
+3. `npx ts-node scripts/prepare-static.ts`: Regenerates the static JSON snapshots for the Explorer.

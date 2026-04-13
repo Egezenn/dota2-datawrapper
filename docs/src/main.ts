@@ -2,6 +2,7 @@ import './style.css';
 import { 
   currentMode, currentHeroId, currentItemId, currentPatchVersion, allData,
   setModeType, setCategory, setHeroCategory, setHeroId, setItemId, setPatchVersion,
+  selectedSearchIndex, setSelectedSearchIndex,
   navLinks, titleEl, searchInput, heroCategoriesEl, itemCategoriesEl,
   modalEl, modalBody, modalSearch, modalSearchResults, clearCacheBtn, api, constantsItems
 } from './state';
@@ -11,7 +12,7 @@ import { renderHeroDetails } from './render/hero';
 import { renderItemDetails } from './render/item';
 import { showPatchDetails } from './render/patch';
 import { LocalCache } from './cache';
-import { getAttributeName, debounce } from './utils';
+import { getAttributeName, debounce, getSearchScore } from './utils';
 
 // --- Navigation & Routing ---
 async function setMode(mode: 'heroes' | 'items' | 'patches') {
@@ -52,6 +53,14 @@ const closeModal = () => {
   setPatchVersion(null);
   modalSearch.value = '';
   modalSearchResults.classList.add('hidden');
+  document.getElementById('modal-search-clear')?.classList.add('hidden');
+
+  // Clear main search bar
+  if (searchInput.value) {
+    searchInput.value = '';
+    document.getElementById('main-search-clear')?.classList.add('hidden');
+    render(allData);
+  }
 };
 
 // Handle hash changes
@@ -69,6 +78,14 @@ async function showHeroDetails(id: number) {
   modalEl.classList.remove('hidden');
   document.body.classList.add('no-scroll');
   
+  // Clear main search
+  searchInput.blur();
+  if (searchInput.value) {
+    searchInput.value = '';
+    document.getElementById('main-search-clear')?.classList.add('hidden');
+    render(allData);
+  }
+  
   try {
     const hero = await LocalCache.getOrFetch(`hero_${id}`, () => api.getHeroData(id));
     if (hero) renderHeroDetails(hero);
@@ -84,6 +101,10 @@ async function showItemDetails(id: number) {
   modalEl.classList.remove('hidden');
   document.body.classList.add('no-scroll');
   modalBody.innerHTML = '<div class="loader">Merging...</div>';
+  searchInput.blur();
+  searchInput.value = '';
+  document.getElementById('main-search-clear')?.classList.add('hidden');
+  render(allData);
   
   try {
     const items = await LocalCache.getOrFetch('items', () => api.getItemsWithConstants(constantsItems));
@@ -128,7 +149,27 @@ async function init() {
     });
   });
 
-  searchInput.addEventListener('input', () => render(allData));
+  const mainSearchClear = document.getElementById('main-search-clear') as HTMLButtonElement;
+  searchInput.addEventListener('input', () => {
+    mainSearchClear.classList.toggle('hidden', searchInput.value.length === 0);
+    render(allData);
+  });
+  mainSearchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    mainSearchClear.classList.add('hidden');
+    searchInput.focus();
+    render(allData);
+  });
+
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const firstCard = document.querySelector('.card') as HTMLElement;
+      if (firstCard) {
+        searchInput.blur();
+        firstCard.click();
+      }
+    }
+  });
   document.getElementById('modal-close')!.addEventListener('click', closeModal);
   modalEl.addEventListener('click', (e) => { if (e.target === modalEl) closeModal(); });
 
@@ -141,22 +182,46 @@ async function init() {
   });
 
   // Modal search logic
+  let lastSearchResults: any[] = [];
+
+  const updateSearchHighlight = () => {
+    const items = modalSearchResults.querySelectorAll('.search-result-item');
+    items.forEach((item, index) => {
+      if (index === selectedSearchIndex) {
+        item.classList.add('selected');
+        item.scrollIntoView({ block: 'nearest' });
+      } else {
+        item.classList.remove('selected');
+      }
+    });
+  };
+
   const handleModalSearch = () => {
     const query = modalSearch.value.toLowerCase().trim();
     if (!query) {
       modalSearchResults.classList.add('hidden');
+      lastSearchResults = [];
       return;
     }
 
     const results = allData.filter(item => {
       const name = (item.name_loc || item.patch_name || item.name || '').toLowerCase();
-      return name.includes(query);
+      item._search_score = getSearchScore(name, query);
+      return item._search_score > 0;
+    }).sort((a, b) => {
+      if (b._search_score !== a._search_score) return b._search_score - a._search_score;
+      const nameA = (a.name_loc || a.patch_name || a.name || '').toLowerCase();
+      const nameB = (b.name_loc || b.patch_name || b.name || '').toLowerCase();
+      return nameA.localeCompare(nameB);
     }).slice(0, 10);
+
+    lastSearchResults = results;
+    setSelectedSearchIndex(0);
 
     if (results.length === 0) {
       modalSearchResults.innerHTML = '<div class="search-result-item no-results">No matches found</div>';
     } else {
-      modalSearchResults.innerHTML = results.map(item => {
+      modalSearchResults.innerHTML = results.map((item, index) => {
         let img = '';
         let meta = '';
 
@@ -178,7 +243,7 @@ async function init() {
         }
         
         return `
-          <div class="search-result-item" data-id="${item.id || item.patch_name}">
+          <div class="search-result-item ${index === 0 ? 'selected' : ''}" data-id="${item.id || item.patch_name}">
             ${img ? `<img src="${img}" class="result-icon">` : ''}
             <div class="result-info">
               <div class="result-text">${item.name_loc || item.patch_name || item.name}</div>
@@ -203,7 +268,17 @@ async function init() {
     });
   };
 
-  modalSearch.addEventListener('input', debounce(handleModalSearch, 250));
+  const modalSearchClear = document.getElementById('modal-search-clear') as HTMLButtonElement;
+  modalSearch.addEventListener('input', () => {
+    modalSearchClear.classList.toggle('hidden', modalSearch.value.length === 0);
+    debounce(handleModalSearch, 250)();
+  });
+  modalSearchClear.addEventListener('click', () => {
+    modalSearch.value = '';
+    modalSearchClear.classList.add('hidden');
+    modalSearchResults.classList.add('hidden');
+    modalSearch.focus();
+  });
 
   // Shortcuts
   document.addEventListener('keydown', (e) => {
@@ -222,14 +297,49 @@ async function init() {
     const isModalOpen = !modalEl.classList.contains('hidden');
     const isSearchFocused = document.activeElement === modalSearch || document.activeElement === searchInput;
 
-    if (isModalOpen && !isSearchFocused && e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
-      modalSearch.focus();
-      // Let the character be typed naturally
+    if (!isSearchFocused && e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (isModalOpen) {
+        modalSearch.focus();
+      } else {
+        searchInput.focus();
+      }
+    }
+
+    if (e.key === 'Escape') {
+      if (isModalOpen) {
+        closeModal();
+      } else if (isSearchFocused) {
+        if (searchInput.value) {
+          searchInput.value = '';
+          document.getElementById('main-search-clear')?.classList.add('hidden');
+          render(allData);
+        }
+        (document.activeElement as HTMLElement).blur();
+      }
+      return;
     }
 
     if (isModalOpen) {
-      if (e.key === 'Escape') {
-        closeModal();
+      if (isSearchFocused && !modalSearchResults.classList.contains('hidden') && lastSearchResults.length > 0) {
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          setSelectedSearchIndex((selectedSearchIndex + 1) % lastSearchResults.length);
+          updateSearchHighlight();
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          setSelectedSearchIndex((selectedSearchIndex - 1 + lastSearchResults.length) % lastSearchResults.length);
+          updateSearchHighlight();
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          const selected = lastSearchResults[selectedSearchIndex];
+          if (selected) {
+            if (currentMode === 'heroes') showHeroDetails(selected.id);
+            else if (currentMode === 'items') showItemDetails(selected.id);
+            else if (currentMode === 'patches') showPatchDetails(selected.patch_name);
+            modalSearch.value = '';
+            modalSearchResults.classList.add('hidden');
+          }
+        }
       } else if (!isSearchFocused) {
         // Navigation shortcuts - only if search is NOT focused
         if (currentHeroId !== null) {
@@ -274,6 +384,18 @@ async function init() {
             showPatchDetails(allData[prevIndex].patch_name);
           }
         }
+      }
+    } else if (!isSearchFocused) {
+      // Main page mode navigation
+      const modes: ('heroes' | 'items' | 'patches')[] = ['heroes', 'items', 'patches'];
+      const currentIndex = modes.indexOf(currentMode);
+
+      if (e.key === 'ArrowRight') {
+        const nextMode = modes[(currentIndex + 1) % modes.length];
+        window.location.hash = nextMode;
+      } else if (e.key === 'ArrowLeft') {
+        const prevMode = modes[(currentIndex - 1 + modes.length) % modes.length];
+        window.location.hash = prevMode;
       }
     }
   });

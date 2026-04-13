@@ -46,7 +46,7 @@
   left: 20px;
   right: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   z-index: 100;
   gap: 20px;
@@ -61,7 +61,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 15px;
+  padding: 10px 40px 10px 15px;
   border-radius: 8px;
   color: white;
   font-size: 14px;
@@ -99,6 +99,16 @@
   cursor: pointer;
   transition: var(--transition);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-left: 3px solid transparent;
+}
+
+.search-result-item.selected {
+  background: rgba(255, 255, 255, 0.08);
+  border-left-color: var(--gold);
+}
+
+.search-result-item:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .result-info {

@@ -12355,6 +12355,10 @@
     "has_icon": false,
     "is_innate": false
   },
+  "special_bonus_unique_invoker_forged_spirit_armor_reduction": {
+    "has_icon": false,
+    "is_innate": false
+  },
   "special_bonus_unique_silencer_arcane_curse_duration": {
     "has_icon": false,
     "is_innate": false

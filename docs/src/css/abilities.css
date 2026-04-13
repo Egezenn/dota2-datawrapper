@@ -200,6 +200,17 @@
   margin-top: 20px;
 }
 
+@media (max-width: 900px) {
+  .abilities-section h3 {
+    text-align: center;
+  }
+  .constants-abilities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 .const-ability-entry {
   display: flex;
   flex-direction: column;
@@ -400,8 +411,27 @@
   margin-left: 8px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .aghs-grid {
     grid-template-columns: 1fr;
+  }
+  .aghanims-section h3 {
+    text-align: center;
+  }
+  .aghs-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+  .aghs-right {
+    padding: 12px 0 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: none;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  .aghs-desc {
+    text-align: center;
   }
 }

@@ -5,6 +5,18 @@
   align-items: center;
 }
 
+@media (max-width: 1280px) {
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #page-title {
+    text-align: center;
+    margin: 0;
+  }
+}
+
 .search-bar {
   position: relative;
   display: flex;
@@ -22,7 +34,7 @@
 .search-bar input {
   background: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 12px 20px 12px 45px;
+  padding: 12px 40px 12px 45px;
   border-radius: 8px;
   color: white;
   width: 300px;
@@ -34,6 +46,37 @@
 .search-bar input:focus {
   border-color: var(--primary);
   box-shadow: 0 0 10px rgba(194, 62, 62, 0.3);
+}
+
+.clear-input-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  transition: var(--transition);
+  z-index: 5;
+}
+
+.clear-input-btn:hover {
+  background: var(--primary);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.clear-input-btn.hidden {
+  display: none;
 }
 
 .data-grid {
@@ -215,12 +258,11 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-muted);
-  padding: 8px 15px;
+  padding: 8px 12px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 11px;
   cursor: pointer;
   transition: var(--transition);
-  margin-left: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }

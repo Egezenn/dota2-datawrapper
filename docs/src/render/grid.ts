@@ -1,6 +1,6 @@
 import { Dota2Datafeed } from '@core/client';
 import { contentEl, currentMode, currentHeroCategory, currentCategory, searchInput } from '../state';
-import { getAttributeName, loadCachedImg } from '../utils';
+import { getAttributeName, loadCachedImg, getSearchScore } from '../utils';
 import { renderPatchesGraph } from './patches-graph';
 
 export function render(data: any[]) {
@@ -44,7 +44,17 @@ export function render(data: any[]) {
 
     const query = searchInput.value.toLowerCase();
     const name = (item.name_loc || item.patch_name || item.name || '').toLowerCase();
-    return name.includes(query);
+    
+    // Assign score for sorting
+    item._search_score = getSearchScore(name, query);
+    return item._search_score > 0;
+  }).sort((a, b) => {
+    // Primary sort: score descending
+    if (b._search_score !== a._search_score) return b._search_score - a._search_score;
+    // Secondary sort: alphabetical
+    const nameA = (a.name_loc || a.patch_name || a.name || '').toLowerCase();
+    const nameB = (b.name_loc || b.patch_name || b.name || '').toLowerCase();
+    return nameA.localeCompare(nameB);
   });
 
   filtered.forEach(item => {

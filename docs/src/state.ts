@@ -18,6 +18,7 @@ export let allData: any[] = [];
 export let currentHeroId: number | null = null;
 export let currentItemId: number | null = null;
 export let currentPatchVersion: string | null = null;
+export let selectedSearchIndex = 0;
 
 export const setModeType = (mode: 'heroes' | 'items' | 'patches') => { (currentMode as any) = mode; };
 export const setCategory = (cat: string) => { (currentCategory as any) = cat; };
@@ -26,6 +27,7 @@ export const setData = (data: any[]) => { (allData as any) = data; };
 export const setHeroId = (id: number | null) => { (currentHeroId as any) = id; };
 export const setItemId = (id: number | null) => { (currentItemId as any) = id; };
 export const setPatchVersion = (version: string | null) => { (currentPatchVersion as any) = version; };
+export const setSelectedSearchIndex = (index: number) => { (selectedSearchIndex as any) = index; };
 
 import abilityLookupStatic from './ability_lookup.json';
 

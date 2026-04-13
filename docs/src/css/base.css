@@ -56,7 +56,15 @@ h3,
 
 #app {
   width: 100%;
-  padding: 0 60px;
+  padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #app {
+    padding: 0 20px;
+  }
 }
 
 .main-nav {
@@ -70,6 +78,19 @@ h3,
   background: rgba(15, 17, 21, 0.8);
   backdrop-filter: blur(10px);
   z-index: 100;
+  gap: 20px;
+}
+
+@media (max-width: 1280px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
 }
 
 .logo-link {
@@ -83,19 +104,29 @@ h3,
   color: var(--text-main);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo span {
   color: var(--primary);
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .nav-links a {
   text-decoration: none;
   color: var(--text-muted);
-  margin-left: 30px;
   font-weight: 600;
   transition: var(--transition);
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -106,7 +137,7 @@ h3,
 .nav-links a.active::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 2px;

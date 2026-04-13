@@ -72,6 +72,7 @@ async function downloadAsset(url: string, destDir: string, force = false) {
 async function main() {
   loadUnavailableAssets();
   const force = process.argv.includes('--force') || process.argv.includes('-f');
+  const skipAssets = process.argv.includes('--no-assets');
   const api = new Dota2Datafeed();
   
   // Force CDN for downloading
@@ -101,7 +102,9 @@ async function main() {
     if (!fs.existsSync(path.dirname(heroPath))) fs.mkdirSync(path.dirname(heroPath), { recursive: true });
 
     // Download hero image
-    await downloadAsset(Dota2Datafeed.urls.heroImage(hero.name), assetsDir, force);
+    if (!skipAssets) {
+      await downloadAsset(Dota2Datafeed.urls.heroImage(hero.name), assetsDir, force);
+    }
 
     let detailedHero = null;
     if (fs.existsSync(heroPath) && !force) {
@@ -118,8 +121,10 @@ async function main() {
     if (detailedHero) {
       // Download ability images & videos
       for (const ability of detailedHero.abilities) {
-        await downloadAsset(Dota2Datafeed.urls.abilityImage(ability.name), assetsDir, force);
-        await sleep(50); // Small delay for assets
+        if (!skipAssets) {
+          await downloadAsset(Dota2Datafeed.urls.abilityImage(ability.name), assetsDir, force);
+          await sleep(50); // Small delay for assets
+        }
       }
     }
     
@@ -142,7 +147,7 @@ async function main() {
   }
 
   for (const item of items) {
-    if (item.name) {
+    if (item.name && !skipAssets) {
       await downloadAsset(Dota2Datafeed.urls.itemImage(item.name), assetsDir, force);
       await sleep(50); // Small delay for assets
     }
@@ -280,8 +285,10 @@ async function main() {
   const fonts = ['radiance', 'reaver'];
   fonts.forEach(f => staticIcons.push(Dota2Datafeed.urls.ASSET_URLS.FONT(f)));
 
-  for (const url of staticIcons) {
-    await downloadAsset(url, assetsDir, force);
+  if (!skipAssets) {
+    for (const url of staticIcons) {
+      await downloadAsset(url, assetsDir, force);
+    }
   }
 
   console.log('\nAll data and assets fetched successfully.');
