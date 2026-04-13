@@ -27,7 +27,7 @@
     "data:deploy": "npm run data:refresh && npm run build --prefix docs && gh-pages -d docs/dist -a",
     "docs:static-build": "npm run fetch-all && npm run gen-lookup && npx ts-node scripts/prepare-static.ts && cd docs && npm run build",
     "docs:deploy": "npm run docs:static-build && gh-pages -d docs/dist -a",
-    "docs:deploy-as-is": "gh-pages -d docs/dist -a",
+    "docs:deploy-as-is": "npm run build --prefix docs && gh-pages -d docs/dist -a",
     "fetch-all": "npx ts-node scripts/fetch-all.ts",
     "prepublishOnly": "npm run build",
     "serve": "npx ts-node src/server.ts"
