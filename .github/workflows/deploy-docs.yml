@@ -20,7 +20,16 @@ jobs:
       - name: Setup Node 🟢
         uses: actions/setup-node@v4
         with:
-          node-with-package-json: "package.json"
+          node-version: "20"
+          cache: "npm"
+
+      - name: Cache Dota 2 Data 💾
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: ${{ runner.os }}-dota-data-${{ hashFiles('scripts/fetch-all.ts') }}
+          restore-keys: |
+            ${{ runner.os }}-dota-data-
 
       - name: Install dependencies 📦
         run: npm install
