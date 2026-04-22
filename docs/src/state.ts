@@ -4,11 +4,7 @@ import { Dota2Datafeed } from '@core/client';
 const isProduction = import.meta.env.PROD || window.location.hostname !== 'localhost';
 const apiBase = isProduction ? './api' : '/api';
 
-export const api = new Dota2Datafeed({ 
-  baseURL: apiBase,
-  useJsonExtension: isProduction 
-});
-Dota2Datafeed.urls.setBaseUrl(isProduction ? `${apiBase}/assets` : '/api/assets');
+export const api = Dota2Datafeed.fromStatic(apiBase);
 
 // State variables
 export let currentMode: 'heroes' | 'items' | 'patches' = 'heroes';

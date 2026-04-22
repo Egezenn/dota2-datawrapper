@@ -25,10 +25,10 @@ npm install dota2-datawrapper
 import { Dota2Datafeed } from 'dota2-datawrapper';
 
 // Initialize with optional configuration
-const api = new Dota2Datafeed({ 
-  language: 'english',
-  useJsonExtension: true // Useful for static JSON mirrors
-});
+const api = new Dota2Datafeed({ language: 'english' });
+
+// OR: Initialize for a Static / GitHub Pages provider
+const staticApi = Dota2Datafeed.fromGitHub('user', 'repo');
 
 async function getHeroDetails(heroId: number) {
   // 1. Fetch community constants (cached/local/github)
@@ -41,6 +41,23 @@ async function getHeroDetails(heroId: number) {
   console.log(`Strength Gain: ${hero.str_gain}`); // Enriched from constants
 }
 ```
+
+### Static & GitHub Providers
+
+If you are hosting a static mirror of the Dota 2 data (e.g., via `npm run prepare-static`), use these helpers to automatically configure API and asset paths:
+
+```typescript
+// 1. Using a GitHub Pages mirror
+const api = Dota2Datafeed.fromGitHub('Egezenn', 'dota2-datawrapper');
+
+// 2. Using any custom static provider
+const api = Dota2Datafeed.fromStatic('./api'); // Relative paths work too!
+```
+
+These helpers automatically:
+
+* Set `isStatic: true` (ensures `.json` extensions and strips query parameters).
+* Configure `Dota2Datafeed.urls` to point to the `/assets` subdirectory of your provider.
 
 ## 📖 API Reference
 

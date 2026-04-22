@@ -10,6 +10,7 @@ export interface Dota2DatafeedConfig {
   constantsBaseURL?: string; // dotaconstants
   timeout?: number;
   useJsonExtension?: boolean;
+  isStatic?: boolean;
 }
 
 /**
@@ -20,12 +21,34 @@ export class Dota2Datafeed {
   private clientConstants: AxiosInstance;
   private language: string;
   private useJsonExtension: boolean;
+  private isStatic: boolean;
   public static urls = Dota2Urls;
   public static utils = utils;
 
+  /**
+   * Creates a client configured for a static provider.
+   * Also sets the global asset base URL to the provider's /assets directory.
+   */
+  static fromStatic(baseURL: string, config: Partial<Dota2DatafeedConfig> = {}): Dota2Datafeed {
+    Dota2Urls.setBaseUrl(`${baseURL}/assets`);
+    return new Dota2Datafeed({
+      baseURL,
+      isStatic: true,
+      ...config
+    });
+  }
+
+  /**
+   * Creates a client configured for a GitHub Pages provider.
+   */
+  static fromGitHub(user: string, repo: string, config: Partial<Dota2DatafeedConfig> = {}): Dota2Datafeed {
+    return this.fromStatic(`https://${user}.github.io/${repo}/api`, config);
+  }
+
   constructor(config: Dota2DatafeedConfig = {}) {
     this.language = config.language || 'english';
-    this.useJsonExtension = !!config.useJsonExtension;
+    this.isStatic = !!config.isStatic;
+    this.useJsonExtension = !!config.useJsonExtension || this.isStatic;
     const timeout = config.timeout || 120000;
 
     // 1. Valve Datafeed Client
@@ -53,6 +76,11 @@ export class Dota2Datafeed {
               req.url += '.json';
             }
           }
+
+          if (this.isStatic) {
+            req.params = {};
+          }
+          
           return req;
         });
       });
@@ -65,7 +93,7 @@ export class Dota2Datafeed {
   async getHeroes(): Promise<Dota2Hero[]> {
     try {
       const response = await this.clientDf.get<HeroListResponse>('/herolist', {
-        params: { language: this.language },
+        params: this.isStatic ? {} : { language: this.language },
       });
       return response.data?.result?.data?.heroes || [];
     } catch (error) {
@@ -80,7 +108,7 @@ export class Dota2Datafeed {
   async getHeroData(heroId: number): Promise<DetailedHero | null> {
     try {
       const path = this.useJsonExtension ? `/heroes/${heroId}` : '/herodata';
-      const params = this.useJsonExtension ? { language: this.language } : { hero_id: heroId, language: this.language };
+      const params = this.isStatic ? {} : (this.useJsonExtension ? { language: this.language } : { hero_id: heroId, language: this.language });
       
       const response = await this.clientDf.get<HeroDataResponse>(path, { params });
       return response.data?.result?.data?.heroes?.[0] || null;
@@ -96,7 +124,7 @@ export class Dota2Datafeed {
   async getItems(): Promise<Dota2Item[]> {
     try {
       const response = await this.clientDf.get<ItemListResponse>('/itemlist', {
-        params: { language: this.language },
+        params: this.isStatic ? {} : { language: this.language },
       });
       return response.data?.result?.data?.itemabilities || [];
     } catch (error) {
@@ -111,7 +139,7 @@ export class Dota2Datafeed {
   async getAbilities(): Promise<Dota2Ability[]> {
     try {
       const response = await this.clientDf.get<AbilityListResponse>('/abilitylist', {
-        params: { language: this.language },
+        params: this.isStatic ? {} : { language: this.language },
       });
       const data = response.data.result.data;
       return data.abilities || data.itemabilities || [];
@@ -127,7 +155,7 @@ export class Dota2Datafeed {
   async getPatchList(): Promise<PatchNotes[]> {
     try {
       const response = await this.clientDf.get<PatchNotesResponse>('/patchnoteslist', {
-        params: { language: this.language },
+        params: this.isStatic ? {} : { language: this.language },
       });
       const data = response.data;
       return data?.patches || data?.result?.data?.patches || [];
@@ -144,7 +172,7 @@ export class Dota2Datafeed {
   async getPatchNotes(version: string): Promise<PatchDetailsResponse> {
     try {
       const path = this.useJsonExtension ? `/patches/${version}` : '/patchnotes';
-      const params = this.useJsonExtension ? { language: this.language } : { version, language: this.language };
+      const params = this.isStatic ? {} : (this.useJsonExtension ? { language: this.language } : { version, language: this.language });
 
       const response = await this.clientDf.get<PatchDetailsResponse>(path, { params });
       return response.data;
