@@ -1,9 +1,8 @@
-name: Deploy Explorer to GitHub Pages
+name: Daily Patch Check and Deploy
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
   workflow_dispatch:
 
 permissions:
@@ -12,7 +11,30 @@ permissions:
   id-token: write
 
 jobs:
+  check-patch:
+    runs-on: ubuntu-latest
+    outputs:
+      new_patch: ${{ steps.check.outputs.new_patch }}
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node 🟢
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies 📦
+        run: npm ci
+
+      - name: Check if new patch exists today
+        id: check
+        run: npx ts-node scripts/check-patch-today.ts
+
   build-and-deploy:
+    needs: check-patch
+    if: needs.check-patch.outputs.new_patch == 'true' || github.event_name == 'workflow_dispatch'
     concurrency: ci-${{ github.ref }}
     environment:
       name: github-pages
@@ -37,7 +59,7 @@ jobs:
             ${{ runner.os }}-dota-data-
 
       - name: Install dependencies 📦
-        run: npm install
+        run: npm ci
 
       - name: Fetch Dota 2 Data 📡
         run: npm run fetch-all
