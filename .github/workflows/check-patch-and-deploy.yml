@@ -1,0 +1,80 @@
+name: Daily Patch Check and Deploy
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  check-patch:
+    runs-on: ubuntu-latest
+    outputs:
+      new_patch: ${{ steps.check.outputs.new_patch }}
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node 🟢
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies 📦
+        run: npm ci
+
+      - name: Check if new patch exists today
+        id: check
+        run: npx ts-node scripts/check-patch-today.ts
+
+  build-and-deploy:
+    needs: check-patch
+    if: needs.check-patch.outputs.new_patch == 'true' || github.event_name == 'workflow_dispatch'
+    concurrency: ci-${{ github.ref }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node 🟢
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Cache Dota 2 Data 💾
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: ${{ runner.os }}-dota-data-${{ hashFiles('scripts/fetch-all.ts') }}
+          restore-keys: |
+            ${{ runner.os }}-dota-data-
+
+      - name: Install dependencies 📦
+        run: npm ci
+
+      - name: Fetch Dota 2 Data 📡
+        run: npm run fetch-all
+
+      - name: Build Static Explorer 🏗️
+        run: npm run docs:static-build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs/dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
