@@ -18,7 +18,7 @@ export function renderAbilityMeta(cAbility: any) {
       ` : ''}
       ${cooldown ? `
         <div class="const-ability-meta-item">
-          <img data-src="${Dota2Datafeed.urls.ASSET_URLS.COOLDOWN}" class="const-ability-meta-icon">
+          <img src="${Dota2Datafeed.urls.ASSET_URLS.COOLDOWN}" class="const-ability-meta-icon">
           <span>${cooldown}</span>
         </div>
       ` : ''}
@@ -101,7 +101,7 @@ export function renderAbilityCard(nameOrAbility: string | DetailedAbility, hero:
       <div class="const-ability-header" style="flex-direction: column; align-items: flex-start; gap: 8px;">
         <div class="const-ability-header-top" style="display: flex; flex-direction: row; align-items: center; gap: 12px; width: 100%;">
           <div class="ability-icon-wrapper" style="width: 48px; height: 48px; position: relative; flex-shrink: 0; background: #000; border-radius: 4px;">
-            <img data-src="${imgUrl}" class="const-ability-icon" loading="lazy"
+            <img src="${imgUrl}" class="const-ability-icon" loading="lazy"
                  style="width: 100%; height: 100%; border-radius: 4px; margin-bottom: 0;">
             ${isInnate ? '<span class="innate-tag" style="font-size: 8px; padding: 1px 3px;">Innate</span>' : ''}
           </div>
@@ -177,7 +177,7 @@ export function renderAghsAbilityCard(nameOrAbility: string | DetailedAbility, h
       <div class="aghs-left" style="width: auto; flex-shrink: 0; padding-right: 0; min-width: 140px;">
         <div class="const-ability-header" style="flex-direction: row; align-items: center; gap: 12px; margin-bottom: 0;">
           <div class="ability-icon-wrapper" style="width: 48px; height: 48px; position: relative; flex-shrink: 0; background: #000; border-radius: 4px;">
-            <img data-src="${imgUrl}" 
+            <img src="${imgUrl}" 
                  style="width: 100%; height: 100%; border-radius: 4px; margin-bottom: 0;">
           </div>
           <div class="const-ability-name" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden; flex: 1; text-align: left; font-size: 14px; font-weight: 600;">${a.name_loc || a.name.replace(/_/g, ' ')}</div>
