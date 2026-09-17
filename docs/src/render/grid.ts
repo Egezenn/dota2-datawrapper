@@ -1,6 +1,6 @@
 import { Dota2Datafeed } from '@core/client';
 import { contentEl, currentMode, currentHeroCategory, currentCategory, searchInput } from '../state';
-import { getAttributeName, loadCachedImg, getSearchScore } from '../utils';
+import { getAttributeName, getSearchScore } from '../utils';
 import { renderPatchesGraph } from './patches-graph';
 
 export function render(data: any[]) {
@@ -64,7 +64,7 @@ export function render(data: any[]) {
     if (currentMode === 'heroes') {
       const imgUrl = Dota2Datafeed.urls.heroImage(item.name);
       card.innerHTML = `
-        <div class="card-img-wrapper"><img alt="${item.name_loc}" loading="lazy"></div>
+        <div class="card-img-wrapper"><img src="${imgUrl}" alt="${item.name_loc}" loading="lazy"></div>
         <div class="card-info">
           <div class="card-name">${item.name_loc}</div>
           <div class="card-attr">
@@ -73,7 +73,6 @@ export function render(data: any[]) {
           </div>
         </div>
       `;
-      loadCachedImg(card.querySelector('img')!, imgUrl);
       card.addEventListener('click', () => (window as any).showHeroDetails(item.id));
     } else if (currentMode === 'items') {
       const imgUrl = Dota2Datafeed.urls.itemImage(item.name);
@@ -81,7 +80,7 @@ export function render(data: any[]) {
       const isEnhancement = item.name.startsWith('item_enhancement_');
       card.innerHTML = `
         <div class="card-img-wrapper">
-          <img alt="${item.name_loc}" loading="lazy" style="object-fit: contain; padding: 10px;">
+          <img src="${imgUrl}" alt="${item.name_loc}" loading="lazy" style="object-fit: contain; padding: 10px;">
           ${isNeutral ? `<div class="tier-badge">Tier ${item.neutral_item_tier + 1}</div>` : ''}
           ${isEnhancement ? `<div class="tier-badge" style="background: var(--primary)">ENHANCEMENT</div>` : ''}
         </div>
@@ -95,7 +94,6 @@ export function render(data: any[]) {
           </div>
         </div>
       `;
-      loadCachedImg(card.querySelector('img')!, imgUrl);
       card.addEventListener('click', () => (window as any).showItemDetails(item.id));
     } else if (currentMode === 'patches') {
       card.style.height = 'auto';

@@ -1,7 +1,7 @@
 import { Dota2Datafeed } from '../../../src/client';
 import type { DetailedHero } from '../../../src/types';
 import { modalBody, constantsHeroes } from '../state';
-import { getAttributeName, processImages } from '../utils';
+import { getAttributeName } from '../utils';
 import { renderHeroAbilities } from './abilities';
 
 export function renderHeroDetails(hero: DetailedHero) {
@@ -19,17 +19,17 @@ export function renderHeroDetails(hero: DetailedHero) {
     <div class="hero-details">
       <div class="top-section">
         <div class="hero-header">
-          <img data-src="${Dota2Datafeed.urls.heroImage(hero.name)}" class="hero-main-img">
+          <img src="${Dota2Datafeed.urls.heroImage(hero.name)}" class="hero-main-img">
           <div class="hero-title">
             <h2>${hero.name_loc}</h2>
             <div class="hero-meta">
               <span class="meta-text">
-                <img data-src="${Dota2Datafeed.urls.attributeIcon(hero.primary_attr)}" class="attr-icon">
+                <img src="${Dota2Datafeed.urls.attributeIcon(hero.primary_attr)}" class="attr-icon">
                 ${getAttributeName(hero.primary_attr)}
               </span>
               <span class="separator">|</span>
               <span class="meta-text">
-                <img data-src="${urls.ATTACK_TYPE_ICON(attackType)}" class="meta-icon">
+                <img src="${urls.ATTACK_TYPE_ICON(attackType)}" class="meta-icon">
                 ${attackType}
               </span>
               <span class="separator">|</span>
@@ -63,16 +63,16 @@ export function renderHeroDetails(hero: DetailedHero) {
               <div class="condensed-group">
                 <span class="condensed-label">Attack</span>
                 <span class="condensed-value">
-                  <img data-src="${urls.STAT_ICON('damage')}" class="stat-icon-img"> ${hero.damage_min}-${hero.damage_max}
-                  <img data-src="${urls.STAT_ICON('attack_range')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.attack_range}
-                  <img data-src="${urls.STAT_ICON('attack_time')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.attack_rate}
+                  <img src="${urls.STAT_ICON('damage')}" class="stat-icon-img"> ${hero.damage_min}-${hero.damage_max}
+                  <img src="${urls.STAT_ICON('attack_range')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.attack_range}
+                  <img src="${urls.STAT_ICON('attack_time')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.attack_rate}
                 </span>
               </div>
               <div class="condensed-group">
                 <span class="condensed-label">Defense</span>
                 <span class="condensed-value">
-                  <img data-src="${urls.STAT_ICON('armor')}" class="stat-icon-img"> ${hero.armor.toFixed(1)}
-                  <img data-src="${urls.STAT_ICON('magic_resist')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.magic_resistance}%
+                  <img src="${urls.STAT_ICON('armor')}" class="stat-icon-img"> ${hero.armor.toFixed(1)}
+                  <img src="${urls.STAT_ICON('magic_resist')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.magic_resistance}%
                 </span>
               </div>
             </div>
@@ -82,14 +82,14 @@ export function renderHeroDetails(hero: DetailedHero) {
               <div class="condensed-group">
                 <span class="condensed-label">Mobility</span>
                 <span class="condensed-value">
-                  <img data-src="${urls.STAT_ICON('movement_speed')}" class="stat-icon-img"> ${hero.movement_speed}
-                  <img data-src="${urls.STAT_ICON('turn_rate')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.turn_rate}
+                  <img src="${urls.STAT_ICON('movement_speed')}" class="stat-icon-img"> ${hero.movement_speed}
+                  <img src="${urls.STAT_ICON('turn_rate')}" class="stat-icon-img" style="margin-left: 10px"> ${hero.turn_rate}
                 </span>
               </div>
               <div class="condensed-group">
                 <span class="condensed-label">Vision</span>
                 <span class="condensed-value">
-                  <img data-src="${urls.STAT_ICON('vision')}" class="stat-icon-img"> ${hero.sight_range_day} / ${hero.sight_range_night}
+                  <img src="${urls.STAT_ICON('vision')}" class="stat-icon-img"> ${hero.sight_range_day} / ${hero.sight_range_night}
                 </span>
               </div>
             </div>
@@ -137,5 +137,4 @@ export function renderHeroDetails(hero: DetailedHero) {
       </div>
     </div>
   `;
-  processImages(modalBody);
 }

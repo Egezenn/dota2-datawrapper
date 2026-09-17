@@ -1,7 +1,6 @@
 import { Dota2Datafeed } from '@core/client';
 import type { DetailedAbility } from '@core/types';
 import { abilityLookup } from './state';
-import { LocalCache } from './cache';
 
 export function getAttributeName(attr: number | string) {
   const a = typeof attr === 'string' ? attr.toLowerCase() : attr;
@@ -43,18 +42,6 @@ export function getAbilityIconUrl(name: string, dAbility?: DetailedAbility) {
   return imgUrl || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 }
 
-export async function loadCachedImg(img: HTMLImageElement, url: string) {
-  img.src = await LocalCache.getCachedImageUrl(url);
-}
-
-export async function processImages(container: HTMLElement) {
-  const imgs = container.querySelectorAll('img[data-src]');
-  for (const img of Array.from(imgs)) {
-    const url = img.getAttribute('data-src')!;
-    loadCachedImg(img as HTMLImageElement, url);
-  }
-}
-
 export function getSearchScore(text: string, query: string): number {
   if (!query) return 1;
   text = text.toLowerCase();
@@ -78,16 +65,16 @@ export function getSearchScore(text: string, query: string): number {
     if (text.startsWith(query)) score = 80;
     else if (text.includes(query)) score = 50;
     else {
-    // Basic fuzzy: check if characters appear in order
-    let textIdx = 0;
-    let queryIdx = 0;
-    while (textIdx < text.length && queryIdx < query.length) {
-      if (text[textIdx] === query[queryIdx]) {
-        queryIdx++;
+      // Basic fuzzy: check if characters appear in order
+      let textIdx = 0;
+      let queryIdx = 0;
+      while (textIdx < text.length && queryIdx < query.length) {
+        if (text[textIdx] === query[queryIdx]) {
+          queryIdx++;
+        }
+        textIdx++;
       }
-      textIdx++;
-    }
-    if (queryIdx === query.length) score = 10;
+      if (queryIdx === query.length) score = 10;
     }
   }
   

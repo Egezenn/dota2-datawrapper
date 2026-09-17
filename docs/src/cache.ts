@@ -1,14 +1,32 @@
+declare const __BUILD_VERSION__: string;
+
 /**
  * A robust cache implementation using IndexedDB to avoid localStorage quota limits.
+ * Automatically invalidated whenever a new build is deployed.
  */
 export class LocalCache {
   private static DB_NAME = 'dota_explorer_cache';
   private static STORE_NAME = 'entries';
   private static DB_VERSION = 1;
-  private static TTL = 1000 * 60 * 60 * 24; // 24 hours
-
   private static db: IDBDatabase | null = null;
-  private static objectUrls = new Map<string, string>();
+  private static versionChecked = false;
+
+  private static async checkVersion(): Promise<void> {
+    if (this.versionChecked) return;
+    this.versionChecked = true;
+
+    try {
+      const currentVersion = typeof __BUILD_VERSION__ !== 'undefined' ? __BUILD_VERSION__ : 'dev';
+      const storedVersion = localStorage.getItem('dota_build_version');
+      if (storedVersion && storedVersion !== currentVersion) {
+        console.log(`[LocalCache] Deployment update detected (${storedVersion} -> ${currentVersion}). Clearing cache.`);
+        await this.clear();
+      }
+      localStorage.setItem('dota_build_version', currentVersion);
+    } catch (e) {
+      console.warn('[LocalCache] Version check error:', e);
+    }
+  }
 
   private static async getDB(): Promise<IDBDatabase> {
     if (this.db) return this.db;
@@ -36,6 +54,7 @@ export class LocalCache {
   }
 
   static async set(key: string, data: any) {
+    await this.checkVersion();
     try {
       const db = await this.getDB();
       return new Promise<void>((resolve, reject) => {
@@ -57,6 +76,7 @@ export class LocalCache {
   }
 
   static async get<T = any>(key: string): Promise<T | null> {
+    await this.checkVersion();
     try {
       const db = await this.getDB();
       return new Promise((resolve, reject) => {
@@ -67,11 +87,6 @@ export class LocalCache {
         request.onsuccess = () => {
           const entry = request.result;
           if (!entry) return resolve(null);
-
-          if (Date.now() - entry.timestamp > this.TTL) {
-            this.remove(key);
-            return resolve(null);
-          }
           resolve(entry.data);
         };
         request.onerror = () => reject(request.error);
@@ -81,51 +96,29 @@ export class LocalCache {
     }
   }
 
-  static async remove(key: string) {
+  static async remove(key: string): Promise<void> {
     try {
       const db = await this.getDB();
-      const tx = db.transaction(this.STORE_NAME, 'readwrite');
-      tx.objectStore(this.STORE_NAME).delete(key);
+      return new Promise<void>((resolve) => {
+        const tx = db.transaction(this.STORE_NAME, 'readwrite');
+        tx.objectStore(this.STORE_NAME).delete(key);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => resolve();
+      });
     } catch (e) {}
   }
 
-  static async clear() {
+  static async clear(): Promise<void> {
     try {
       const db = await this.getDB();
-      const tx = db.transaction(this.STORE_NAME, 'readwrite');
-      tx.objectStore(this.STORE_NAME).clear();
-      localStorage.clear(); // Also clear localStorage just in case
+      return new Promise<void>((resolve) => {
+        const tx = db.transaction(this.STORE_NAME, 'readwrite');
+        tx.objectStore(this.STORE_NAME).clear();
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => resolve();
+      });
     } catch (e) {
-      localStorage.clear();
-    }
-  }
-
-  /**
-   * Fetches an image, caches its blob in IndexedDB, and returns an Object URL.
-   */
-  static async getCachedImageUrl(url: string): Promise<string> {
-    if (this.objectUrls.has(url)) return this.objectUrls.get(url)!;
-
-    try {
-      const cachedBlob = await this.get<Blob>(`blob:${url}`);
-      if (cachedBlob) {
-        const objectUrl = URL.createObjectURL(cachedBlob);
-        this.objectUrls.set(url, objectUrl);
-        return objectUrl;
-      }
-
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`Failed to fetch image: ${response.status}`);
-      
-      const blob = await response.blob();
-      await this.set(`blob:${url}`, blob);
-      
-      const objectUrl = URL.createObjectURL(blob);
-      this.objectUrls.set(url, objectUrl);
-      return objectUrl;
-    } catch (e) {
-      console.warn(`[LocalCache] Failed to cache image ${url}:`, e);
-      return url; // Fallback to raw URL
+      console.warn('[LocalCache] Clear failed:', e);
     }
   }
 

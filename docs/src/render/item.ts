@@ -1,6 +1,5 @@
 import { Dota2Datafeed } from '../../../src/client';
 import { modalBody, allData } from '../state';
-import { processImages } from '../utils';
 
 export function renderItemDetails(item: any) {
   const urls = Dota2Datafeed.urls.ASSET_URLS;
@@ -36,7 +35,7 @@ export function renderItemDetails(item: any) {
       <div class="item-details-layout">
         <!-- LEFT COLUMN: Identity & Relations -->
         <div class="item-details-left">
-           <img data-src="${Dota2Datafeed.urls.itemImage(item.name)}" class="hero-main-img">
+           <img src="${Dota2Datafeed.urls.itemImage(item.name)}" class="hero-main-img">
            <div class="hero-title" style="text-align: center; width: 100%;">
              <h2 style="margin-bottom: 10px">${item.dname || item.name_loc}</h2>
              
@@ -68,7 +67,7 @@ export function renderItemDetails(item: any) {
                  </span>
                ` : `
                  <span class="meta-text" style="color: var(--gold); font-size: 1.2rem">
-                   <img data-src="${urls.GOLD}" class="meta-icon">
+                   <img src="${urls.GOLD}" class="meta-icon">
                    ${item.cost}
                  </span>
                `}
@@ -84,7 +83,7 @@ export function renderItemDetails(item: any) {
                  ` : ''}
                  ${item.cd ? `
                    <div class="const-ability-meta-item">
-                     <img data-src="${Dota2Datafeed.urls.ASSET_URLS.COOLDOWN}" class="const-ability-meta-icon">
+                     <img src="${Dota2Datafeed.urls.ASSET_URLS.COOLDOWN}" class="const-ability-meta-icon">
                      <span>${item.cd}</span>
                    </div>
                  ` : ''}
@@ -124,9 +123,9 @@ export function renderItemDetails(item: any) {
                    
                    return Array.from(componentMap.values()).map((comp: any) => `
                      <div class="item-component-card ${comp.name.includes('_recipe') ? 'item-component-recipe' : ''}" onclick="window.showItemDetailsByName('${comp.name}')">
-                       <img data-src="${Dota2Datafeed.urls.itemImage(comp.name)}">
+                       <img src="${Dota2Datafeed.urls.itemImage(comp.name)}">
                        <div class="item-component-name">${comp.name_loc || comp.name.replace('item_', '').replace(/_/g, ' ')}</div>
-                       ${comp.cost ? `<div class="item-component-cost"><img data-src="${urls.GOLD}">${comp.cost}</div>` : ''}
+                       ${comp.cost ? `<div class="item-component-cost"><img src="${urls.GOLD}">${comp.cost}</div>` : ''}
                      </div>
                    `).join('');
                  })()}
@@ -140,9 +139,9 @@ export function renderItemDetails(item: any) {
                <div class="item-components-grid">
                  ${upgradeItems.map((upg: any) => `
                    <div class="item-component-card" onclick="window.showItemDetailsByName('${upg.name}')">
-                     <img data-src="${Dota2Datafeed.urls.itemImage(upg.name)}">
+                     <img src="${Dota2Datafeed.urls.itemImage(upg.name)}">
                      <div class="item-component-name">${upg.name_loc || upg.name.replace('item_', '').replace(/_/g, ' ')}</div>
-                     ${upg.cost ? `<div class="item-component-cost"><img data-src="${urls.GOLD}">${upg.cost}</div>` : ''}
+                     ${upg.cost ? `<div class="item-component-cost"><img src="${urls.GOLD}">${upg.cost}</div>` : ''}
                    </div>
                  `).join('')}
                </div>
@@ -205,5 +204,4 @@ export function renderItemDetails(item: any) {
       </div>
     </div>
   `;
-  processImages(modalBody);
 }

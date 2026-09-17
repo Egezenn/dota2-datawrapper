@@ -177,6 +177,10 @@ async function init() {
   clearCacheBtn.addEventListener('click', async () => {
     if (confirm('Clear all cached data and reload?')) {
       await LocalCache.clear();
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      }
       window.location.reload();
     }
   });
@@ -411,3 +415,12 @@ async function init() {
 }
 
 init();
+
+// Service Worker Registration for offline caching & instant loads
+if ('serviceWorker' in navigator && (import.meta.env.PROD || window.location.hostname !== 'localhost')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((err) => {
+      console.warn('[SW] Registration failed:', err);
+    });
+  });
+}

@@ -5,7 +5,6 @@ import {
 import { render } from './grid';
 import { LocalCache } from '../cache';
 import { Dota2Datafeed } from '@core/client';
-import { processImages } from '../utils';
 import { ensureConstants } from '../data';
 
 export async function showPatchDetails(version: string) {
@@ -93,7 +92,7 @@ export async function showPatchDetails(version: string) {
               
               return `
                 <div class="change-item">
-                  ${imgUrl ? `<img data-src="${imgUrl}" class="change-icon">` : ''}
+                  ${imgUrl ? `<img src="${imgUrl}" class="change-icon">` : ''}
                   <div class="change-content">
                     <div class="change-title">${itemName || 'Various Changes'}</div>
                     <div class="change-notes">
@@ -128,7 +127,7 @@ export async function showPatchDetails(version: string) {
               
               return `
                 <div class="change-item">
-                  ${heroIconUrl ? `<img data-src="${heroIconUrl}" class="change-icon">` : ''}
+                  ${heroIconUrl ? `<img src="${heroIconUrl}" class="change-icon">` : ''}
                   <div class="change-content">
                     <div class="change-title">${heroName}</div>
                     
@@ -171,7 +170,7 @@ export async function showPatchDetails(version: string) {
                       return `
                         <div class="ability-change" style="margin-top: 10px;">
                           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-                            ${abIcon ? `<img data-src="${abIcon}" style="width: 32px; height: auto; border-radius: 4px;">` : ''}
+                            ${abIcon ? `<img src="${abIcon}" style="width: 32px; height: auto; border-radius: 4px;">` : ''}
                             <div class="patch-note-item patch-note-title" style="font-weight: 500; color: var(--gold); margin-bottom: 0;">${abilityName}:</div>
                           </div>
                           ${ab.ability_notes.map((n: any) => {
@@ -204,7 +203,6 @@ export async function showPatchDetails(version: string) {
 
     html += `</div>`;
     modalBody.innerHTML = html;
-    processImages(modalBody);
   } catch (err) {
     console.error(err);
     modalBody.innerHTML = 'Error loading details.';
